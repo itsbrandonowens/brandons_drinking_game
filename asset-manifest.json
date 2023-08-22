@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/brandons_drinking_game/static/css/main.1b074372.css",
+    "main.css": "/brandons_drinking_game/static/css/main.34360b04.css",
     "main.js": "/brandons_drinking_game/static/js/main.0bd3ba7a.js",
     "static/js/787.7251fea7.chunk.js": "/brandons_drinking_game/static/js/787.7251fea7.chunk.js",
     "static/media/black_card.png": "/brandons_drinking_game/static/media/black_card.a09380262d39636b64bc.png",
@@ -25,12 +25,12 @@
     "static/media/4_of_spades.png": "/brandons_drinking_game/static/media/4_of_spades.8f0668446faa6a9e9852.png",
     "static/media/2_of_spades.png": "/brandons_drinking_game/static/media/2_of_spades.b9261a5e22908925e4af.png",
     "index.html": "/brandons_drinking_game/index.html",
-    "main.1b074372.css.map": "/brandons_drinking_game/static/css/main.1b074372.css.map",
+    "main.34360b04.css.map": "/brandons_drinking_game/static/css/main.34360b04.css.map",
     "main.0bd3ba7a.js.map": "/brandons_drinking_game/static/js/main.0bd3ba7a.js.map",
     "787.7251fea7.chunk.js.map": "/brandons_drinking_game/static/js/787.7251fea7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1b074372.css",
+    "static/css/main.34360b04.css",
     "static/js/main.0bd3ba7a.js"
   ]
 }
