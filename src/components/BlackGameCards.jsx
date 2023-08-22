@@ -1,0 +1,62 @@
+import React from 'react'
+import '../styles/GameCards.css'
+import black_card from "./images/black_card.png"
+
+const BlackGameCards = () => {
+    const storedNames = JSON.parse(localStorage.getItem("player names"))
+    let randomName = storedNames[Math.floor(Math.random() * storedNames.length)];
+    const cards = [ 
+        { 
+            title: 'Neck your Drink',
+            description: 'Finish your drink, no matter how full!'
+        },
+        {
+            title: 'Take a Shot',
+            description: 'Take a shot, of any spirit you like!'
+        },
+        { 
+            title: 'Neck your Drink and Take a Shot',
+            description: 'Finish your drink, no matter how full and take a shot of any spirit you like!'
+        },
+        { 
+            title: 'Neck a FULL drink and take a shot!',
+            description: 'Pour yourself a new, full drink, and take a shot!'
+        },
+        {
+            title: 'EVERYONE DOWN IT',
+            description: 'Everybody finish your drinks! '
+        },
+        {
+            title: 'Lucky Black Card',
+            description: 'Your off the hook, pick someone to down their drink!'
+        },
+        {
+            title: 'Deadly Rock Paper Scissors',
+            description: 'Play Rock, Paper, Scissors with everyone in the room, do a shot for every player you lose too!'
+        },
+        {
+            title: 'Dirty Pint',
+            description: 'Everybody must pour some of their drink into a pint glass, and you must drink it!'
+        },
+    ]
+    
+    let randomValue = cards[Math.floor(Math.random() * cards.length)];
+    return (
+
+        <div className="card_container">
+           <img src={black_card} className="cards" alt="black_card"></img>
+           <div className="card_contents">
+                <h2 className="card_title"> {randomValue.title} </h2>
+                <p className="card_player_name">{randomName}</p>
+                <p className="card_description">{randomValue.description}</p>
+           </div>     
+        </div>
+
+
+
+
+
+    )
+}
+
+export default BlackGameCards

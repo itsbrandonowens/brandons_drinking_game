@@ -1,0 +1,59 @@
+.home_container {
+    text-align: center
+}
+
+.homepage_title {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4vw;
+    padding: 10px;
+    margin-bottom: 1px;
+    color: rgb(255, 255, 255);
+    filter: drop-shadow(0px 0px 15px #292929);
+}
+
+.next_card_button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 2vw;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #000000;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    margin-left:45%;
+}
+
+
+.next_card_button:active {
+    background-color: #979797;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.home_button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 2vw;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #000000;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    margin:1%;
+}
+
+
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+/* The CSS Below is for mobile and smaller screen sizes */
+@media only screen and (max-width:600px) {}
