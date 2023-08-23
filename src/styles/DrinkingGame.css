@@ -39,6 +39,42 @@
     margin:1%;
 }
 
+.shearer_image {
+    width:15%;
+    position:absolute;
+    rotate:-10deg;
+    top:30%;
+    right:-3%;
+    overflow:hidden;
+}
+
+.speech_bubble {
+    width:20%;
+    position: absolute;
+    top:5%;
+    right:5%;
+    rotate:10deg
+    
+}
+.shearer_text_name { 
+    font-size:2.8vw;
+    position: absolute;
+    top:4%;
+    right:9%;
+    rotate:10deg;
+    text-decoration:bold;
+
+}
+
+.shearer_text { 
+    font-size:1.7vw;
+    position: absolute;
+    top:15%;
+    right:9.5%;
+    rotate:10deg
+
+}
+
 
 }
 

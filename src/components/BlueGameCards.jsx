@@ -62,6 +62,14 @@ const BlueGameCards = () => {
             title: '2 Truths, 1 Lie',
             description: 'Tell everyone 2 truths and 1 lie, they must guess the lie, if they get it wrong they drink.'
         },
+        {
+            title: 'Get down Mr President!',
+            description: 'Everyone hit the deck! Last one to get to the floor has been shot... they must drink'
+        },
+        {
+            title: 'The Abzorbaloff',
+            description: 'You are the Abzorbaloff! From now on, after every sip you must say "mmm tastes like chicken". If you dont must take an extra sip'
+        },
         
         
 

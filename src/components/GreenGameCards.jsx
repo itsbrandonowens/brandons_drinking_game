@@ -150,6 +150,26 @@ const GreenGameCards = () => {
             title: 'T-Minus!',
             description: 'You have 5 seconds to say 5 words starting with T, or drink'
         },
+        {
+            title: 'Sly Digs!',
+            description: 'Write a players name down on your phone and say something about that player, every player must guess who it is. Every wrong player must drink'
+        },
+        {
+            title: 'Men are Pigs!',
+            description: 'All men, take 2 drinks!'
+        },
+        {
+            title: 'I hate women!',
+            description: 'All women, take 2 drinks!'
+        },
+        {
+            title: 'Short Kings!',
+            description: 'Everyone UNDER 6 foot, take a drink and hope you grow!'
+        },
+        {
+            title: 'Giant Chads!',
+            description: 'Everyone 6 foot and above, take a drink!'
+        },
         
        
 

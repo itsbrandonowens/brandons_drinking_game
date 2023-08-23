@@ -43,9 +43,14 @@ const PinkGameCards = () => {
             title: 'SUPER Bonus!',
             description: 'Congratulations! Horus demands you tell someone to neck a full drink!',
             video: 'https://youtu.be/tVTYxjudOww?t=149'
+        },                    
+        {  
+            title: 'Im Blue!',
+            description: 'Starting with you, you must drink until the next time Blue is said. The next person in the circle must do the same and so on until the chorus is over',
+            video: 'https://youtu.be/68ugkg9RePc?t=26'
         },
 
-
+        
 
         
         

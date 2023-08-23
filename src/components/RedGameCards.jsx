@@ -26,6 +26,30 @@ const RedGameCards = () => {
             title: 'Race for a dildo',
             description: 'You have 30 seconds to find an item that could be used as a dildo, person with the least pleasurable item must drink. If you find an actual dildo, the other player must finish their drink'
         },
+        {
+            title: 'Alreet fatty',
+            description: 'Whoever has the biggest waist size between you two must take 4 sips, if its a draw, both of you lard arses take a drink'
+        }, 
+        {
+            title: 'Sharing is Caring',
+            description: 'Swap drinks with each other! Whoever takes the most sips of the others drink wins! Loser must do a shot'
+        },     
+        {
+            title: 'Most Likely To: Get an STD',
+            description: 'Everyone must vote who, out of these two players, is most likely to get an STD, loser must drink twice'
+        },
+        {
+            title: 'Most Likely To: Be a Nonce',
+            description: 'Everyone must vote who, out of these two players, is most likely to be a nonce, loser must drink twice'
+        },
+        {
+            title: 'Most Likely To: Get Arrested',
+            description: 'Everyone must vote who, out of these two players, is most likely to get arrested, loser must drink twice'
+        },
+        {
+            title: 'Short Arse',
+            description: 'Shortest player out of you two must drink twice, tallest player then gives out 2 drinks'
+        },
 
 
 
@@ -38,7 +62,7 @@ const RedGameCards = () => {
             <img src={red_card} className="cards" alt="red_card"></img>
             <div className="card_contents">
                 <h2 className="card_title"> {randomValue.title} </h2>
-                <p className="card_player_name">{randomName} vs {randomName2}</p>
+                <p className="card_player_name">{randomName} <span className ="versus_label"> vs </span> {randomName2}</p>
                 <p className="card_description">{randomValue.description}</p>
             </div>
         </div>
