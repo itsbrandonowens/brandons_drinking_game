@@ -3,6 +3,8 @@ import '../styles/Homepage.css'
 import AddPlayerNames from './AddPlayerNames';
 import { useState, } from 'react';
 import { Link } from 'react-router-dom';
+import geordie_monster from "./images/geordie_monster.jpg"
+import dirty_mackems from "./images/dirty_mackems.jpg"
 
 const Home = () => {
     const [isPopupOpen, setPopupOpen] = useState(false);
@@ -44,6 +46,8 @@ const Home = () => {
                     <button className="start_game_button" onClick={closePopup}>Close</button>
                 </div>
             )}
+            <img src={geordie_monster} className="geordie_monster" alt="geordie_monster"></img>
+            <img src={dirty_mackems} className="dirty_mackems" alt="dirty_mackems"></img>
         </div>
 
 

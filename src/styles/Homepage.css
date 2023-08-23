@@ -1,158 +1,219 @@
 @media only screen and (min-width:600px) {
-.home_container {
-    text-align: center;
-    transition: all 0.8s ease;
+    .home_container {
+        text-align: center;
+        transition: all 0.8s ease;
+
+    }
+
+    .homepage_title {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 4vw;
+        padding: 10px;
+        color: rgb(255, 255, 255);
+        filter: drop-shadow(0px 0px 15px #292929);
+    }
+
+    .start_game_button {
+        display: inline-block;
+        padding: 15px 25px;
+        font-size: 1vw;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #000000;
+        background-color: #ffffff;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+        margin: 5%;
+    }
+
+
+    .start_game_button:active {
+        background-color: #979797;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+
+
+    .add_players_container {
+        background-color: rgba(115, 115, 115, 0.9);
+        border: 5px solid rgba(193, 193, 193, 0.8);
+        width: 30%;
+        margin-left: 34%;
+        margin-top: 2%;
+        transition: all 0.8s ease;
+        padding: 1%; 
+    }
+
+    .add_players_title {
+        color: rgb(255, 255, 255);
+        font-size: 2vw;
+    }
+
+    .add_players_form {
+        transition: all 0.8s ease;
+    }
+
+    .add_players_input {
+        padding: 10px;
+        border: 0;
+        margin-right: 20px;
+        display: inline-block;
+        padding: 15px 25px;
+        font-size: 1vw;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #000000;
+        background-color: #ffffff;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+        margin: 10px;
+    }
+
+    .add_players_button {
+        display: inline-block;
+        padding: 15px 25px;
+        font-size: 1vw;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #000000;
+        background-color: #ffffff;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+    }
+
+
+    .add_players_button:active {
+        background-color: #979797;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+
+    .added_players_list {
+        text-decoration: none;
+        list-style-type: none;
+        color: white;
+        font-size: 1.5vw;
+        transition: all 0.8s ease;
+        margin-right: 10%;
+        margin-top: 10%;
+
+    }
+
+    .each_player_names_list {
+        color: black;
+        background-color: rgba(255, 255, 255, 0.9);
+        border: 3px solid rgba(193, 193, 193, 0.8);
+        border-radius: 10px;
+        margin-top: 2%;
+        padding: 1%;
+    }
+
+    .rules_popup {
+        width: 40%;
+        margin: 2%;
+        position: absolute;
+        top: 18%;
+        right: 28%;
+        background-color: rgb(154, 154, 154);
+        border: 5px solid rgba(193, 193, 193, 0.8);
+    }
+
+    .rules_list {
+        text-decoration: none;
+        list-style-type: none;
+        color: rgb(255, 255, 255);
+        font-size: 1.5vw;
+        text-align: left;
+    }
+
+    .black {
+        color: black;
+    }
+
+    .orange {
+        color: orange;
+    }
+
+    .green {
+        color: green;
+    }
+
+    .blue {
+        color: blue;
+    }
+
+    .red {
+        color: red;
+    }
+
+    .pink {
+        color: pink;
+    }
+
+    .yellow {
+        color: yellow;
+    }
+
+    .geordie_monster {
+        animation: fadeIn 10s;
+        animation: cowmove 20s linear both infinite alternate;
+        position: absolute;
+        top: 20%;
+        right: 15%;
+        filter: drop-shadow(0px 0px 15px #292929);
+        width: 15%;
+        rotate: 10deg;
+        border-radius: 30%;
+    }
+
+    .dirty_mackems {
+        animation: fadeIn 10s;
+        animation: cowmove 20s linear both infinite alternate;
+        position: absolute;
+        top: 60%;
+        right: 85%;
+        filter: drop-shadow(0px 0px 15px #292929);
+        width: 15%;
+        rotate: 350deg;
+        border-radius: 30%;
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes cowmove {
+        0% {
+            transform: translateX(100px);
+        }
+
+        50% {
+            transform: translateX(200px);
+        }
+
+        100% {
+            transform: translateX(100px);
+        }
+    }
+
+
 }
 
-.homepage_title {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 4vw;
-    padding: 10px;
-    color: rgb(255, 255, 255);
-    filter: drop-shadow(0px 0px 15px #292929);
-}
-
-.start_game_button {
-    display: inline-block;
-    padding: 15px 25px;
-    font-size: 1vw;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: #000000;
-    background-color: #ffffff;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #999;
-    margin: 5%;
-}
-
-
-.start_game_button:active {
-    background-color: #979797;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-}
-
-
-.add_players_container {
-    background-color: rgba(115, 115, 115, 0.9);
-    border: 5px solid rgba(193, 193, 193, 0.8);
-    width: 30%;
-    margin-left: 35%;
-    margin-top:2%;
-    transition: all 0.8s ease;
-}
-
-.add_players_title {
-    color: rgb(255, 255, 255);
-    font-size: 2vw;
-}
-
-.add_players_form {
-    transition: all 0.8s ease;
-}
-
-.add_players_input {
-    padding: 10px;
-    border: 0;
-    margin-right: 20px;
-    display: inline-block;
-    padding: 15px 25px;
-    font-size: 1vw;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: #000000;
-    background-color: #ffffff;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #999;
-    margin:10px;
-}
-
-.add_players_button {
-    display: inline-block;
-    padding: 15px 25px;
-    font-size: 1vw;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: #000000;
-    background-color: #ffffff;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #999;
-}
-
-
-.add_players_button:active {
-    background-color: #979797;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-}
-
-.added_players_list {
-    text-decoration: none;
-    list-style-type: none;
-    color: white;
-    font-size: 1.5vw;
-    transition: all 0.8s ease;
-    margin-right:10%;
-    margin-top:10%;
-}
-.rules_popup{
-    width: 40%;
-    margin: 2%;
-    position:absolute;
-    top:18%;
-    right:28%;
-    background-color: rgb(154, 154, 154);
-    border: 5px solid rgba(193, 193, 193, 0.8);
-}
-
-.rules_list {
-    text-decoration: none;
-    list-style-type: none;
-    color: rgb(255, 255, 255);
-    font-size: 1.5vw;
-    text-align: left;
-}
-
-.black {
-    color: black;
-}
-
-.orange {
-    color: orange;
-}
-
-.green {
-    color: green;
-}
-
-.blue {
-    color: blue;
-}
-
-.red {
-    color: red;
-}
-
-.pink {
-    color: pink;
-}
-
-.yellow {
-    color: yellow;
-}
-
-
-
-}
 /* --------------------------------------------------------------------------------------------------------------------------------------- */
 /* The CSS Below is for mobile and smaller screen sizes */
 @media only screen and (max-width:600px) {
@@ -165,6 +226,7 @@
         color: rgb(255, 255, 255);
         filter: drop-shadow(0px 0px 15px #292929);
     }
+
     .start_game_button {
         display: inline-block;
         padding: 15px 25px;
@@ -180,33 +242,33 @@
         box-shadow: 0 9px #999;
         margin: 5%;
     }
-    
-    
+
+
     .start_game_button:active {
         background-color: #979797;
         box-shadow: 0 5px #666;
         transform: translateY(4px);
     }
-    
-    
+
+
     .add_players_container {
         background-color: rgba(115, 115, 115, 0.9);
         border: 5px solid rgba(193, 193, 193, 0.8);
         width: 80%;
         margin-left: 10%;
-        margin-top:2%;
+        margin-top: 2%;
         transition: all 0.8s ease;
     }
-    
+
     .add_players_title {
         color: rgb(255, 255, 255);
         font-size: 5vw;
     }
-    
+
     .add_players_form {
         transition: all 0.8s ease;
     }
-    
+
     .add_players_input {
         padding: 10px;
         border: 0;
@@ -223,7 +285,7 @@
         border-radius: 15px;
         box-shadow: 0 9px #999;
     }
-    
+
     .add_players_button {
         display: inline-block;
         padding: 15px 25px;
@@ -237,36 +299,36 @@
         border: none;
         border-radius: 15px;
         box-shadow: 0 9px #999;
-        margin:20px;
+        margin: 20px;
     }
-    
-    
+
+
     .add_players_button:active {
         background-color: #979797;
         box-shadow: 0 5px #666;
         transform: translateY(4px);
     }
-    
+
     .added_players_list {
         text-decoration: none;
         list-style-type: none;
         color: white;
         font-size: 5vw;
         transition: all 0.8s ease;
-        margin-right:10%;
-        margin-top:10%;
+        margin-right: 10%;
+        margin-top: 10%;
     }
 
-    .rules_popup{
+    .rules_popup {
         width: 40%;
         margin: 2%;
-        position:absolute;
-        top:18%;
-        right:28%;
+        position: absolute;
+        top: 18%;
+        right: 28%;
         background-color: rgb(154, 154, 154);
         border: 5px solid rgba(193, 193, 193, 0.8);
     }
-    
+
     .rules_list {
         text-decoration: none;
         list-style-type: none;
@@ -274,36 +336,70 @@
         font-size: 4vw;
         text-align: left;
     }
-    
+
     .black {
         color: black;
     }
-    
+
     .orange {
         color: orange;
     }
-    
+
     .green {
         color: green;
     }
-    
+
     .blue {
         color: blue;
     }
-    
+
     .red {
         color: red;
     }
-    
+
     .pink {
         color: pink;
     }
-    
+
     .yellow {
         color: yellow;
     }
-    
 
 
+    .geordie_monster {
+        animation: fadeIn 10s;
+        animation: cowmove 10s linear both infinite alternate;
+        position: absolute;
+        top: 50%;
+
+        filter: drop-shadow(0px 0px 15px #292929);
+        width: 15%;
+        rotate: 10deg;
+        border-radius: 30%;
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes cowmove {
+        0% {
+            transform: translateX(10px);
+        }
+
+        50% {
+            transform: translateX(100px);
+        }
+
+        100% {
+            transform: translateX(10px);
+        }
+    }
 
 }

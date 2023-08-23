@@ -49,7 +49,7 @@ const AddPlayerNames  = () => {
 
             <ul className="added_players_list">
                 {playerName.map((item, index) => (
-                    <li key={index}>{item}</li>
+                    <li className = "each_player_names_list" key={index}>{item}</li>
                 ))}
             </ul>
         </div>
