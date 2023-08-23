@@ -15,10 +15,6 @@ const BlueGameCards = () => {
             description: 'Every player must read their last text out loud or drink!'
         },
         { 
-            title: 'Going to the bar',
-            description: 'Starting with you, go around in a circle saying "Im going to the bar and im going to buy..." and add an alcoholic beverage. Keep this going till someone forgets and they must drink'
-        },
-        { 
             title: 'Categories ',
             description: 'You must pick a category, then everyone goes around in a circle naming things from that category. First person who cant, drinks... just like in Ring of Fire'
         },

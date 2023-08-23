@@ -38,16 +38,21 @@ const PinkGameCards = () => {
             title: 'You Hit the Bonus!',  
             description: 'Congratulations! Fishing Frankie reels in 5 sips for you to give out!',
             video: 'https://youtu.be/gDWHcRjXBGM?t=6'
-        },
+        },   
         {
             title: 'SUPER Bonus!',
             description: 'Congratulations! Horus demands you tell someone to neck a full drink!',
             video: 'https://youtu.be/tVTYxjudOww?t=149'
-        },                    
+        },                           
         {  
             title: 'Im Blue!',
             description: 'Starting with you, you must drink until the next time Blue is said. The next person in the circle must do the same and so on until the chorus is over',
             video: 'https://youtu.be/68ugkg9RePc?t=26'
+        }, 
+        {  
+            title: 'Squeaky Bum Time',
+            description: 'Finish your drink before this video ends! If you fail you must do a shot.',
+            video: 'https://www.youtube.com/watch?v=6_2ZJ4QW_O4'
         },
 
         

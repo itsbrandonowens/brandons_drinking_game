@@ -46,6 +46,7 @@
     top:30%;
     right:-3%;
     overflow:hidden;
+    filter: drop-shadow(0px 0px 15px #292929);
 }
 
 .speech_bubble {
@@ -53,7 +54,8 @@
     position: absolute;
     top:5%;
     right:5%;
-    rotate:10deg
+    rotate:10deg;
+    filter: drop-shadow(0px 0px 15px #292929);
     
 }
 .shearer_text_name { 
@@ -71,7 +73,8 @@
     position: absolute;
     top:15%;
     right:9.5%;
-    rotate:10deg
+    rotate:10deg;
+    
 
 }
 

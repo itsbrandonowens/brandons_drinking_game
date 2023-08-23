@@ -47,6 +47,10 @@ const RedGameCards = () => {
             description: 'Everyone must vote who, out of these two players, is most likely to get arrested, loser must drink twice'
         },
         {
+            title: 'Most Likely To: Be Kicked of a Plane',
+            description: 'Everyone must vote who, out of these two players, is most likely to be kicked off a plane, loser must drink twice'
+        },
+        {
             title: 'Short Arse',
             description: 'Shortest player out of you two must drink twice, tallest player then gives out 2 drinks'
         },

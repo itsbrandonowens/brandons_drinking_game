@@ -24,13 +24,13 @@ const DrinkingGame = () => {
             * (max - min + 1)) + min;
     };
 
+
     const OnClick = () => {
         setNum(randomNumberInRange(1, 23));
         console.log(num)
         setShearerNum(randomNumberInRange(1, 25));
         console.log(shearerNum)
     }
-
 
 
     return (
