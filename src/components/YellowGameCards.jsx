@@ -21,7 +21,7 @@ const YellowGameCards = () => {
     const storedNames = JSON.parse(localStorage.getItem("player names"))
     let randomName = storedNames[Math.floor(Math.random() * storedNames.length)];
     const playing_cards = [two_of_spades, three_of_spades, four_of_spades, five_of_spades, six_of_spades, seven_of_spades, eight_of_spades, nine_of_spades, ten_of_spades, eleven_of_spades, twelve_of_spades, thirteen_of_spades, fourteen_of_spades]
-    const randomCard = playing_cards[Math.floor(Math.random() * playing_cards.length)];
+    const finalRandomCard2 = playing_cards[Math.floor(Math.random() * playing_cards.length)];
     const [randomCard2,setRandomCard2] = useState(back_of_card)
     
 
@@ -33,7 +33,7 @@ const YellowGameCards = () => {
     ]
 
     let checkCardHandler= () => { 
-        randomCard2 = playing_cards[Math.floor(Math.random() * playing_cards.length)];
+        setRandomCard2(finalRandomCard2)
         console.log(randomCard2)
     }
 
@@ -47,8 +47,8 @@ const YellowGameCards = () => {
                 <h2 className="card_title"> {randomValue.title} </h2>
                 <p className="card_player_name">{randomName}</p>
                 <div className="cards_and_button_container">
-                    <img src={randomCard} className="playing_card1" alt="playing_card"></img>
-                    <button className="check_button"  onClick={()=> setRandomCard2(randomCard)}>Check</button>
+                    <img src={seven_of_spades} className="playing_card1" alt="playing_card"></img>
+                    <button className="check_button"  onClick={checkCardHandler}>Check</button>
                     <img src={randomCard2} className="playing_card1" alt="playing_card"></img>
                 </div>
             </div>

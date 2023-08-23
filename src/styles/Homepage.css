@@ -2,6 +2,7 @@
     .home_container {
         text-align: center;
         transition: all 0.8s ease;
+        
 
     }
 
@@ -375,6 +376,18 @@
         filter: drop-shadow(0px 0px 15px #292929);
         width: 15%;
         rotate: 10deg;
+        border-radius: 30%;
+    }
+
+    .dirty_mackems {
+        animation: fadeIn 10s;
+        animation: cowmove 20s linear both infinite alternate;
+        position: absolute;
+        top: 60%;
+        right: 85%;
+        filter: drop-shadow(0px 0px 15px #292929);
+        width: 15%;
+        rotate: 350deg;
         border-radius: 30%;
     }
 

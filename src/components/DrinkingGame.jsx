@@ -20,7 +20,7 @@ const DrinkingGame = () => {
     };
 
     const OnClick = () => {
-        setNum(randomNumberInRange(1, 22));
+        setNum(randomNumberInRange(1, 23));
         console.log(num)
     }
 
@@ -45,6 +45,10 @@ const DrinkingGame = () => {
             {num == 22?
                 <PinkGameCards /> : null
             }
+            {num == 23?
+                <YellowGameCards /> : null
+            }
+            
 
             <button className="next_card_button" onClick={OnClick}>Next Card</button>
             
