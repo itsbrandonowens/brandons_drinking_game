@@ -17,7 +17,11 @@ const Home = () => {
         setPopupOpen(false);
     }; // 
 
+    /* 
+    Ideas for more cards:
+    Image related cards - "Most likely to look like a FAS baby"
     
+    */
 
     return (
 
@@ -42,7 +46,7 @@ const Home = () => {
                         <li><span className="red"> Red </span> Cards - 1v1 Cards </li>
                         <li><span className="pink"> Pink </span> Cards - Video Cards</li>
                         <li><span className="yellow"> Yellow </span> Cards - Cards Cards</li>
-                    </ul>
+                    </ul> 
                     <button className="start_game_button" onClick={closePopup}>Close</button>
                 </div>
             )}

@@ -19,6 +19,15 @@ const OrangeGameCards = () => {
             title: 'Just Drink',
             description: 'Just Drink'
         },
+        {
+            title: 'Right Handed',
+            description: 'If youre holding your drink with you right hand, drink!'
+        },
+        {
+            title: 'Left Handed',
+            description: 'If youre holding your drink with you left hand, drink!'
+        },
+        
     ]
     
     let randomValue = cards[Math.floor(Math.random() * cards.length)];

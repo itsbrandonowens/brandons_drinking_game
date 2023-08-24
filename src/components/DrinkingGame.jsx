@@ -12,6 +12,8 @@ import PinkGameCards from './PinkGameCards';
 import YellowGameCards from './YellowGameCards';
 import shearer_image from './images/shearer.png'
 import speech_bubble from './images/speech_bubble.png'
+import SpinningWheel from './SpinningWheel';
+import WhiteGameCards from './WhiteGameCards';
 
 const DrinkingGame = () => {
     const [num, setNum] = useState(2);
@@ -26,7 +28,7 @@ const DrinkingGame = () => {
 
 
     const OnClick = () => {
-        setNum(randomNumberInRange(1, 23));
+        setNum(randomNumberInRange(1, 25));
         console.log(num)
         setShearerNum(randomNumberInRange(1, 25));
         console.log(shearerNum)
@@ -57,6 +59,9 @@ const DrinkingGame = () => {
             {num == 23 ?
                 <YellowGameCards /> : null
             }
+            {num == 24 || num == 25 ?
+                <WhiteGameCards /> : null
+            }
 
             {shearerNum == 1 ?
                 <div className="shearer_popup">
@@ -64,12 +69,12 @@ const DrinkingGame = () => {
                     <img src={speech_bubble} className="speech_bubble" alt="speech_bubble"></img>
                     <p className="shearer_text_name"> {randomName}!</p>
                     <p className="shearer_text"> Give out 5 drinks!</p>
-                </div> 
-                :null
+                </div>
+                : null
             }
-
-
-            <button className="next_card_button" onClick={OnClick}>Next Card</button>
+         
+                <button className="next_card_button" onClick={OnClick}>Next Card</button>
+        
 
         </div>
 

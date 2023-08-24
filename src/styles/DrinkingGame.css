@@ -13,7 +13,8 @@
     border: none;
     border-radius: 15px;
     box-shadow: 0 9px #999;
-    margin-left:45%;
+    margin-left:43%;
+    z-index:1000;
 }
 
 
@@ -78,6 +79,15 @@
 
 }
 
+.white_wheel_container {
+    position:absolute;
+    top:2%;
+    right:56%;
+    z-index:1;
+    height:10%;
+    width:10%;
+}
+
 
 }
 
@@ -113,6 +123,8 @@
         border-radius: 15px;
         box-shadow: 0 9px #999;
         margin-left:35%;
+        position:absolute;
+        top:1%;
     }
     
     
@@ -136,6 +148,55 @@
         border-radius: 15px;
         box-shadow: 0 9px #999;
         margin:2%;
+    }
+
+    .shearer_image {
+        width:15%;
+        position:absolute;
+        rotate:-10deg;
+        top:14%;
+        right:-3%;
+        overflow:hidden;
+        filter: drop-shadow(0px 0px 15px #292929);
+    }
+    
+    .speech_bubble {
+        width:25%;
+        position: absolute;
+        top:5%;
+        right:5%;
+        rotate:10deg;
+        filter: drop-shadow(0px 0px 15px #292929);
+        
+    }
+    .shearer_text_name { 
+        font-size:2.8vw;
+        position: absolute;
+        top:6%;
+        right:9%;
+        rotate:10deg;
+        text-decoration:bold;
+    
+    }
+    
+    .shearer_text { 
+        font-size:2vw;
+        position: absolute;
+        top:8%;
+        right:8%;
+        rotate:10deg;
+    }
+    .canvas {
+        height:10%;
+        width:10%;
+    }
+
+    .white_wheel_container {
+        position:absolute;
+        top:2%;
+        right:56%;
+        height:10%;
+        width:10%;
     }
 
 }

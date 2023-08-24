@@ -28,6 +28,7 @@ const YellowGameCards = () => {
     const cards = [
         {
             title: 'Higher or Lower',
+            description:'Guess if the covered card is higher or lower, drink if you are wrong. Click the card to find out!'
         },
 
     ]
@@ -46,10 +47,11 @@ const YellowGameCards = () => {
             <div className="card_contents">
                 <h2 className="card_title"> {randomValue.title} </h2>
                 <p className="card_player_name">{randomName}</p>
+                <p className="higher_or_lower_description">{randomValue.description}</p>
                 <div className="cards_and_button_container">
                     <img src={seven_of_spades} className="playing_card1" alt="playing_card"></img>
-                    <button className="check_button"  onClick={checkCardHandler}>Check</button>
-                    <img src={randomCard2} className="playing_card1" alt="playing_card"></img>
+                  
+                    <img src={randomCard2} className="playing_card2" alt="playing_card" onClick={checkCardHandler}></img>
                 </div>
             </div>
         </div>
