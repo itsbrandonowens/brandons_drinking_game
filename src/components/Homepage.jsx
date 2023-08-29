@@ -20,6 +20,7 @@ const Home = () => {
     /* 
     Ideas for more cards:
     Image related cards - "Most likely to look like a FAS baby"
+    Finish the Lyrics
     
     */
 

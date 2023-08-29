@@ -28,7 +28,7 @@ const YellowGameCards = () => {
     const cards = [
         {
             title: 'Higher or Lower',
-            description:'Guess if the covered card is higher or lower, drink if you are wrong. Click the card to find out!'
+            description:'Guess if the covered card is higher or lower, drink if you are wrong. Ace is Low. Click the card to find out!'
         },
 
     ]

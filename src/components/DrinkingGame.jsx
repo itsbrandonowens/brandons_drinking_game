@@ -12,14 +12,15 @@ import PinkGameCards from './PinkGameCards';
 import YellowGameCards from './YellowGameCards';
 import shearer_image from './images/shearer.png'
 import speech_bubble from './images/speech_bubble.png'
-import SpinningWheel from './SpinningWheel';
 import WhiteGameCards from './WhiteGameCards';
 
 const DrinkingGame = () => {
     const [num, setNum] = useState(2);
     const [shearerNum, setShearerNum] = useState(0);
     const storedNames = JSON.parse(localStorage.getItem("player names"))
+   
     let randomName = storedNames[Math.floor(Math.random() * storedNames.length)];
+
 
     const randomNumberInRange = (min, max) => {
         return Math.floor(Math.random()
@@ -28,7 +29,7 @@ const DrinkingGame = () => {
 
 
     const OnClick = () => {
-        setNum(randomNumberInRange(1, 25));
+        setNum(randomNumberInRange(1, 30));
         console.log(num)
         setShearerNum(randomNumberInRange(1, 25));
         console.log(shearerNum)
@@ -38,28 +39,29 @@ const DrinkingGame = () => {
     return (
         <div className="game_container" >
             <Link to='/homepage'> <button className="home_button"> 🏠 </button> </Link>
+
             {num == 1 ?
                 <BlackGameCards /> : null
             }
-            {num == 2 || num == 3 || num == 4 || num == 5 || num == 6 || num == 7 || num == 8 ?
+            {num == 2 || num == 3 || num == 4 || num == 5 || num == 6 || num == 7 || num == 8 || num == 9 || num == 10 || num == 11   ?
                 <GreenGameCards /> : null
             }
-            {num == 9 || num == 10 || num == 11 || num == 12 || num == 13 ?
+            {num == 12 || num == 13 || num == 14 || num == 15 ?
                 <OrangeGameCards /> : null
             }
-            {num == 14 || num == 15 || num == 16 || num == 17 || num == 18 ?
+            {num == 16 || num == 17 || num == 18 || num == 19 || num == 20 || num == 21?
                 <BlueGameCards /> : null
             }
-            {num == 19 || num == 20 || num == 21 ?
+            {num == 22 || num == 23 || num == 24 ?
                 <RedGameCards /> : null
             }
-            {num == 22 ?
+            {num == 25 || num == 26 ?
                 <PinkGameCards /> : null
             }
-            {num == 23 ?
+            {num == 27 || num == 28 ?
                 <YellowGameCards /> : null
             }
-            {num == 24 || num == 25 ?
+            {num == 29 || num == 30 ?
                 <WhiteGameCards /> : null
             }
 

@@ -62,10 +62,6 @@ const BlueGameCards = () => {
             title: 'Get down Mr President!',
             description: 'Everyone hit the deck! Last one to get to the floor has been shot... they must drink'
         },
-        {
-            title: 'The Abzorbaloff',
-            description: 'You are the Abzorbaloff! From now on, after every sip you must say "mmm tastes like chicken". If you dont must take an extra sip'
-        },
         
         
 

@@ -1,5 +1,6 @@
 import React from 'react'
 import WheelComponent from "react-wheel-of-prizes";
+import '../styles/GameCards.css'
 
 const SpinningWheel = () => {
     const segments = [
@@ -8,10 +9,16 @@ const SpinningWheel = () => {
         "Give out 5 drinks",
         "Free Pass!",
         "Drink 2",
-        "Half of your drink"
+        "Half of your drink",
+        "Drink 1",
+        "Give out 2 drinks",
+        "Drink 2",
+        "Do a Shot",
+        "Drink 2 with a buddy",
+        "Player to your left drink"
     ];
 
-    const segColors = ["#EE4040", "#F0CF50", "#815CD1", "#3DA5E0", "#34A24F","#34B5AF" ];
+    const segColors = ["#EE4040", "#F0CF50", "#815CD1", "#3DA5E0", "#34A24F","#34B5AF","#E24220","#14A8B8","#CA45DE","#E2157F","#33D017","#AB124B"];
     const onFinished = (winner) => {
         console.log(winner);
     };
@@ -36,6 +43,8 @@ const SpinningWheel = () => {
                 upDuration={randomNumberInRange(1, 500)}
                 downDuration={randomNumberInRange(1, 500)}
                 fontFamily="Arial"
+                width = "100"
+                height = "100"
             />
         </div>
 

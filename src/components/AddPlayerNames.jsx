@@ -36,7 +36,7 @@ const AddPlayerNames  = () => {
         localStorage.setItem("player names", JSON.stringify(playerName))   
     }
 
-    setTimeout(OnFinish, 500);
+    setTimeout(OnFinish, 200);
 
     return (
         <div className='add_players_container'>
