@@ -15,7 +15,7 @@ import speech_bubble from './images/speech_bubble.png'
 import WhiteGameCards from './WhiteGameCards';
 import TimerComponent from './TimerComponent';
 const DrinkingGame = () => {
-    const [num, setNum] = useState(2);
+    const [num, setNum] = useState(5);
     const [shearerNum, setShearerNum] = useState(0);
     const storedNames = JSON.parse(localStorage.getItem("player names"))
    
@@ -29,10 +29,10 @@ const DrinkingGame = () => {
 
 
     const OnClick = () => {
-        setNum(randomNumberInRange(1, 30));
+        setNum(randomNumberInRange(1, 100));
         console.log(num)
         setShearerNum(randomNumberInRange(1, 25));
-        console.log(shearerNum)
+        
     }
 
 
@@ -40,29 +40,29 @@ const DrinkingGame = () => {
         <div className="game_container" >
             <Link to='/homepage'> <button className="home_button"> 🏠 </button> </Link>
 
-            {num == 1 ?
-                <BlackGameCards /> : null
+            {num >= 1 && num <= 4 ? 
+                <BlackGameCards /> : null // Black -  4% chance
             }
-            {num == 2 || num == 3 || num == 4 || num == 5 || num == 6 || num == 7 || num == 8 || num == 9 || num == 10 || num == 11   ?
-                <GreenGameCards /> : null
+            {num >= 5 && num <= 22  ?
+                <GreenGameCards /> : null  // Black -  18% chance
             }
-            {num == 12 || num == 13 || num == 14 || num == 15 ?
-                <OrangeGameCards /> : null
+            {num >= 23 && num <= 34?
+                <OrangeGameCards /> : null // Black -  12% chance
             }
-            {num == 16 || num == 17 || num == 18 || num == 19 || num == 20 || num == 21?
-                <BlueGameCards /> : null
+            {num >= 35 && num <= 52?
+                <BlueGameCards /> : null // Black -  18% chance
             }
-            {num == 22 || num == 23 || num == 24 ?
-                <RedGameCards /> : null
+            {num >= 53 && num <= 67?
+                <RedGameCards /> : null // Black -  15% chance
             }
-            {num == 25 || num == 26 ?
-                <PinkGameCards /> : null
+            {num >= 68 && num <= 79 ?
+                <PinkGameCards /> : null // Black -  12% chance
             }
-            {num == 27 || num == 28 ?
-                <YellowGameCards /> : null
+            {num >= 80 && num <= 88 ?
+                <YellowGameCards /> : null // Black -  9% chance
             }
-            {num == 29 || num == 30 ?
-                <WhiteGameCards /> : null
+            {num >= 89 && num <= 100 ?
+                <WhiteGameCards /> : null // Black -  12% chance
             }
 
             {shearerNum == 1 ?
