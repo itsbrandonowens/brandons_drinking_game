@@ -56,6 +56,15 @@ const RedGameCards = () => {
             title: 'Short Arse',
             description: 'Shortest player out of you two must drink twice, tallest player then gives out 2 drinks'
         },
+        {
+            title: 'Blockbuster',
+            description: 'Both players must say their favourite movies, everyone else vote which movie is worst, the player with the most votes must drink!'
+        },
+        {
+            title: '1337 Gamer',
+            description: 'Both players must say their favourite game, everyone else vote which game is worst, the player with the most votes must drink!'
+        },
+
 
 
 

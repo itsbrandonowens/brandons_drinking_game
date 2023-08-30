@@ -35,8 +35,8 @@ const BlackGameCards = () => {
             description: 'Play Rock, Paper, Scissors with everyone in the room, do a shot for every player you lose too!'
         },
         {
-            title: 'Dirty Pint',
-            description: 'Everybody must pour some of their drink into a pint glass, and you must drink it!'
+            title: 'Chug Card',
+            description: 'You may shout "Chug!" at any point and everyone has to finish their drinks! Can only be used once!'
         },
     ]
     

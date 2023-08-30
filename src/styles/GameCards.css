@@ -138,7 +138,47 @@
         transform: translateY(4px);
     }
 
+    .timer_container{
+        filter: drop-shadow(0px 0px 15px #292929);
+        background-color: rgba(115, 115, 115, 0.9);
+        border: 5px solid rgba(193, 193, 193, 0.8);
+        width:10%;
+        padding:1%;
+        position: absolute;
+        top:19%;
+        right:85%;
 
+    }
+
+    .timer_function{
+        color:white;
+        text-align:center;
+        font-size:2vw;
+    }
+
+    .timer_button {
+        display: inline-block;
+        padding: 15px 25px;
+        font-size: 1vw;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #000000;
+        background-color: #ffffff;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+        margin-left:10%;
+        margin-top:8%;
+    }
+    
+    
+    .timer_button:active {
+        background-color: #979797;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
 }
 
 
@@ -283,5 +323,45 @@
 
     .white_wheel_container {
         width: 70%;
+    }
+    .timer_container{
+        filter: drop-shadow(0px 0px 15px #292929);
+        background-color: rgba(115, 115, 115, 0.9);
+        border: 5px solid rgba(193, 193, 193, 0.8);
+        width:90%;
+        padding:1%;
+        position: absolute;
+        top:35%;
+        right:3%;
+    }
+
+    .timer_function{
+        color:white;
+        text-align:center;
+        font-size:5vw;
+    }
+
+    .timer_button {
+        display: inline-block;
+        padding: 15px 25px;
+        font-size: 3vw;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #000000;
+        background-color: #ffffff;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+       margin-left:2%;
+       margin-bottom:5%;
+    }
+    
+    
+    .timer_button:active {
+        background-color: #979797;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
     }
 }

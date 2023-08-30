@@ -62,6 +62,30 @@ const BlueGameCards = () => {
             title: 'Get down Mr President!',
             description: 'Everyone hit the deck! Last one to get to the floor has been shot... they must drink'
         },
+        {
+            title: 'BANNED!',
+            description: 'You can pick a word that is banned for 10 minutes, if anyone says this word they must drink!'
+        },
+        {
+            title: 'ET Phone Home!',
+            description: 'Everyone must try to phone this player, first to succeed must choose someone to drink'
+        },
+        {
+            title: 'WYR - Tea or Coffee!',
+            description: 'Hands up for Tea, Hands down for Coffee! The lowest amount of hands must drink! If its even, everyone drink!'
+        },
+        {
+            title: 'WYR - Energy Drink or Coffee!',
+            description: 'Hands up for Energy Drink, Hands down for Coffee! The lowest amount of hands must drink! If its even, everyone drink!'
+        },
+        {
+            title: 'WYR - Pizza or Burger!',
+            description: 'Hands up for Pizza, Hands down for Burger! The lowest amount of hands must drink! If its even, everyone drink!'
+        },
+        {
+            title: 'WYR - Doggy Style or Cowgirl!',
+            description: 'Hands up for Doggy, Hands down for Cowgirl! The lowest amount of hands must drink! If its even, everyone drink!'
+        },
         
         
 

@@ -13,7 +13,7 @@ import YellowGameCards from './YellowGameCards';
 import shearer_image from './images/shearer.png'
 import speech_bubble from './images/speech_bubble.png'
 import WhiteGameCards from './WhiteGameCards';
-
+import TimerComponent from './TimerComponent';
 const DrinkingGame = () => {
     const [num, setNum] = useState(2);
     const [shearerNum, setShearerNum] = useState(0);
@@ -74,7 +74,7 @@ const DrinkingGame = () => {
                 </div>
                 : null
             }
-         
+                <TimerComponent/>
                 <button className="next_card_button" onClick={OnClick}>Next Card</button>
         
 

@@ -25,7 +25,23 @@ const OrangeGameCards = () => {
         },
         {
             title: 'Left Handed',
-            description: 'If youre holding your drink with you left hand, drink!'
+            description: 'If you are holding your drink with you left hand, drink!'
+        },
+        {
+            title: 'Vapist',
+            description: 'If you are holding a vape right now, drink!'
+        },
+        {
+            title: 'Drink Swappers',
+            description: 'Take some of the drink from the player on your right and pour it into your drink'
+        },
+        {
+            title: 'Sober Guys',
+            description: 'Are you drunk? If not, drink twice'
+        },
+        {
+            title: 'Seeing Double',
+            description: 'You must drink double for 5 minutes'
         },
         
     ]
