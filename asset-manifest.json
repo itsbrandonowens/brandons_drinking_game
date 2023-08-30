@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/brandons_drinking_game/static/css/main.a5fafa30.css",
-    "main.js": "/brandons_drinking_game/static/js/main.43ce3490.js",
+    "main.css": "/brandons_drinking_game/static/css/main.5aca6c44.css",
+    "main.js": "/brandons_drinking_game/static/js/main.4548268d.js",
     "static/js/787.7251fea7.chunk.js": "/brandons_drinking_game/static/js/787.7251fea7.chunk.js",
     "static/media/shearer.png": "/brandons_drinking_game/static/media/shearer.d2e6900e58c78739e554.png",
     "static/media/black_card.png": "/brandons_drinking_game/static/media/black_card.a09380262d39636b64bc.png",
@@ -30,12 +30,12 @@
     "static/media/geordie_monster.jpg": "/brandons_drinking_game/static/media/geordie_monster.a155e996570cd54a6a6e.jpg",
     "static/media/dirty_mackems.jpg": "/brandons_drinking_game/static/media/dirty_mackems.9f7548a63c1706f930a9.jpg",
     "index.html": "/brandons_drinking_game/index.html",
-    "main.a5fafa30.css.map": "/brandons_drinking_game/static/css/main.a5fafa30.css.map",
-    "main.43ce3490.js.map": "/brandons_drinking_game/static/js/main.43ce3490.js.map",
+    "main.5aca6c44.css.map": "/brandons_drinking_game/static/css/main.5aca6c44.css.map",
+    "main.4548268d.js.map": "/brandons_drinking_game/static/js/main.4548268d.js.map",
     "787.7251fea7.chunk.js.map": "/brandons_drinking_game/static/js/787.7251fea7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a5fafa30.css",
-    "static/js/main.43ce3490.js"
+    "static/css/main.5aca6c44.css",
+    "static/js/main.4548268d.js"
   ]
 }
