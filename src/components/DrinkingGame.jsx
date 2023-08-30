@@ -43,26 +43,26 @@ const DrinkingGame = () => {
             {num >= 1 && num <= 4 ? 
                 <BlackGameCards /> : null // Black -  4% chance
             }
-            {num >= 5 && num <= 22  ?
-                <GreenGameCards /> : null  // Black -  18% chance
+            {num >= 5 && num <= 24  ?
+                <GreenGameCards /> : null  // Green -  20% chance
             }
-            {num >= 23 && num <= 34?
-                <OrangeGameCards /> : null // Black -  12% chance
+            {num >= 25 && num <= 34?
+                <OrangeGameCards /> : null // Orange -  10% chance
             }
-            {num >= 35 && num <= 52?
-                <BlueGameCards /> : null // Black -  18% chance
+            {num >= 35 && num <= 54?
+                <BlueGameCards /> : null // Blue -  20% chance
             }
-            {num >= 53 && num <= 67?
-                <RedGameCards /> : null // Black -  15% chance
+            {num >= 55 && num <= 69?
+                <RedGameCards /> : null // Red -  15% chance
             }
-            {num >= 68 && num <= 79 ?
-                <PinkGameCards /> : null // Black -  12% chance
+            {num >= 70 && num <= 79 ?
+                <PinkGameCards /> : null // Pink -  10% chance
             }
             {num >= 80 && num <= 88 ?
-                <YellowGameCards /> : null // Black -  9% chance
+                <YellowGameCards /> : null // Yellow -  9% chance
             }
             {num >= 89 && num <= 100 ?
-                <WhiteGameCards /> : null // Black -  12% chance
+                <WhiteGameCards /> : null // White -  12% chance
             }
 
             {shearerNum == 1 ?
