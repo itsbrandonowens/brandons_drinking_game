@@ -31,6 +31,12 @@ const AddPlayerNames  = () => {
         handleAddItem();
         OnFinish();
     }
+
+    const handleKeyDown = (event) => {
+        if (event.key ==='Enter'){
+            OnClick()
+        }
+    };
     
     const OnFinish = () => { 
         localStorage.setItem("player names", JSON.stringify(playerName))   
@@ -42,7 +48,7 @@ const AddPlayerNames  = () => {
         <div className='add_players_container'>
             <h3 className="add_players_title">Add Players</h3>
             <div className='add_players_form'>
-                <input className='add_players_input'id="playerName" type="text"value={inputValue} onChange={handleInputChange} />
+                <input className='add_players_input'id="playerName" type="text"value={inputValue} onChange={handleInputChange} onKeyDown={handleKeyDown} />
                 <button className = "add_players_button" onClick={OnClick}>Add Player</button>
                 
             </div>
