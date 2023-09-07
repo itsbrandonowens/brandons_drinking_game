@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/brandons_drinking_game/static/css/main.ab6f30c1.css",
-    "main.js": "/brandons_drinking_game/static/js/main.907e7996.js",
+    "main.css": "/brandons_drinking_game/static/css/main.50921bfd.css",
+    "main.js": "/brandons_drinking_game/static/js/main.403e4ac2.js",
     "static/js/787.7251fea7.chunk.js": "/brandons_drinking_game/static/js/787.7251fea7.chunk.js",
     "static/media/shearer.png": "/brandons_drinking_game/static/media/shearer.d2e6900e58c78739e554.png",
     "static/media/black_card.png": "/brandons_drinking_game/static/media/black_card.a09380262d39636b64bc.png",
@@ -12,9 +12,31 @@
     "static/media/orange_card.png": "/brandons_drinking_game/static/media/orange_card.5b40c7073b304040b2dd.png",
     "static/media/card_back.png": "/brandons_drinking_game/static/media/card_back.165e28bded59e41beac3.png",
     "static/media/green_card.png": "/brandons_drinking_game/static/media/green_card.f260b52ee4875cceed64.png",
+    "static/media/twenty.png": "/brandons_drinking_game/static/media/twenty.214f22a26e9400d9376c.png",
+    "static/media/eighteen.png": "/brandons_drinking_game/static/media/eighteen.70691a5ebf70bd50bae0.png",
+    "static/media/thirteen.png": "/brandons_drinking_game/static/media/thirteen.e1023409540bdb37150e.png",
+    "static/media/eight.png": "/brandons_drinking_game/static/media/eight.6f0714ed390b96f1280c.png",
+    "static/media/sixteen.png": "/brandons_drinking_game/static/media/sixteen.b05df54c2b2eb4dddf57.png",
+    "static/media/nineteen.png": "/brandons_drinking_game/static/media/nineteen.b31fd4f07a8025364a94.png",
+    "static/media/three.png": "/brandons_drinking_game/static/media/three.0a5e53b2824533b14d08.png",
+    "static/media/twelve.png": "/brandons_drinking_game/static/media/twelve.e88076d2809e335cd18c.png",
+    "static/media/fifteen.png": "/brandons_drinking_game/static/media/fifteen.bffa4234c2e74bb85f29.png",
+    "static/media/six.png": "/brandons_drinking_game/static/media/six.284e10d9b7b965612aa1.png",
+    "static/media/nine.png": "/brandons_drinking_game/static/media/nine.693e56f6869cc70f0db8.png",
+    "static/media/two.png": "/brandons_drinking_game/static/media/two.9fa557580a4f6f708d80.png",
+    "static/media/five.png": "/brandons_drinking_game/static/media/five.023344fa8296e2f103bd.png",
+    "static/media/ten.png": "/brandons_drinking_game/static/media/ten.863ec2be8017f05ccd80.png",
+    "static/media/fourteen.png": "/brandons_drinking_game/static/media/fourteen.d1ab7ed52380355478e8.png",
+    "static/media/seventeen.png": "/brandons_drinking_game/static/media/seventeen.5d5f0b2da0c58303ac08.png",
+    "static/media/four.png": "/brandons_drinking_game/static/media/four.d640d63ff51152f31b1c.png",
+    "static/media/seven.png": "/brandons_drinking_game/static/media/seven.3b75d2c5b8e223e8a747.png",
+    "static/media/eleven.png": "/brandons_drinking_game/static/media/eleven.8fc912f5998091ccf320.png",
+    "static/media/one.png": "/brandons_drinking_game/static/media/one.3fa10148aeb17fe3916a.png",
+    "static/media/base.png": "/brandons_drinking_game/static/media/base.df170277ca9bd6d54a6b.png",
     "static/media/white_card.png": "/brandons_drinking_game/static/media/white_card.288f681a198992393efc.png",
     "static/media/red_card.png": "/brandons_drinking_game/static/media/red_card.480aa5e2810a75835dee.png",
     "static/media/blue_card.png": "/brandons_drinking_game/static/media/blue_card.e9a99d2cb67fa132852e.png",
+    "static/media/purple_card.png": "/brandons_drinking_game/static/media/purple_card.fbdae09394b2fc5f79b8.png",
     "static/media/pink_card.png": "/brandons_drinking_game/static/media/pink_card.a2cfdd3de01b97687e82.png",
     "static/media/10_of_spades.png": "/brandons_drinking_game/static/media/10_of_spades.c9f933df0fb58bf52847.png",
     "static/media/9_of_spades.png": "/brandons_drinking_game/static/media/9_of_spades.dcce4a160670652e0ffe.png",
@@ -30,12 +52,12 @@
     "static/media/geordie_monster.jpg": "/brandons_drinking_game/static/media/geordie_monster.a155e996570cd54a6a6e.jpg",
     "static/media/dirty_mackems.jpg": "/brandons_drinking_game/static/media/dirty_mackems.9f7548a63c1706f930a9.jpg",
     "index.html": "/brandons_drinking_game/index.html",
-    "main.ab6f30c1.css.map": "/brandons_drinking_game/static/css/main.ab6f30c1.css.map",
-    "main.907e7996.js.map": "/brandons_drinking_game/static/js/main.907e7996.js.map",
+    "main.50921bfd.css.map": "/brandons_drinking_game/static/css/main.50921bfd.css.map",
+    "main.403e4ac2.js.map": "/brandons_drinking_game/static/js/main.403e4ac2.js.map",
     "787.7251fea7.chunk.js.map": "/brandons_drinking_game/static/js/787.7251fea7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ab6f30c1.css",
-    "static/js/main.907e7996.js"
+    "static/css/main.50921bfd.css",
+    "static/js/main.403e4ac2.js"
   ]
 }
