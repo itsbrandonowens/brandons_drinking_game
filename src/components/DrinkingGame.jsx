@@ -14,11 +14,12 @@ import shearer_image from './images/shearer.png'
 import speech_bubble from './images/speech_bubble.png'
 import WhiteGameCards from './WhiteGameCards';
 import TimerComponent from './TimerComponent';
+import PurpleGameCards from './PurpleGameCards';
 const DrinkingGame = () => {
     const [num, setNum] = useState(5);
     const [shearerNum, setShearerNum] = useState(0);
     const storedNames = JSON.parse(localStorage.getItem("player names"))
-   
+
     let randomName = storedNames[Math.floor(Math.random() * storedNames.length)];
 
 
@@ -32,7 +33,7 @@ const DrinkingGame = () => {
         setNum(randomNumberInRange(1, 100));
         console.log(num)
         setShearerNum(randomNumberInRange(1, 25));
-        
+
     }
 
 
@@ -40,30 +41,35 @@ const DrinkingGame = () => {
         <div className="game_container" >
             <Link to='/homepage'> <button className="home_button"> 🏠 </button> </Link>
 
-            {num >= 1 && num <= 4 ? 
+            {num >= 1 && num <= 4 ?
                 <BlackGameCards /> : null // Black -  4% chance
             }
-            {num >= 5 && num <= 24  ?
-                <GreenGameCards /> : null  // Green -  20% chance
+            {num >= 5 && num <= 23 ?
+                <GreenGameCards /> : null  // Green -  19% chance
             }
-            {num >= 25 && num <= 34?
-                <OrangeGameCards /> : null // Orange -  10% chance
+            {num >= 24 && num <= 32 ?
+                <OrangeGameCards /> : null // Orange -  9% chance
             }
-            {num >= 35 && num <= 54?
-                <BlueGameCards /> : null // Blue -  20% chance
+            {num >= 33 && num <= 51 ?
+                <BlueGameCards /> : null // Blue -  19% chance
             }
-            {num >= 55 && num <= 69?
-                <RedGameCards /> : null // Red -  15% chance
+            {num >= 52 && num <= 65 ?
+                <RedGameCards /> : null // Red -  14% chance
             }
-            {num >= 70 && num <= 79 ?
-                <PinkGameCards /> : null // Pink -  10% chance
+            {num >= 66 && num <= 74 ?
+                <PinkGameCards /> : null // Pink -  9% chance
             }
-            {num >= 80 && num <= 88 ?
-                <YellowGameCards /> : null // Yellow -  9% chance
+            {num >= 75 && num <= 82 ?
+                <YellowGameCards /> : null // Yellow -  8% chance
             }
-            {num >= 89 && num <= 100 ?
-                <WhiteGameCards /> : null // White -  12% chance
+            {num >= 83 && num <= 92 ?
+                <WhiteGameCards /> : null // White -  10% chance
             }
+            {num >= 93 && num <= 100 ?
+                <PurpleGameCards /> : null // Purple -  8% chance
+            }
+
+
 
             {shearerNum == 1 ?
                 <div className="shearer_popup">
@@ -74,10 +80,8 @@ const DrinkingGame = () => {
                 </div>
                 : null
             }
-                <TimerComponent/>
-                <button className="next_card_button" onClick={OnClick}>Next Card</button>
-        
-
+            <TimerComponent />
+            <button className="next_card_button" onClick={OnClick}>Next Card</button>
         </div>
 
 
