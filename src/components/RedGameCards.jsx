@@ -5,7 +5,8 @@ import red_card from "./images/red_card.png"
 const RedGameCards = () => {
     const storedNames = JSON.parse(localStorage.getItem("player names"))
     let randomName = storedNames[Math.floor(Math.random() * storedNames.length)];
-
+    let assignedNameCard = JSON.parse(localStorage.getItem("assignedName"))
+    
     function arrayRemove(storedNames, value) {
 
         return storedNames.filter(function (geeks) {

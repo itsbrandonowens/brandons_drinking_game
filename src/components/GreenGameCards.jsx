@@ -5,6 +5,8 @@ import green_card from "./images/green_card.png"
 const GreenGameCards = () => {
     const storedNames = JSON.parse(localStorage.getItem("player names"))
     let randomName = storedNames[Math.floor(Math.random() * storedNames.length)];
+    let assignedNameCard = JSON.parse(localStorage.getItem("assignedName"))
+
     const cards = [ 
         { 
             title: 'Summer Babies',
@@ -185,7 +187,7 @@ const GreenGameCards = () => {
            <img src={green_card} className="cards" alt="green_card"></img>
            <div className="card_contents">
                 <h2 className="card_title"> {randomValue.title} </h2>
-                <p className="card_player_name">{randomName}</p>
+                <p className="card_player_name">{storedNames[assignedNameCard]}</p>
                 <p className="card_description">{randomValue.description}</p>
            </div>     
         </div>

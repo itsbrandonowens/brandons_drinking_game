@@ -1,6 +1,5 @@
 import React from 'react'
 import '../styles/GameCards.css'
-import purple_card from "./images/purple_card.png"
 import { useState, useEffect } from 'react';
 import d1 from "./images/dice/one.png"
 import d2 from "./images/dice/two.png"

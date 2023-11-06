@@ -1,10 +1,13 @@
 import React from 'react'
 import '../styles/GameCards.css'
 import black_card from "./images/black_card.png"
+import { useState, } from 'react';
 
 const BlackGameCards = () => {
     const storedNames = JSON.parse(localStorage.getItem("player names"))
     let randomName = storedNames[Math.floor(Math.random() * storedNames.length)];
+    let assignedNameCard = JSON.parse(localStorage.getItem("assignedName"))
+
     const cards = [ 
         { 
             title: 'Neck your Drink',
@@ -47,7 +50,7 @@ const BlackGameCards = () => {
            <img src={black_card} className="cards" alt="black_card"></img>
            <div className="card_contents">
                 <h2 className="card_title"> {randomValue.title} </h2>
-                <p className="card_player_name">{randomName}</p>
+                <p className="card_player_name">{storedNames[assignedNameCard]}</p>
                 <p className="card_description">{randomValue.description}</p>
            </div>     
         </div>

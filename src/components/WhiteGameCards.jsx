@@ -6,7 +6,8 @@ import SpinningWheel from './SpinningWheel'
 const WhiteGameCards = () => {
     const storedNames = JSON.parse(localStorage.getItem("player names"))
     let randomName = storedNames[Math.floor(Math.random() * storedNames.length)];
-
+    let assignedNameCard = JSON.parse(localStorage.getItem("assignedName"))
+    
     const cards = [
         {
             title: 'The Wheel!',
@@ -20,7 +21,7 @@ const WhiteGameCards = () => {
             <img src={white_card} className="cards" alt="white_card"></img>
             <div className="card_contents">
                 <h2 className="card_title"> {randomValue.title} </h2>
-                <p className="card_player_name">{randomName}</p>
+                <p className="card_player_name">{storedNames[assignedNameCard]}</p>
                 <div className="white_wheel_container">
                     <SpinningWheel />
                 </div>

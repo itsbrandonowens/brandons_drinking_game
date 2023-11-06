@@ -7,6 +7,7 @@ import RingOfFireComponent from './RingOfFireComponent'
 const YellowGameCards = () => {
     const storedNames = JSON.parse(localStorage.getItem("player names"))
     let randomName = storedNames[Math.floor(Math.random() * storedNames.length)];
+    let assignedNameCard = JSON.parse(localStorage.getItem("assignedName"))
 
     const cards = [
         {
@@ -30,7 +31,7 @@ const YellowGameCards = () => {
             <img src={yellow_card} className="cards" alt="yellow_card"></img>
             <div className="card_contents">
                 <h2 className="card_title"> {randomValue.title} </h2>
-                <p className="card_player_name">{randomName}</p>
+                <p className="card_player_name">{storedNames[assignedNameCard]}</p>
                 <p className="higher_or_lower_description">{randomValue.description}</p>
                 {
                     randomValue.game == "h_l" ?

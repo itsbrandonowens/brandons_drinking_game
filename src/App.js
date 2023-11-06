@@ -5,6 +5,7 @@ import Homepage from './components/Homepage';
 import DrinkingGame from './components/DrinkingGame';
 
 
+
 function App() {
   return (
     <div className ="App">
@@ -13,6 +14,7 @@ function App() {
         <Route path='/brandons_drinking_game' element={<Homepage/>} />
         <Route path='/homepage' element={<Homepage />} />
         <Route path='/drinking_game' element={<DrinkingGame />} />
+       
       </Routes>
     </div>
   );

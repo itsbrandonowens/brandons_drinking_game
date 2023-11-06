@@ -15,13 +15,15 @@ import speech_bubble from './images/speech_bubble.png'
 import WhiteGameCards from './WhiteGameCards';
 import TimerComponent from './TimerComponent';
 import PurpleGameCards from './PurpleGameCards';
+
+
 const DrinkingGame = () => {
     const [num, setNum] = useState(5);
     const [shearerNum, setShearerNum] = useState(0);
     const storedNames = JSON.parse(localStorage.getItem("player names"))
-
     let randomName = storedNames[Math.floor(Math.random() * storedNames.length)];
 
+    const [assignedName, setAssignedName]= useState(0)
 
     const randomNumberInRange = (min, max) => {
         return Math.floor(Math.random()
@@ -33,14 +35,14 @@ const DrinkingGame = () => {
         setNum(randomNumberInRange(1, 100));
         console.log(num)
         setShearerNum(randomNumberInRange(1, 25));
-
+        setAssignedName(prev=>([prev+1]%storedNames.length))
+        localStorage.setItem("assignedName", JSON.stringify(assignedName))
     }
 
 
     return (
         <div className="game_container" >
             <Link to='/homepage'> <button className="home_button"> 🏠 </button> </Link>
-
             {num >= 1 && num <= 4 ?
                 <BlackGameCards /> : null // Black -  4% chance
             }
@@ -81,6 +83,7 @@ const DrinkingGame = () => {
                 : null
             }
             <TimerComponent />
+        
             <button className="next_card_button" onClick={OnClick}>Next Card</button>
         </div>
 

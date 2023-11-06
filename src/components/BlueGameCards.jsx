@@ -5,6 +5,7 @@ import blue_card from "./images/blue_card.png"
 const BlueGameCards = () => {
     const storedNames = JSON.parse(localStorage.getItem("player names"))
     let randomName = storedNames[Math.floor(Math.random() * storedNames.length)];
+    let assignedNameCard = JSON.parse(localStorage.getItem("assignedName"))
     const cards = [ 
         { 
             title: '21',
@@ -21,10 +22,6 @@ const BlueGameCards = () => {
         { 
             title: 'RPS',
             description: 'You and the player on your left must play rock paper scissors, the loser must drink'
-        },
-        { 
-            title: 'tebahpla',
-            description: 'You have 60 seconds to say the alphabet backwards, if you cant then drink half of your drink'
         },
         { 
             title: 'Rule 1',
@@ -98,7 +95,7 @@ const BlueGameCards = () => {
            <img src={blue_card} className="cards" alt="blue_card"></img>
            <div className="card_contents">
                 <h2 className="card_title"> {randomValue.title} </h2>
-                <p className="card_player_name">{randomName}</p>
+                <p className="card_player_name">{storedNames[assignedNameCard]}</p>
                 <p className="card_description">{randomValue.description}</p>
            </div>     
         </div>

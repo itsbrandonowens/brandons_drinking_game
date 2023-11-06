@@ -7,6 +7,7 @@ const PinkGameCards = () => {
     const storedNames = JSON.parse(localStorage.getItem("player names"))
     let randomName = storedNames[Math.floor(Math.random() * storedNames.length)];
     let newNames = storedNames.slice(randomName)
+    let assignedNameCard = JSON.parse(localStorage.getItem("assignedName"))
 
     const cards = [
         {
@@ -76,7 +77,7 @@ const PinkGameCards = () => {
             <img src={pink_card} className="cards" alt="pink_card"></img>
             <div className="card_contents">
                 <h2 className="card_title"> {randomValue.title} </h2>
-                <p className="card_player_name">{randomName}</p>
+                <p className="card_player_name">{storedNames[assignedNameCard]}</p>
                 <p className="card_description_video">{randomValue.description}</p>
                 <div className='card_video'>
                 <ReactPlayer

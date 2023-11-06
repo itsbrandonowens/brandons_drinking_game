@@ -6,6 +6,7 @@ import DiceComponent from './DiceComponent';
 const PurpleGameCards = () => {
     const storedNames = JSON.parse(localStorage.getItem("player names"))
     const randomName = storedNames[Math.floor(Math.random() * storedNames.length)];
+    let assignedNameCard = JSON.parse(localStorage.getItem("assignedName"))
 
     const cards = [
         {
@@ -64,7 +65,7 @@ const PurpleGameCards = () => {
             <img src={purple_card} className="cards" alt="purple_card"></img>
             <div className="card_contents">
                 <h2 className="card_title"> {randomValue.title} </h2>
-                <p className="card_player_name">{randomName}</p>
+                <p className="card_player_name">{storedNames[assignedNameCard]}</p>
 
                 <p className="dice_description">{randomValue.description}</p>
                 <p className="dice_roll_desc">{randomValue.dice_roll_desc}</p>
