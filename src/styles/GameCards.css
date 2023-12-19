@@ -139,11 +139,17 @@
         filter: drop-shadow(0px 0px 15px #ffffff);
         transition: all 0.5s;
         animation: fadeIn 0.5s;
-        background-color: rgba(255, 71, 135, 0.9);
+        background-color: rgba(199, 171, 181, 0.9);
         border: 5px solid rgb(255, 255, 255);
         
         padding:1%;
         width:45%;
+    }
+    .nat20{
+        position: absolute;
+        top: -5%;
+        right: 30%;
+
     }
 
     .dice_nat20 {
@@ -275,19 +281,20 @@
 
     .timer_container {
         filter: drop-shadow(0px 0px 15px #292929);
-        background-color: rgba(115, 115, 115, 0.9);
-        border: 5px solid rgba(193, 193, 193, 0.8);
-        width: 10%;
+        background-color: #fbeee0;
+        border: 2px solid #422800;
+        width: 50%;
+        height:10%;
         padding: 1%;
         position: absolute;
-        top: 19%;
-        right: 85%;
+        top: 1%;
+        left:24%;
 
     }
 
     .timer_function {
-        color: white;
-        text-align: center;
+        color: rgb(0, 0, 0);
+        margin-left:2%;
         font-size: 2vw;
     }
 
@@ -299,20 +306,25 @@
         text-align: center;
         text-decoration: none;
         outline: none;
-        color: #000000;
-        background-color: #ffffff;
+        color: #ffffff;
+        background-color: #422800;
         border: none;
         border-radius: 15px;
-        box-shadow: 0 9px #999;
-        margin-left: 10%;
-        margin-top: 8%;
+        box-shadow: 0 9px #5e3a1c;
+        margin-left:5%;
     }
 
 
     .timer_button:active {
-        background-color: #979797;
-        box-shadow: 0 5px #666;
+        background-color: #e5c5aa;
+        box-shadow: 0 9px #5e3a1c;
         transform: translateY(4px);
+    }
+
+    .all_timer_buttons {
+        margin-top:-10%;
+        margin-left:20%;
+
     }
 }
 

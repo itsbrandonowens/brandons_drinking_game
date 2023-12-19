@@ -172,6 +172,10 @@ const GreenGameCards = () => {
             title: 'Giant Chads!',
             description: 'Everyone 6 foot and above, take a drink!'
         },
+        {
+            title: 'Bus Wankers!',
+            description: 'Everyone without a drivers license, drink!'
+        },
         
        
 

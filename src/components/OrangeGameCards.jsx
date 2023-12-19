@@ -12,10 +12,6 @@ const OrangeGameCards = () => {
             title: '3 Big Sips',
             description: 'Take 3 big sips of your drink',
         },
-        {  
-            title: 'Half of your drink',
-            description: 'Neck half of your drink, now!'
-        },
         {
             title: 'Just Drink',
             description: 'Just Drink'
@@ -43,6 +39,10 @@ const OrangeGameCards = () => {
         {
             title: 'Seeing Double',
             description: 'You must drink double for 5 minutes'
+        },
+        {
+            title: 'Free Pass!',
+            description: 'You have a free pass for any future forfeit!'
         },
         
     ]

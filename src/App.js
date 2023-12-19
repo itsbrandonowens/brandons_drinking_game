@@ -7,6 +7,12 @@ import DrinkingGame from './components/DrinkingGame';
 
 
 function App() {
+  const scrollLock = () => {
+    document.body.style.overflow = 'hidden';
+   }
+
+   scrollLock();
+  
   return (
     <div className ="App">
       <Routes>

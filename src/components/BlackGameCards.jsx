@@ -7,6 +7,7 @@ const BlackGameCards = () => {
     const storedNames = JSON.parse(localStorage.getItem("player names"))
     let randomName = storedNames[Math.floor(Math.random() * storedNames.length)];
     let assignedNameCard = JSON.parse(localStorage.getItem("assignedName"))
+    const[score,setScore] = useState(0);
 
     const cards = [ 
         { 
@@ -41,7 +42,12 @@ const BlackGameCards = () => {
             title: 'Chug Card',
             description: 'You may shout "Chug!" at any point and everyone has to finish their drinks! Can only be used once!'
         },
+        {
+            title: 'Tinky Winky',
+            description: 'Starting with you, take it in turns to say another name for a penis, first person to fail drink twice'
+        },
     ]
+    
     
     let randomValue = cards[Math.floor(Math.random() * cards.length)];
     return (

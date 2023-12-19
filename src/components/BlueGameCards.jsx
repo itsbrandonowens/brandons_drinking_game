@@ -67,22 +67,8 @@ const BlueGameCards = () => {
             title: 'ET Phone Home!',
             description: 'Everyone must try to phone this player, first to succeed must choose someone to drink'
         },
-        {
-            title: 'WYR - Tea or Coffee!',
-            description: 'Hands up for Tea, Hands down for Coffee! The lowest amount of hands must drink! If its even, everyone drink!'
-        },
-        {
-            title: 'WYR - Energy Drink or Coffee!',
-            description: 'Hands up for Energy Drink, Hands down for Coffee! The lowest amount of hands must drink! If its even, everyone drink!'
-        },
-        {
-            title: 'WYR - Pizza or Burger!',
-            description: 'Hands up for Pizza, Hands down for Burger! The lowest amount of hands must drink! If its even, everyone drink!'
-        },
-        {
-            title: 'WYR - Doggy Style or Cowgirl!',
-            description: 'Hands up for Doggy, Hands down for Cowgirl! The lowest amount of hands must drink! If its even, everyone drink!'
-        },
+        
+    
         
         
 

@@ -1,13 +1,13 @@
-import React, { useState, useRef} from 'react'
+import React, { useState, useRef } from 'react'
 import '../styles/GameCards.css'
 
 
 const TimerComponent = () => {
-  const Ref = useRef(null);
- 
+    const Ref = useRef(null);
+
     // The state for our timer
     const [timer, setTimer] = useState('00:00');
- 
+
     const getTimeRemaining = (e) => {
         const total = Date.parse(e) - Date.parse(new Date());
         const seconds = Math.floor((total / 1000) % 60);
@@ -17,12 +17,12 @@ const TimerComponent = () => {
             total, minutes, seconds
         };
     }
- 
+
     const startTimer = (e) => {
         let { total, minutes, seconds }
-                    = getTimeRemaining(e);
+            = getTimeRemaining(e);
         if (total >= 0) {
- 
+
             // update the timer
             // check if less than 10 then we need to
             // add '0' at the beginning of the variable
@@ -32,11 +32,11 @@ const TimerComponent = () => {
             )
         }
     }
- 
+
     const clearTimer10mins = (e) => {
- 
+
         setTimer('10:00');
- 
+
         // If you try to remove this line the
         // updating of timer Variable will be
         // after 1000ms or 1sec
@@ -46,10 +46,10 @@ const TimerComponent = () => {
         }, 1000)
         Ref.current = id;
     }
- 
+
     const getDeadTime10mins = () => {
         let deadline = new Date();
- 
+
         // This is where you need to adjust if
         // you entend to add more time
         deadline.setSeconds(deadline.getSeconds() + 600);
@@ -57,9 +57,9 @@ const TimerComponent = () => {
     }
 
     const clearTimer5mins = (e) => {
- 
+
         setTimer('05:00');
- 
+
         // If you try to remove this line the
         // updating of timer Variable will be
         // after 1000ms or 1sec
@@ -72,7 +72,7 @@ const TimerComponent = () => {
 
     const getDeadTime5mins = () => {
         let deadline = new Date();
- 
+
         // This is where you need to adjust if
         // you entend to add more time
         deadline.setSeconds(deadline.getSeconds() + 300);
@@ -80,9 +80,9 @@ const TimerComponent = () => {
     }
 
     const clearTimerClear = (e) => {
- 
+
         setTimer('00:00');
- 
+
         // If you try to remove this line the
         // updating of timer Variable will be
         // after 1000ms or 1sec
@@ -95,7 +95,7 @@ const TimerComponent = () => {
 
     const getDeadTimeClear = () => {
         let deadline = new Date();
- 
+
         // This is where you need to adjust if
         // you entend to add more time
         deadline.setSeconds(deadline.getSeconds() + 0);
@@ -118,9 +118,11 @@ const TimerComponent = () => {
 
         <div className="timer_container">
             <h2 className="timer_function">{timer}</h2>
-            <button className = "timer_button" onClick={onClickReset10mins}>10 Minutes</button>
-            <button className = "timer_button" onClick={onClickReset5mins}>05 Minutes</button>
-            <button className = "timer_button" onClick={onClickResetClear}>Clear Time</button>
+            <div className="all_timer_buttons">
+                <button className="timer_button" onClick={onClickReset10mins}>10 Minutes</button>
+                <button className="timer_button" onClick={onClickReset5mins}>05 Minutes</button>
+                <button className="timer_button" onClick={onClickResetClear}>Clear Time</button>
+            </div>
         </div>
 
 

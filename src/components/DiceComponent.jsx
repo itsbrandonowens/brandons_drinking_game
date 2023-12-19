@@ -22,30 +22,42 @@ import d18 from "./images/dice/eighteen.png"
 import d19 from "./images/dice/nineteen.png"
 import d20 from "./images/dice/twenty.png"
 import base from "./images/dice/base.png"
+import Confetti from "react-confetti";
+import useWindowSize from 'react-use/lib/useWindowSize'
 
 
 const DiceComponent = () => {
     const die_faces = [d1, d2, d3, d4, d5, d6, d7, d8, d9, d10, d11, d12, d13, d14, d15, d16, d17, d18, d19, d20]
     const [randomDice, setRandomDice] = useState(base)
     const [wobble, setWobble] = useState(0)
+    const { width, height } = useWindowSize()
 
 
     const diceHandler = () => {
         setTimeout(() => {
             setRandomDice(die_faces[Math.floor(Math.random() * die_faces.length)]);
-        }, "1700");
+        }, "1500");
 
         setWobble(1);
     }
+
+
 
     return (
         <div className="dice_container">
             <img src={randomDice} className={"dice_image"} alt="dice_image" onClick={diceHandler} wobble={wobble} onAnimationEnd={() => setWobble(0)}></img>
             {
                 randomDice == d20 ?
-                    <div className="nat20_container">
-                        <p className="dice_nat20">Nat20!</p>
-                        <p className="dice_nat20_desc">Congrats! Give the punishment to a player of your choosing </p>
+                    <div>
+                        <Confetti
+                            width={width}
+                            height={height}
+                        />
+                        <div className="nat20_container">
+                            <p className="dice_nat20">Nat20!</p>
+                            <p className="dice_nat20_desc">Congrats! Give the punishment to a player of your choosing </p>
+
+                        </div>
                     </div> : null
             }
 
@@ -61,4 +73,4 @@ const DiceComponent = () => {
     )
 }
 
-export default DiceComponent
+export default DiceComponent 
