@@ -5,10 +5,13 @@
   padding-bottom:10%;
   justify-content: center;
   background-size: 300% 300%;
-  background-image: linear-gradient(-45deg, rgb(123, 0, 88) 0%, rgb(255, 137, 218) 25%, rgb(255, 238, 0) 51%, #ff357f 100%);
+  background-image: linear-gradient(-45deg, rgb(16, 0, 123) 0%, rgb(61, 106, 133) 25%, rgb(0, 213, 255) 51%, #7f35ff 100%);
   -webkit-animation: AnimateBG 20s ease infinite;
           animation: AnimateBG 20s ease infinite;
 }
+
+/* background-image: linear-gradient(-45deg, rgb(123, 0, 88) 0%, rgb(255, 137, 218) 25%, rgb(255, 238, 0) 51%, #ff357f 100%); */
+
 
 @-webkit-keyframes AnimateBG {
   0% {

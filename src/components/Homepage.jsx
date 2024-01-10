@@ -2,10 +2,10 @@ import React from 'react'
 import '../styles/Homepage.css'
 import AddPlayerNames from './AddPlayerNames';
 import { useState, } from 'react';
-import geordie_monster from "./images/geordie_monster.jpg"
-import LOLogo from "./images/LOLogo.png"
-import DrinkingGame from './DrinkingGame';
 
+
+import DrinkingGame from './DrinkingGame';
+import LastOrdersLogo from "./images/LastOrdersLogo.png"
 const Home = () => {
     /* Logo Page -->  Rules Page --> Add Players*/
 
@@ -30,7 +30,7 @@ const Home = () => {
 
         <div className="home_container">
             <div className={homeStyle}>
-                <img src={LOLogo} className="lologo" alt="last_orders_logo"></img>
+                <img src={LastOrdersLogo} className="lologo" alt="last_orders_logo"></img>
                 <button className="start_game_button1" onClick={firstTransition}> Click Here to Start </button>
             </div>
             <div className={rulesStyle}>

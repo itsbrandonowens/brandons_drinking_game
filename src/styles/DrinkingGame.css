@@ -1,50 +1,17 @@
 @media only screen and (min-width:600px) {
 
-    .next_card_button {
-        display: absolute;
-        padding: 15px 25px;
-        font-size: 2vw;
-        cursor: pointer;
-        text-align: center;
-        text-decoration: none;
-        outline: none;
-        color: #000000;
-        margin-left: 43%;
-        z-index: 1000;
-        background-color: #fbeee0;
-        border: 2px solid #422800;
-        border-radius: 30px;
-        box-shadow: #422800 4px 4px 0 0;
-        color: #422800;
-        font-weight: 600;
-        text-decoration: none;
-        user-select: none;
-        -webkit-user-select: none;
-        touch-action: manipulation;
-    }
-
-    .next_card_button:hover {
-        background-color: #fff;
-    }
-
-    .next_card_button:active {
-        box-shadow: #422800 2px 2px 0 0;
-        transform: translate(2px, 2px);
-    }
-
     .next_card_button2 {
         position: absolute;
-        right: -1%;
-        top: 41%;
+        right:-1%;
+        margin-top:-22.5%;
         padding: 15px 25px;
-        font-size: 6vw;
+        font-size: 5vw;
         cursor: pointer;
         text-align: center;
         text-decoration: none;
         -webkit-transform: rotate(90deg);
         outline: none;
         color: #000000;
-        margin-left: 43%;
         z-index: 2000;
         background-color: #fbeee0;
         border: 2px solid #422800;
