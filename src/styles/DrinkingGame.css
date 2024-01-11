@@ -210,11 +210,11 @@
 
     .white_wheel_container {
         position: absolute;
-        top: 2%;
-        right: 56%;
+        top:-55%;
+        right:-35%;
+        font-size:1vw;
         z-index: 1;
-        height: 10%;
-        width: 10%;
+        
     }
 
     .nameDivs {

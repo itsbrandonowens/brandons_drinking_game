@@ -35,7 +35,7 @@ const SpinningWheel = () => {
         
 
         if (window.innerWidth>768 && window.innerWidth<992){
-            return 10;
+            return 100;
         }
 
         if (window.innerWidth>991){
