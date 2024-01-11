@@ -2,6 +2,7 @@ import React from 'react'
 import WheelComponent from "react-wheel-of-prizes";
 import '../styles/GameCards.css'
 
+
 const SpinningWheel = () => {
     const segments = [
         "Finish your drink",
@@ -28,6 +29,23 @@ const SpinningWheel = () => {
             * (max - min + 1)) + min;
     };
     
+    
+    const generateWheelSize = (wheelSize) => {
+
+        
+
+        if (window.innerWidth>768 && window.innerWidth<992){
+            return 10;
+        }
+
+        if (window.innerWidth>991){
+            return 200;
+        }
+
+
+    }
+    
+
     return (
 
         <div className="wheel_container">
@@ -39,7 +57,7 @@ const SpinningWheel = () => {
                 contrastColor="white"
                 buttonText="Spin"
                 isOnlyOnce={true}
-                size={200}
+                size={generateWheelSize()}
                 upDuration={randomNumberInRange(1, 500)}
                 downDuration={randomNumberInRange(1, 500)}
                 fontFamily="Arial"
