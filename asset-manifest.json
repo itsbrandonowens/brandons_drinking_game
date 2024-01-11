@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/brandons_drinking_game/static/css/main.6ec7756d.css",
-    "main.js": "/brandons_drinking_game/static/js/main.4ba6100b.js",
+    "main.css": "/brandons_drinking_game/static/css/main.7580cc22.css",
+    "main.js": "/brandons_drinking_game/static/js/main.b3a2024b.js",
     "static/js/787.7251fea7.chunk.js": "/brandons_drinking_game/static/js/787.7251fea7.chunk.js",
     "static/media/LastOrdersLogo.png": "/brandons_drinking_game/static/media/LastOrdersLogo.445f026c065b98865661.png",
     "static/media/shearer.png": "/brandons_drinking_game/static/media/shearer.bc142f0ab9631a6f346f.png",
@@ -51,12 +51,12 @@
     "static/media/4_of_spades.png": "/brandons_drinking_game/static/media/4_of_spades.8f0668446faa6a9e9852.png",
     "static/media/2_of_spades.png": "/brandons_drinking_game/static/media/2_of_spades.b9261a5e22908925e4af.png",
     "index.html": "/brandons_drinking_game/index.html",
-    "main.6ec7756d.css.map": "/brandons_drinking_game/static/css/main.6ec7756d.css.map",
-    "main.4ba6100b.js.map": "/brandons_drinking_game/static/js/main.4ba6100b.js.map",
+    "main.7580cc22.css.map": "/brandons_drinking_game/static/css/main.7580cc22.css.map",
+    "main.b3a2024b.js.map": "/brandons_drinking_game/static/js/main.b3a2024b.js.map",
     "787.7251fea7.chunk.js.map": "/brandons_drinking_game/static/js/787.7251fea7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6ec7756d.css",
-    "static/js/main.4ba6100b.js"
+    "static/css/main.7580cc22.css",
+    "static/js/main.b3a2024b.js"
   ]
 }
