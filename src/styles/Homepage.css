@@ -1,4 +1,718 @@
-@media only screen and (min-width:600px) {
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+/* The CSS Below is for Mobile in portrait orientation*/
+@media only screen and (max-width: 767px) { 
+   
+        .home_container {
+            text-align: center;
+            transition: all 0.8s ease;
+            overflow: hidden;
+    
+        }
+    
+        .home_style {
+            animation: fadeIn 3s;
+        }
+    
+        .lologo {
+            position: absolute;
+            margin-top: 25%;
+            right:8%;
+            width: 90%;
+    
+    
+        }
+    
+        .home_style_gone {
+            transform: translateY(-2000px);
+            transition: 3s;
+        }
+    
+    
+        .rules_container {
+            transition: 2s;
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            
+        }
+    
+        .rules_container_gone {
+            transform: translateY(10000px);
+            transition: 2s;
+            width: 80%;
+    
+        }
+    
+        .rules_container_gone2 {
+            transform: translateY(-1000px);
+            transition: 2s;
+            width: 80%;
+            left: 10%;
+            position: absolute;
+            top: 10%;
+        }
+    
+        .rules_title {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 3vw;
+            padding: 10px;
+            color: rgb(255, 255, 255);
+            filter: drop-shadow(0px 0px 15px #292929);
+        }
+    
+        .rules_grid {
+            display: grid;
+            grid-template-rows: 60% 40%;
+            width: 95%;
+            row-gap: 20px;
+    
+        }
+    
+        .rules_grid_item {
+            background-color: rgba(63, 63, 63, 0.8);
+            border: 2px solid rgba(255, 255, 255, 0.8);
+            padding: 5%;
+    
+        }
+    
+        .rules_text {
+            font-size: 3vw;
+            padding:1%;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            filter: drop-shadow(0px 0px 15px #292929);
+            display:none;
+        }
+    
+        .rules_text_legal {
+            font-size: 3vw;
+            padding:1%;
+            
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            filter: drop-shadow(0px 0px 15px #292929);
+        }
+    
+        .rules_text_list {
+            font-size: 3vw;
+            color: white;
+            margin-right:15%;
+            filter: drop-shadow(0px 0px 15px #292929);
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            list-style-type: none;
+        }
+
+        .rules_button {
+            background-color: #fbeee0;
+            border: 2px solid #422800;
+            border-radius: 30px;
+            box-shadow: #422800 4px 4px 0 0;
+            color: #422800;
+            cursor: pointer;
+            display: inline-block;
+            font-weight: 400;
+            padding:3%;
+            font-size: 10vw;
+            text-align: center;
+            text-decoration: none;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            margin-top: 15%;
+            filter: drop-shadow(0px 0px 2px #292929);
+        }
+    
+    
+        .start_game_button {
+            animation: fadeIn 3s;
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 2vw;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #000000;
+            background-color: #ffffff;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+            margin: 5%;
+        }
+    
+        .start_game_button1 {
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 10vw;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #ffffff;
+            background: rgba(76, 175, 80, 0);
+            border: none;
+            border-radius: 15px;
+            border: 2px solid rgba(255, 255, 255, 0.8);
+            margin: 5%;
+            margin-top: 120%;
+            filter: drop-shadow(0px 0px 2px #292929);
+        }
+    
+        .start_game_button_last {
+            background-color: #fbeee0;
+            border: 2px solid #422800;
+            border-radius: 30px;
+            box-shadow: #422800 4px 4px 0 0;
+            color: #422800;
+            cursor: pointer;
+            display: inline-block;
+            font-weight: 600;
+            font-size: 9vw;
+            text-align: center;
+            text-decoration: none;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            margin-top: 5%;
+            
+            filter: drop-shadow(0px 0px 2px #292929);
+            padding:3%;
+        }
+    
+        .start_game_button_last:hover {
+            background-color: #fff;
+        }
+    
+        .start_game_button_last:active {
+            box-shadow: #422800 2px 2px 0 0;
+            transform: translate(2px, 2px);
+        }
+    
+    
+        .enter_names_gone {
+            transform: translateY(2000px);
+            transition: 2s;
+        }
+    
+        .enter_names {
+            position: absolute;
+            top: 5%;
+            width: 100%;
+            transition: 2s;
+        }
+    
+        .start_game_button:active {
+            background-color: #979797;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+    
+        .add_players_grid {
+            display: grid;
+            grid-template-rows: 30% 50%;
+            width: 100%;
+        }
+    
+        .add_players_grid_item {
+            margin: 1%;
+        }
+    
+        .add_players_container {
+            transition: all 0.8s ease;
+        }
+    
+     
+    
+        .add_players_form {
+            transition: all 0.8s ease;
+            margin-top: -5%;
+    
+        }
+    
+        .add_players_button {
+            background-color: #fbeee0;
+            border: 2px solid #422800;
+            border-radius: 30px;
+            box-shadow: #422800 4px 4px 0 0;
+            color: #422800;
+            cursor: pointer;
+            display: inline-block;
+            font-weight: 400;
+            padding:3%;
+            font-size: 10vw;
+            text-align: center;
+            text-decoration: none;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            margin-top: 5%;
+            filter: drop-shadow(0px 0px 2px #292929);
+        }
+    
+        .add_players_button:hover {
+            background-color: #fff;
+        }
+    
+        .add_players_button:active {
+            box-shadow: #422800 2px 2px 0 0;
+            transform: translate(2px, 2px);
+        }
+    
+      
+    
+        .add_players_input {
+            background-color: #fbeee0;
+            border: 2px solid #422800;
+            border-radius: 30px;
+            box-shadow: #422800 4px 4px 0 0;
+            color: #422800;
+            display: inline-block;
+            font-weight: 400;
+            padding:1%;
+            font-size: 7vw;
+            text-align: center;
+            text-decoration: none;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            margin-top: 15%;
+            filter: drop-shadow(0px 0px 2px #292929);
+        }
+    
+    
+        .added_players_list {
+            display: inline;
+            text-decoration: none;
+            list-style-type: none;
+            color: white;
+            transition: all 0.8s ease;
+            font-family: Arial, Helvetica, sans-serif;
+            filter: drop-shadow(0px 0px 2px #292929);
+            position:absolute;
+            top:100%;
+            right:54%;
+            
+        }
+    
+    
+    
+        .each_player_names_list {
+            width:200%;
+            background-color: #fbeee0;
+            border: 2px solid #422800;
+            border-radius: 30px;
+            box-shadow: #422800 4px 4px 0 0;
+            font-weight: 600;
+            padding: 5%;
+            color: #422800;
+            font-size: 5vw;
+            margin:10%;
+        }
+    
+        .start_game_button2 {
+            animation: fadeIn 3s;
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 2vw;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #000000;
+            background-color: #ffffff;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+            margin: 5%;
+        }
+    
+    
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+    
+            100% {
+                opacity: 100;
+            }
+        }
+    
+        @keyframes cowmove {
+            0% {
+                transform: translateX(100px);
+    
+            }
+    
+            50% {
+                transform: translateX(200px);
+            }
+    
+            100% {
+                transform: translateX(100px);
+            }
+        }
+    
+    
+    }
+
+
+
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+/* The CSS Below is for Mobile in landscape orientation */
+@media only screen and (min-width:768px) and (max-width:991px) and (orientation: landscape) {
+    .home_container {
+        text-align: center;
+        transition: all 0.8s ease;
+        overflow: hidden;
+
+    }
+
+    .home_style {
+        animation: fadeIn 3s;
+    }
+
+    .lologo {
+        position: absolute;
+        right: 36%;
+        width: 30%;
+    }
+
+    .home_style_gone {
+        transform: translateY(-2000px);
+        transition: 3s;
+    }
+
+
+
+    .rules_container {
+        transition: 2s;
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        width: 80%;
+    }
+
+    .rules_container_gone {
+        transform: translateY(10000px);
+        transition: 2s;
+        width: 80%;
+
+    }
+
+    .rules_container_gone2 {
+        transform: translateY(-1000px);
+        transition: 2s;
+        width: 80%;
+        left: 10%;
+        position: absolute;
+        top: 10%;
+    }
+
+    .rules_title {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 3vw;
+        padding: 10px;
+        color: rgb(255, 255, 255);
+        filter: drop-shadow(0px 0px 15px #292929);
+    }
+
+    .rules_grid {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        width: 90%;
+        column-gap: 50px;
+
+    }
+
+    .rules_grid_item {
+        background-color: rgba(63, 63, 63, 0.8);
+        border: 2px solid rgba(255, 255, 255, 0.8);
+        padding: 1%;
+
+    }
+
+    .rules_text {
+        font-size: 1.5vw;
+        padding:1%;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        filter: drop-shadow(0px 0px 15px #292929);
+    }
+
+    .rules_text_legal {
+        margin-top:12%;
+        font-size: 1.5vw;
+        padding:1%;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        filter: drop-shadow(0px 0px 15px #292929);
+    }
+
+    .rules_text_list {
+        font-size: 1vw;
+        margin-right:10%;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        filter: drop-shadow(0px 0px 15px #292929);
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+    .rules_button {
+        background-color: #fbeee0;
+        border: 2px solid #422800;
+        border-radius: 30px;
+        box-shadow: #422800 4px 4px 0 0;
+        color: #422800;
+        cursor: pointer;
+        display: inline-block;
+        font-weight: 400;
+        padding:1%;
+        font-size: 3vw;
+        text-align: center;
+        text-decoration: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        margin-top: 2%;
+        filter: drop-shadow(0px 0px 2px #292929);
+    }
+
+
+    .start_game_button1 {
+        display: inline-block;
+        padding: 15px 25px;
+        font-size: 4vw;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #ffffff;
+        background: rgba(76, 175, 80, 0);
+        border: none;
+        border-radius: 15px;
+        border: 2px solid rgba(255, 255, 255, 0.8);
+        margin: 5%;
+        margin-top: 30%;
+        filter: drop-shadow(0px 0px 2px #292929);
+    }
+
+    .start_game_button_last {
+        background-color: #fbeee0;
+        border: 2px solid #422800;
+        border-radius: 30px;
+        box-shadow: #422800 4px 4px 0 0;
+        color: #422800;
+        cursor: pointer;
+        display: inline-block;
+        font-weight: 600;
+        font-size: 4vw;
+        text-align: center;
+        text-decoration: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        margin-top: 5%;
+        margin-left: 25%;
+        filter: drop-shadow(0px 0px 2px #292929);
+        padding:1%;
+    }
+
+    .start_game_button_last:hover {
+        background-color: #fff;
+    }
+
+    .start_game_button_last:active {
+        box-shadow: #422800 2px 2px 0 0;
+        transform: translate(2px, 2px);
+    }
+
+
+
+    .enter_names_gone {
+        transform: translateY(2000px);
+        transition: 2s;
+    }
+
+    .enter_names {
+        position: absolute;
+        top: 5%;
+        width: 100%;
+        transition: 2s;
+    }
+
+    .start_game_button:active {
+        background-color: #979797;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+
+    .add_players_grid {
+        display: grid;
+        grid-template-rows: 30% 50%;
+        width: 100%;
+    }
+
+    .add_players_grid_item {
+        margin: 1%;
+    }
+
+    .add_players_container {
+        transition: all 0.8s ease;
+    }
+
+
+    .add_players_form {
+        transition: all 0.8s ease;
+        margin-top: -5%;
+
+    }
+
+    .add_players_button {
+        background-color: #fbeee0;
+        border: 2px solid #422800;
+        border-radius: 30px;
+        box-shadow: #422800 4px 4px 0 0;
+        color: #422800;
+        cursor: pointer;
+        display: inline-block;
+        font-weight: 400;
+        padding:1%;
+        font-size: 2vw;
+        text-align: center;
+        text-decoration: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        margin-top: 5%;
+        filter: drop-shadow(0px 0px 2px #292929);
+    }
+
+    .add_players_button:hover {
+        background-color: #fff;
+    }
+
+    .add_players_button:active {
+        box-shadow: #422800 2px 2px 0 0;
+        transform: translate(2px, 2px);
+    }
+
+  
+
+    .add_players_input {
+        background-color: #fbeee0;
+        border: 2px solid #422800;
+        border-radius: 30px;
+        box-shadow: #422800 4px 4px 0 0;
+        color: #422800;
+        margin-right:1%;
+        display: inline-block;
+        font-weight: 400;
+        padding:1%;
+        font-size: 2vw;
+        text-align: center;
+        text-decoration: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        margin-top: 5%;
+        filter: drop-shadow(0px 0px 2px #292929);
+    }
+
+
+    .added_players_list {
+        display: flex;
+        text-decoration: none;
+        list-style-type: none;
+        color: white;
+        transition: all 0.8s ease;
+        font-family: Arial, Helvetica, sans-serif;
+        filter: drop-shadow(0px 0px 2px #292929);
+        margin-right: 2%;
+        margin-top: 25%;
+
+    }
+
+
+
+    .each_player_names_list {
+        margin-top: 1%;
+        margin-bottom: 1%;
+        background-color: #fbeee0;
+        border: 2px solid #422800;
+        border-radius: 30px;
+        box-shadow: #422800 4px 4px 0 0;
+        padding-top: 1%;
+        font-weight: 600;
+        padding-bottom: 1%;
+        color: #422800;
+        font-size: 1.3vw;
+        width:20%;
+        margin: 0.2%;
+
+
+    }
+
+    .start_game_button2 {
+        animation: fadeIn 3s;
+        display: inline-block;
+        padding: 15px 25px;
+        font-size: 2vw;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #000000;
+        background-color: #ffffff;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+        margin: 5%;
+    }
+
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 100;
+        }
+    }
+
+    @keyframes cowmove {
+        0% {
+            transform: translateX(100px);
+
+        }
+
+        50% {
+            transform: translateX(200px);
+        }
+
+        100% {
+            transform: translateX(100px);
+        }
+    }
+
+
+}
+
+    
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+/* The CSS Below is for Desktop and Larger Devices */
+
+@media only screen and (min-width:992px) {
+
     .home_container {
         text-align: center;
         transition: all 0.8s ease;
@@ -24,14 +738,7 @@
         transition: 3s;
     }
 
-    .homepage_title {
-        text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 4vw;
-        padding: 10px;
-        color: rgb(255, 255, 255);
-        filter: drop-shadow(0px 0px 15px #292929);
-    }
+
 
     .rules_container {
         transition: 2s;
@@ -82,7 +789,17 @@
     }
 
     .rules_text {
-        font-size: 1vw;
+        font-size: 1.5vw;
+        padding:1%;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        filter: drop-shadow(0px 0px 15px #292929);
+    }
+
+    .rules_text_legal {
+        margin-top:12%;
+        font-size: 1.5vw;
+        padding:1%;
         color: white;
         font-family: Arial, Helvetica, sans-serif;
         filter: drop-shadow(0px 0px 15px #292929);
@@ -96,6 +813,26 @@
         font-family: Arial, Helvetica, sans-serif;
         text-decoration: none;
         list-style-type: none;
+    }
+
+    .rules_button {
+        background-color: #fbeee0;
+        border: 2px solid #422800;
+        border-radius: 30px;
+        box-shadow: #422800 4px 4px 0 0;
+        color: #422800;
+        cursor: pointer;
+        display: inline-block;
+        font-weight: 400;
+        padding:1%;
+        font-size: 2vw;
+        text-align: center;
+        text-decoration: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        margin-top: 5%;
+        filter: drop-shadow(0px 0px 2px #292929);
     }
 
 
@@ -199,18 +936,6 @@
     }
 
 
-    .add_players_title {
-        background-color: rgba(188, 121, 96, 0.8);
-        width: 100%;
-        padding-top: 2%;
-        padding-bottom: 2%;
-        color: rgb(255, 255, 255);
-        font-size: 2vw;
-        text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
-
-    }
-
     .add_players_form {
         transition: all 0.8s ease;
         margin-top: -5%;
@@ -320,18 +1045,6 @@
     }
 
 
-    .geordie_monster {
-        animation: cowmove 20s linear both infinite alternate;
-        position: absolute;
-        margin-top: 7%;
-        margin-left: 40%;
-        filter: drop-shadow(0px 0px 15px #292929);
-        width: 15%;
-        rotate: 10deg;
-        border-radius: 30%;
-        transition: 3s;
-    }
-
     @keyframes fadeIn {
         0% {
             opacity: 0;
@@ -360,351 +1073,3 @@
 
 }
 
-/* --------------------------------------------------------------------------------------------------------------------------------------- */
-/* The CSS Below is for mobile and smaller screen sizes */
-@media only screen and (max-width:600px) {
-
-    .home_container {
-        text-align: center;
-        transition: all 0.8s ease;
-        overflow: hidden;
-
-    }
-
-    .home_style {
-        animation: fadeIn 3s;
-    }
-
-    .lologo {
-        position: absolute;
-        margin-top: 30%;
-        right:10%;
-        width: 80%;
-
-
-    }
-
-    .home_style_gone {
-        transform: translateY(-2000px);
-        transition: 3s;
-    }
-
-
-    .rules_container {
-        transition: 2s;
-        position: absolute;
-        top: 20%;
-        left: 10%;
-        width: 80%;
-    }
-
-    .rules_container_gone {
-        transform: translateY(10000px);
-        transition: 2s;
-        width: 80%;
-
-    }
-
-    .rules_container_gone2 {
-        transform: translateY(-1000px);
-        transition: 2s;
-        width: 80%;
-        left: 10%;
-        position: absolute;
-        top: 10%;
-    }
-
-
-    .rules_grid {
-        display: grid;
-        grid-template-columns: 70% 30%;
-        width: 90%;
-        column-gap: 10px;
-        margin-top:-20%;
-    }
-
-    .rules_grid_item {
-        background-color: rgba(227, 151, 124, 0.8);
-        border: 2px solid rgba(255, 255, 255, 0.8);
-        
-
-    }
-
-    .rules_text {
-        font-size: 4vw;
-        color: white;
-        font-family: Arial, Helvetica, sans-serif;
-        filter: drop-shadow(0px 0px 15px #292929);
-    }
-
-    .rules_text_list {
-        font-size: 3vw;
-        margin-right:20%;
-        color: white;
-        font-family: Arial, Helvetica, sans-serif;
-        filter: drop-shadow(0px 0px 15px #292929);
-        font-family: Arial, Helvetica, sans-serif;
-        text-decoration: none;
-        list-style-type: none;
-    }
-
-
-    .start_game_button {
-        animation: fadeIn 3s;
-        display: inline-block;
-        padding: 15px 25px;
-        font-size: 2vw;
-        cursor: pointer;
-        text-align: center;
-        text-decoration: none;
-        outline: none;
-        color: #000000;
-        background-color: #ffffff;
-        border: none;
-        border-radius: 15px;
-        box-shadow: 0 9px #999;
-        margin: 5%;
-    }
-
-    .start_game_button1 {
-        display: inline-block;
-        padding: 15px 25px;
-        font-size: 9vw;
-        cursor: pointer;
-        text-align: center;
-        text-decoration: none;
-        outline: none;
-        color: #ffffff;
-        background: rgba(76, 175, 80, 0);
-        border: none;
-        border-radius: 15px;
-        border: 2px solid rgba(255, 255, 255, 0.8);
-        margin: 5%;
-        margin-top: 95%;
-        filter: drop-shadow(0px 0px 2px #292929);
-    }
-
-    .start_game_button_last {
-        background-color: #fbeee0;
-        border: 2px solid #422800;
-        border-radius: 30px;
-        box-shadow: #422800 4px 4px 0 0;
-        color: #422800;
-        cursor: pointer;
-        display: inline-block;
-        font-weight: 600;
-        font-size: 10vw;
-        text-align: center;
-        text-decoration: none;
-        user-select: none;
-        -webkit-user-select: none;
-        touch-action: manipulation;
-        margin-top: 5%;
-        margin-left: 25%;
-        filter: drop-shadow(0px 0px 2px #292929);
-        padding:1%;
-    }
-
-    .start_game_button_last:hover {
-        background-color: #fff;
-    }
-
-    .start_game_button_last:active {
-        box-shadow: #422800 2px 2px 0 0;
-        transform: translate(2px, 2px);
-    }
-
-
-
-    .enter_names_gone {
-        transform: translateY(2000px);
-        transition: 2s;
-    }
-
-    .enter_names {
-        position: absolute;
-        top: 5%;
-        width: 100%;
-        transition: 2s;
-    }
-
-    .start_game_button:active {
-        background-color: #979797;
-        box-shadow: 0 5px #666;
-        transform: translateY(4px);
-    }
-
-    .add_players_grid {
-        display: grid;
-        grid-template-rows: 30% 50%;
-        width: 100%;
-    }
-
-    .add_players_grid_item {
-        margin: 1%;
-    }
-
-    .add_players_container {
-        transition: all 0.8s ease;
-    }
-
-
-    .add_players_title {
-        background-color: rgba(188, 121, 96, 0.8);
-        width: 100%;
-        padding-top: 2%;
-        padding-bottom: 2%;
-        color: rgb(255, 255, 255);
-        font-size: 2vw;
-        text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
-
-    }
-
-    .add_players_form {
-        transition: all 0.8s ease;
-        margin-top: -5%;
-
-    }
-
-    .add_players_button {
-        background-color: #fbeee0;
-        border: 2px solid #422800;
-        border-radius: 30px;
-        box-shadow: #422800 4px 4px 0 0;
-        color: #422800;
-        cursor: pointer;
-        display: inline-block;
-        font-weight: 400;
-        padding:1%;
-        font-size: 7vw;
-        text-align: center;
-        text-decoration: none;
-        user-select: none;
-        -webkit-user-select: none;
-        touch-action: manipulation;
-        margin-top: 5%;
-        filter: drop-shadow(0px 0px 2px #292929);
-    }
-
-    .add_players_button:hover {
-        background-color: #fff;
-    }
-
-    .add_players_button:active {
-        box-shadow: #422800 2px 2px 0 0;
-        transform: translate(2px, 2px);
-    }
-
-  
-
-    .add_players_input {
-        background-color: #fbeee0;
-        border: 2px solid #422800;
-        border-radius: 30px;
-        box-shadow: #422800 4px 4px 0 0;
-        color: #422800;
-        margin-right:1%;
-        display: inline-block;
-        font-weight: 400;
-        padding:1%;
-        font-size: 2vw;
-        text-align: center;
-        text-decoration: none;
-        user-select: none;
-        -webkit-user-select: none;
-        touch-action: manipulation;
-        margin-top: 5%;
-        filter: drop-shadow(0px 0px 2px #292929);
-    }
-
-
-    .added_players_list {
-        display: flex;
-        text-decoration: none;
-        list-style-type: none;
-        color: white;
-        transition: all 0.8s ease;
-        font-family: Arial, Helvetica, sans-serif;
-        filter: drop-shadow(0px 0px 2px #292929);
-        margin-right: 2%;
-        margin-top: 25%;
-
-    }
-
-
-
-    .each_player_names_list {
-        margin-top: 1%;
-        margin-bottom: 1%;
-        background-color: #fbeee0;
-        border: 2px solid #422800;
-        border-radius: 30px;
-        box-shadow: #422800 4px 4px 0 0;
-        padding-top: 1%;
-        font-weight: 600;
-        padding-bottom: 1%;
-        color: #422800;
-        font-size: 1.3vw;
-        width:20%;
-        margin: 0.2%;
-
-
-    }
-
-    .start_game_button2 {
-        animation: fadeIn 3s;
-        display: inline-block;
-        padding: 15px 25px;
-        font-size: 2vw;
-        cursor: pointer;
-        text-align: center;
-        text-decoration: none;
-        outline: none;
-        color: #000000;
-        background-color: #ffffff;
-        border: none;
-        border-radius: 15px;
-        box-shadow: 0 9px #999;
-        margin: 5%;
-    }
-
-
-    .geordie_monster {
-        animation: cowmove 20s linear both infinite alternate;
-        position: absolute;
-        margin-top: 7%;
-        margin-left: 40%;
-        filter: drop-shadow(0px 0px 15px #292929);
-        width: 15%;
-        rotate: 10deg;
-        border-radius: 30%;
-        transition: 3s;
-    }
-
-    @keyframes fadeIn {
-        0% {
-            opacity: 0;
-        }
-
-        100% {
-            opacity: 100;
-        }
-    }
-
-    @keyframes cowmove {
-        0% {
-            transform: translateX(100px);
-
-        }
-
-        50% {
-            transform: translateX(200px);
-        }
-
-        100% {
-            transform: translateX(100px);
-        }
-    }
-
-}

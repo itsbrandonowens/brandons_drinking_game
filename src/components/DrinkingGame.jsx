@@ -54,7 +54,7 @@ const DrinkingGame = () => {
             setNum(randomNumberInRange(1, 100));
             //This prevents the wheel from spinning twice in a row  
         }
-        setShearerNum(randomNumberInRange(1, 30));
+        setShearerNum(randomNumberInRange(1, 3));
 
         if (shearerNum == 1) {
             setShearerStyle("shearer_popup")
@@ -107,12 +107,15 @@ const DrinkingGame = () => {
             }
 
 
-
+            
             <img src={shearer_image} className={shearerStyle} alt="shearer"></img>
             <img src={speech_bubble} className={speechBubbleStyle} alt="speech_bubble"></img>
             <p className={shearerNameStyle}> {randomName}!</p>
             <p className={shearerTextStyle}> Give out 4 drinks!</p>
-           
+            
+
+
+
             <button className="next_card_button2" onClick={OnClick}>Next Card</button>
         </div>
 

@@ -7,11 +7,10 @@ import { useState, } from 'react';
 import DrinkingGame from './DrinkingGame';
 import LastOrdersLogo from "./images/LastOrdersLogo.png"
 const Home = () => {
-    /* Logo Page -->  Rules Page --> Add Players*/
+    
 
     const [rulesStyle, setRulesStyle] = useState("rules_container_gone")
     const [enterNamesStyle, setEnterNamesStyle] = useState("enter_names_gone");
-    const [secondButtonStyle, setSecondButtonStyle] = useState("start_game_button");
     const [homeStyle, setHomeStyle] = useState("home_style")
 
 
@@ -37,7 +36,7 @@ const Home = () => {
 
                 <div className="rules_grid">
                     <div className="rules_grid_item">
-                        <p className="rules_text">You must do what the card says, some cards may last a certain amount of minutes so use the timer when necessary.</p>
+                        <p className="rules_text">You must do what the card says, some cards may last a certain amount of minutes so use a timer when necessary.</p>
                         <ul>
                             <li className="rules_text_list"> Black Cards - Cards of Death: Avoid these at ALL costs! </li>
                             <li className="rules_text_list"> Green Cards - Cards that involve every, or most players </li>
@@ -54,12 +53,12 @@ const Home = () => {
 
                     </div>
                     <div className="rules_grid_item">
-                        <p className="rules_text">Everyone playing must be over the age of 18</p>
-                        <p className="rules_text">Everyone must drink responsibly</p>
-                        <p className="rules_text">Continue if you agree to our Privacy and Cookie Policy</p>
+                        <p className="rules_text_legal">⛔ Everyone playing must be over the age of 18</p>
+                        <p className="rules_text_legal">🍻 Everyone must drink responsibly</p>
+                        <p className="rules_text_legal">🍪 Continue if you agree to our Privacy and Cookie Policy</p>
                     </div>
                 </div>
-                <button className="add_players_button" onClick={secondTransition}> Continue </button>
+                <button className="rules_button" onClick={secondTransition}> Continue </button>
             </div>
             <div className={enterNamesStyle}>
                 <AddPlayerNames />
