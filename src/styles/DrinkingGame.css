@@ -1,4 +1,246 @@
-@media only screen and (min-width:600px) {
+
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+/* The CSS Below is for mobile in portrait orientation*/
+@media only screen and (max-width: 767px) { 
+    .force_orientation{
+        background-color:black;
+        width:100%;
+        height:100%;
+        padding:1000%;
+        
+    }
+
+    .force_orientation_title{
+        color:red;
+        position:absolute;
+        top:1%;
+        left:15%;
+        font-size:20vw;
+    }
+
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+/* The CSS Below is for mobile in landscape orientation */
+@media only screen and (min-width:768px) and (max-width:991px) and (orientation: landscape) { 
+    .next_card_button2 {
+        position: absolute;
+        right:-1%;
+        top:46%;
+        padding: 15px 25px;
+        font-size: 5vw;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        -webkit-transform: rotate(90deg);
+        outline: none;
+        color: #000000;
+        z-index: 2000;
+        background-color: #fbeee0;
+        border: 2px solid #422800;
+        border-radius: 30px;
+        box-shadow: #422800 4px 4px 0 0;
+        color: #422800;
+        font-weight: 600;
+        text-decoration: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+    }
+
+    .next_card_button2:hover {
+        background-color: #fff;
+    }
+
+    .next_card_button2:active {
+        box-shadow: #422800 2px 2px 0 0;
+        transform: translate(2px, 2px);
+        -webkit-transform: rotate(90deg);
+    }
+
+    .home_button {
+        display: inline-block;
+        padding: 15px 25px;
+        font-size: 2vw;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #000000;
+        background-color: #ffffff;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+        margin: 1%;
+    }
+
+    .shearer_popup{
+        position:absolute;
+        top:30%;
+        width:25%;
+        transition:4s;
+    }
+    .shearer_popup_gone { 
+        position:absolute;
+        top:30%;
+        width:25%;
+        transition:4s;
+        transform: translateX(4000px);
+    }
+
+    .speech_bubble{
+        position:absolute;
+        top:10%;
+        left:15%;
+        width: 20%;
+        -webkit-transform: scaleX(-1);
+        filter: drop-shadow(0px 0px 15px #292929);
+        animation-name:fadeIn;
+        animation-duration:2s;
+        animation-iteration-count: 1;
+        animation-delay:4s;
+        animation-fill-mode:forwards;
+        transition: 2s;
+        opacity:0;
+    }
+    .speech_bubble_gone {
+        width: 20%;
+        position:absolute;
+        top:10%;
+        left:15%;
+        -webkit-transform: scaleX(-1);
+        animation-name:fadeOut;
+        animation-duration:0.2s;
+        animation-iteration-count: 1;
+        animation-fill-mode:forwards;
+        filter: drop-shadow(0px 0px 15px #292929);
+        transform: translateX(4000px);
+        transition: 4s; 
+    }
+
+    .shearer_text_name{
+        position:absolute;
+        top: 11%;
+        left:21%;
+        font-size:1.8vw;
+        animation-name:fadeIn;
+        animation-duration:2s;
+        animation-iteration-count: 1;
+        animation-delay:4s;
+        animation-fill-mode:forwards;
+        transition: 2s;
+        opacity:0;
+    }
+    .shearer_text_name_gone{
+        position:absolute;
+        top: 11%;
+        left:21%;
+        font-size:1.8vw;
+        animation-name:fadeOut;
+        animation-duration:0.2s;
+        animation-iteration-count: 1;
+        animation-fill-mode:forwards;
+        filter: drop-shadow(0px 0px 15px #292929);
+        transform: translateX(4000px);
+        transition: 4s; 
+    }
+
+    .shearer_text{
+        position:absolute;
+        top: 18%;
+        left:19%;
+        font-size:1.8vw;
+        animation-name:fadeIn;
+        animation-duration:2s;
+        animation-iteration-count: 1;
+        animation-delay:4s;
+        animation-fill-mode:forwards;
+        transition: 2s;
+        opacity:0;
+    }
+
+    .shearer_text_gone{
+        position:absolute;
+        top: 18%;
+        left:19%;
+        font-size:1.8vw;
+        animation-name:fadeOut;
+        animation-duration:0.2s;
+        animation-iteration-count: 1;
+        animation-fill-mode:forwards;
+        filter: drop-shadow(0px 0px 15px #292929);
+        transform: translateX(4000px);
+        transition: 4s; 
+    }
+
+    
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 100;
+        }
+    }
+
+    @keyframes fadeOut {
+        0% {
+            opacity: 100;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @keyframes shearerPulse {
+        0% {
+            width:15%;
+        }
+
+        50% {
+            width:15.5%;
+        }
+
+        100% {
+            width:15%;
+        }
+    }
+
+    .white_wheel_container {
+        position: absolute;
+        top: 2%;
+        right: 56%;
+        z-index: 1;
+        height: 10%;
+        width: 10%;
+    }
+
+    .nameDivs {
+        width: 5%;
+        display: inline-block;
+        margin-left: 5%;
+        padding: 10px;
+        font-size: 1vw;
+        text-align: center;
+        color: #000000;
+        background-color: #ffffff;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+
+    }
+
+    .force_orientation{
+        display:none;
+    }
+
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+/* The CSS Below is for Desktop */
+@media only screen and (min-width:992px) {
 
     .next_card_button2 {
         position: absolute;
@@ -209,12 +451,11 @@
 
     }
 
+    .force_orientation{
+        display:none;
+    }
+
 
 }
 
-/* --------------------------------------------------------------------------------------------------------------------------------------- */
-/* The CSS Below is for mobile in portrait orientation*/
 
-
-/* --------------------------------------------------------------------------------------------------------------------------------------- */
-/* The CSS Below is for mobile in landscape orientation */

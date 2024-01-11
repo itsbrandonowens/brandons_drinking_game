@@ -54,7 +54,7 @@ const DrinkingGame = () => {
             setNum(randomNumberInRange(1, 100));
             //This prevents the wheel from spinning twice in a row  
         }
-        setShearerNum(randomNumberInRange(1, 3));
+        setShearerNum(randomNumberInRange(1, 30));
 
         if (shearerNum == 1) {
             setShearerStyle("shearer_popup")
@@ -76,6 +76,9 @@ const DrinkingGame = () => {
     return (
         <div className="game_container" >
 
+            <div className="force_orientation">
+                <h1 className="force_orientation_title"> Please rotate your device!</h1>
+            </div>
 
             <Link to='/homepage'> <button className="home_button"> 🏠 </button> </Link>
             {num >= 1 && num <= 4 ?

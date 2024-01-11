@@ -39,17 +39,14 @@
         .rules_container_gone {
             transform: translateY(10000px);
             transition: 2s;
-            width: 80%;
-    
         }
     
         .rules_container_gone2 {
             transform: translateY(-1000px);
             transition: 2s;
-            width: 80%;
-            left: 10%;
+            left: 5%;
             position: absolute;
-            top: 10%;
+            top: 5%;
         }
     
         .rules_title {
@@ -356,10 +353,6 @@
     
     
     }
-
-
-
-
 
 /* --------------------------------------------------------------------------------------------------------------------------------------- */
 /* The CSS Below is for Mobile in landscape orientation */
@@ -703,10 +696,7 @@
     }
 
 
-}
-
-    
-
+    }
 
 /* --------------------------------------------------------------------------------------------------------------------------------------- */
 /* The CSS Below is for Desktop and Larger Devices */
