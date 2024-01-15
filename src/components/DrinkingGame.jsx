@@ -17,6 +17,7 @@ import PurpleGameCards from './PurpleGameCards';
 import rotate_device from './images/rotate_device.png'
 import earthquake_image from './images/earthquake_image.png'
 import boozenami_image from './images/boozenami.png'
+import waves_image from './images/waves_image.png'
 
 const DrinkingGame = () => {
     const [num, setNum] = useState(5);
@@ -30,133 +31,155 @@ const DrinkingGame = () => {
     const [cardStyle, setCardStyle] = useState("game_container")
     const [earthquakeDetailsStyle, setEarthquakeDetailsStyle] = useState("earthquake_container_gone")
     const [earthquakeNum, setEarthquakeNum] = useState(0);
+    const [boozenamiDetailsStyle, setBoozenamiDetailsStyle] = useState("earthquake_container_gone")
+    const [boozenamiNum, setBoozenamiNum] = useState(0);
     let randomName = storedNames[Math.floor(Math.random() * storedNames.length)];
     const [assignedName, setAssignedName] = useState(0);
-    
+
 
     // Random Number Function 
     const randomNumberInRange = (min, max) => {
         return Math.floor(Math.random()
             * (max - min + 1)) + min;
-
-
     };
 
     //Boozenami Function - (EVERYONE NECK SOMEONE ELSES DRINK)
+    const boozenamiFunction = () => {
+        setBoozenamiNum(randomNumberInRange(1, 80));
 
-
-    // Earthquake Function
-    const earthquakeFunction = () => {
-        setEarthquakeNum(randomNumberInRange(1, 100));
-
-        if (earthquakeNum == 1) {
-            setCardStyle("game_container_earthquake")
-            setTimeout(() => {
-                setEarthquakeDetailsStyle("earthquake_container")
-            }, "2000");
+        if (boozenamiNum == 1 && earthquakeNum !== 1) {
+            setBoozenamiDetailsStyle("boozenami_container")
+            setNum("101")
 
         } else {
-            setCardStyle("game_container")
-            setEarthquakeDetailsStyle("earthquake_container_gone")
+        
+        setBoozenamiDetailsStyle("earthquake_container_gone")
 
-        }
+}
 
     }
 
-    //Shearer Function
-    const shearerFunction = () => {
-        setShearerNum(randomNumberInRange(1, 30));
+// Earthquake Function
+const earthquakeFunction = () => {
+    setEarthquakeNum(randomNumberInRange(1, 80));
 
-        if (shearerNum == 1) {
-            setShearerStyle("shearer_popup")
-            setSpeechBubbleStyle("speech_bubble")
-            setShearerNameStyle("shearer_text_name")
-            setShearerTextStyle("shearer_text")
-        } else {
-            setShearerStyle("shearer_popup_gone")
-            setSpeechBubbleStyle("speech_bubble_gone")
-            setShearerNameStyle("shearer_text_name_gone")
-            setShearerTextStyle("shearer_text_gone")
-        }
+    if (earthquakeNum == 1) {
+        setCardStyle("game_container_earthquake")
+        setTimeout(() => {
+            setEarthquakeDetailsStyle("earthquake_container")
+        }, "2000");
+        
+
+    } else {
+        setCardStyle("game_container")
+        setEarthquakeDetailsStyle("earthquake_container_gone")
 
     }
-    // This is called everytime the "next card" button is pressed  
-    const OnClick = () => {
-        setPrevNum(num);
+
+}
+
+//Shearer Function
+const shearerFunction = () => {
+    setShearerNum(randomNumberInRange(1, 30));
+
+    if (shearerNum == 1) {
+        setShearerStyle("shearer_popup")
+        setSpeechBubbleStyle("speech_bubble")
+        setShearerNameStyle("shearer_text_name")
+        setShearerTextStyle("shearer_text")
+    } else {
+        setShearerStyle("shearer_popup_gone")
+        setSpeechBubbleStyle("speech_bubble_gone")
+        setShearerNameStyle("shearer_text_name_gone")
+        setShearerTextStyle("shearer_text_gone")
+    }
+
+}
+// This is called everytime the "next card" button is pressed  
+const OnClick = () => {
+    setPrevNum(num);
+    setNum(randomNumberInRange(1, 100));
+    console.log("The previous number is " + prevNum)
+    console.log("The current number is " + num)
+    if (num >= 83 && num <= 92 && prevNum >= 83 && prevNum <= 92) {
         setNum(randomNumberInRange(1, 100));
-        console.log("The previous number is " + prevNum)
-        console.log("The current number is " + num)
-        if (num >= 83 && num <= 92 && prevNum >= 83 && prevNum <= 92) {
-            setNum(randomNumberInRange(1, 100));
-            //This prevents the wheel from spinning twice in a row  
-        }
-        shearerFunction();
-        earthquakeFunction();
-        setAssignedName(prev => ([prev + 1] % storedNames.length))
-        localStorage.setItem("assignedName", JSON.stringify(assignedName))
+        //This prevents the wheel from spinning twice in a row  
     }
+    shearerFunction();
+    earthquakeFunction();
+    boozenamiFunction();
+    setAssignedName(prev => ([prev + 1] % storedNames.length))
+    localStorage.setItem("assignedName", JSON.stringify(assignedName))
+}
 
-    return (
-        <div className={cardStyle} >
+return (
+    <div className={cardStyle} >
 
-            <div className="force_orientation">
-                <img src={rotate_device} className="force_orientation_image" ></img>
-            </div>
+        <div className="force_orientation">
+            <img src={rotate_device} className="force_orientation_image" ></img>
+        </div>
 
-            <div className={earthquakeDetailsStyle}>
-                <h1 className="earthquake_title">  EARTHQUAKE</h1>
-                <img src={earthquake_image} className="earthquake_image" ></img>
-                <h2 className="earthquake_description">  NECK YOUR DRINK QUICK!</h2>
-            </div>
+        <div className={earthquakeDetailsStyle}>
+            <h1 className="earthquake_title">  EARTHQUAKE</h1>
+            <img src={earthquake_image} className="earthquake_image" ></img>
+            <h2 className="earthquake_description">  NECK YOUR DRINK QUICK!</h2>
+        </div>
 
-            
-                <Link to='/homepage'> <button className="home_button"> 🏠 </button> </Link>
-                {num >= 1 && num <= 2 ?
-                    <BlackGameCards /> : null // Black -  2% chance
-                }
-                {num >= 3 && num <= 23 ?
-                    <GreenGameCards /> : null  // Green -  21% chance
-                }
-                {num >= 24 && num <= 32 ?
-                    <OrangeGameCards /> : null // Orange -  9% chance
-                }
-                {num >= 33 && num <= 51 ?
-                    <BlueGameCards /> : null // Blue -  19% chance
-                }
-                {num >= 52 && num <= 65 ?
-                    <RedGameCards /> : null // Red -  14% chance
-                }
-                {num >= 66 && num <= 74 ?
-                    <PinkGameCards /> : null // Pink -  9% chance
-                }
-                {num >= 75 && num <= 82 ?
-                    <YellowGameCards /> : null // Yellow -  8% chance
-                }
-                {num >= 83 && num <= 92 ?
-                    <WhiteGameCards /> : null // White -  10% chance
-                }
-                {num >= 93 && num <= 100 ?
-                    <PurpleGameCards /> : null // Purple -  8% chance
-                }
-            
+        <div className={boozenamiDetailsStyle}>
+            <h1 className="boozenami_title"> Boozenami</h1>
+            <img src={boozenami_image} className="boozenami_image"></img>
+            <img src={waves_image} className="waves_image"></img>
+            <h2 className="boozenami_description">  EVERYONE NECK SOMEONE ELSES DRINK!</h2>
 
-
-            <img src={shearer_image} className={shearerStyle} alt="shearer"></img>
-            <img src={speech_bubble} className={speechBubbleStyle} alt="speech_bubble"></img>
-            <p className={shearerNameStyle}> {randomName}</p>
-            <p className={shearerTextStyle}> Give out 4 drinks!</p>
-
-
-
-
-            <button className="next_card_button2" onClick={OnClick}>Next Card</button>
         </div>
 
 
+        <Link to='/homepage'> <button className="home_button"> 🏠 </button> </Link>
+        {num >= 1 && num <= 2 ?
+            <BlackGameCards /> : null // Black -  2% chance
+        }
+        {num >= 3 && num <= 23 ?
+            <GreenGameCards /> : null  // Green -  21% chance
+        }
+        {num >= 24 && num <= 32 ?
+            <OrangeGameCards /> : null // Orange -  9% chance
+        }
+        {num >= 33 && num <= 51 ?
+            <BlueGameCards /> : null // Blue -  19% chance
+        }
+        {num >= 52 && num <= 65 ?
+            <RedGameCards /> : null // Red -  14% chance
+        }
+        {num >= 66 && num <= 74 ?
+            <PinkGameCards /> : null // Pink -  9% chance
+        }
+        {num >= 75 && num <= 82 ?
+            <YellowGameCards /> : null // Yellow -  8% chance
+        }
+        {num >= 83 && num <= 92 ?
+            <WhiteGameCards /> : null // White -  10% chance
+        }
+        {num >= 93 && num <= 100 ?
+            <PurpleGameCards /> : null // Purple -  8% chance
+        }
+
+
+        <img src={shearer_image} className={shearerStyle} alt="shearer"></img>
+        <img src={speech_bubble} className={speechBubbleStyle} alt="speech_bubble"></img>
+        <p className={shearerNameStyle}> {randomName}</p>
+        <p className={shearerTextStyle}> Give out 4 drinks!</p>
 
 
 
-    )
+
+        <button className="next_card_button2" onClick={OnClick}>Next Card</button>
+    </div>
+
+
+
+
+
+)
 }
 
 export default DrinkingGame
