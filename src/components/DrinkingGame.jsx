@@ -62,6 +62,7 @@ const DrinkingGame = () => {
         }
 
     }
+
     //Shearer Function
     const shearerFunction = () => {
         setShearerNum(randomNumberInRange(1, 30));
@@ -109,9 +110,6 @@ const DrinkingGame = () => {
             </div>
 
             
-
-            
-            <div className="all_cards">
                 <Link to='/homepage'> <button className="home_button"> 🏠 </button> </Link>
                 {num >= 1 && num <= 2 ?
                     <BlackGameCards /> : null // Black -  2% chance
@@ -140,12 +138,12 @@ const DrinkingGame = () => {
                 {num >= 93 && num <= 100 ?
                     <PurpleGameCards /> : null // Purple -  8% chance
                 }
-            </div>
+            
 
 
             <img src={shearer_image} className={shearerStyle} alt="shearer"></img>
             <img src={speech_bubble} className={speechBubbleStyle} alt="speech_bubble"></img>
-            <p className={shearerNameStyle}> {randomName}!</p>
+            <p className={shearerNameStyle}> {randomName}</p>
             <p className={shearerTextStyle}> Give out 4 drinks!</p>
 
 

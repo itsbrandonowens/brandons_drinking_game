@@ -24,6 +24,8 @@ import d20 from "./images/dice/twenty.png"
 import base from "./images/dice/base.png"
 import Confetti from "react-confetti";
 import useWindowSize from 'react-use/lib/useWindowSize'
+import nat1wizard from './images/nat1wizard.png'
+import nat20wizard from './images/nat20wizard.png'
 
 
 const DiceComponent = () => {
@@ -42,9 +44,10 @@ const DiceComponent = () => {
     }
 
 
-
+    
     return (
         <div className="dice_container">
+            
             <img src={randomDice} className={"dice_image"} alt="dice_image" onClick={diceHandler} wobble={wobble} onAnimationEnd={() => setWobble(0)}></img>
             {
                 randomDice == d20 ?
@@ -54,8 +57,9 @@ const DiceComponent = () => {
                             height={height}
                         />
                         <div className="nat20_container">
-                            <p className="dice_nat20">Nat20!</p>
-                            <p className="dice_nat20_desc">Congrats! Give the punishment to a player of your choosing </p>
+                        <img src={nat20wizard} className="nat1wizard" alt="dice_image"></img>
+                        <h2 className="dice_nat20_desc">Congrats! Give the punishment to a player of your choosing </h2>
+                          
 
                         </div>
                     </div> : null
@@ -63,9 +67,9 @@ const DiceComponent = () => {
 
             {
                 randomDice == d1 ?
-                    <div className="nat20_container">
-                        <p className="dice_nat20">Nat1!</p>
-                        <p className="dice_nat20_desc">Unlucky! Double your punishment! </p>
+                    <div className="nat20_container"> 
+                        <img src={nat1wizard} className="nat1wizard" alt="dice_image"></img>
+                        <h2 className="dice_nat20_desc">Unlucky! Double your punishment! </h2>
                     </div> : null
             }
         </div>

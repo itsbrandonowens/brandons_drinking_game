@@ -479,25 +479,21 @@
 
 
     .nat20_container {
-        position: absolute;
-        color: white;
-        top: 62%;
-        right: 26%;
-        filter: drop-shadow(0px 0px 15px #ffffff);
-        transition: all 0.5s;
+        
+    }
+    .nat1wizard {
+        width:30%;
+        position:absolute;
+        top:15%;
+        right:50%;
+        filter: drop-shadow(0px 0px 15px #000000);
         animation: fadeIn 0.5s;
-        background-color: rgba(199, 171, 181, 0.9);
-        border: 5px solid rgb(255, 255, 255);
-
-        padding: 1%;
-        width: 45%;
     }
 
     .nat20 {
         position: absolute;
         top: -5%;
         right: 30%;
-
     }
 
     .dice_nat20 {
@@ -512,12 +508,22 @@
     }
 
     .dice_nat20_desc {
-        color: rgb(0, 0, 0);
-        font-size: 1.2vw;
+        font-size: 3vw;
         filter: drop-shadow(0px 0px 15px #292929);
         transition: all 0.5s;
         animation: fadeIn 0.5s;
         font-family: Arial, Helvetica, sans-serif;
+        color:white;
+        padding:2%;
+        position: absolute;
+        top: 80%;
+        right: 21%;
+        transition: all 0.5s;
+        animation: fadeIn 0.5s;
+        background-color: rgba(0, 0, 0, 0.8);
+        border: 5px solid rgb(255, 255, 255);
+        padding: 1%;
+        width: 55%;
     }
 
 
