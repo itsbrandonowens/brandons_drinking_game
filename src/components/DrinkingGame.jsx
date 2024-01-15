@@ -47,7 +47,7 @@ const DrinkingGame = () => {
 
     // Earthquake Function
     const earthquakeFunction = () => {
-        setEarthquakeNum(randomNumberInRange(1, 2));
+        setEarthquakeNum(randomNumberInRange(1, 100));
 
         if (earthquakeNum == 1) {
             setCardStyle("game_container_earthquake")
