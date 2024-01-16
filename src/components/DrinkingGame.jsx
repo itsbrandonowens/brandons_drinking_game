@@ -43,9 +43,9 @@ const DrinkingGame = () => {
             * (max - min + 1)) + min;
     };
 
-    //Boozenami Function - (EVERYONE NECK SOMEONE ELSES DRINK)
+    //Boozenami Function 
     const boozenamiFunction = () => {
-        setBoozenamiNum(randomNumberInRange(1, 80));
+        setBoozenamiNum(randomNumberInRange(1, 100));
 
         if (boozenamiNum == 1 && earthquakeNum !== 1) {
             setBoozenamiDetailsStyle("boozenami_container")

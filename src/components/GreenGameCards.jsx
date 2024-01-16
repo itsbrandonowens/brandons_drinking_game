@@ -176,6 +176,59 @@ const GreenGameCards = () => {
             title: 'Bus Wankers!',
             description: 'Everyone without a drivers license, drink!'
         },
+        {
+            title: 'Serial Vapist',
+            description: 'Everyone who vapes or smokes, drink!'
+        },
+        {
+            title: 'You Hottie',
+            description: 'Compliment the person on your left, then both drink!'
+        },
+        {
+            title: 'Spice Bomb',
+            description: 'You choose the person who smells the nicest, they must drink!'
+        },
+        {
+            title: 'Liquid Ass',
+            description: 'You choose the person who smells the worst, they must drink!'
+        },
+        {
+            title: 'Fly for a White Guy',
+            description: 'You choose the person who is currently dressed the best, they must drink!'
+        },
+        {
+            title: 'Blocks of Cream',
+            description: 'You choose the person who has the nicest smile, they must drink!'
+        },
+        {
+            title: 'Dead Trim',
+            description: 'You choose the person who has the worst haircut, they must drink!'
+        },
+        { 
+            title: "Starting with T",
+            description: 'Say 5 words starting with T in 5 seconds or drink'
+        },
+        { 
+            title: 'Tastes like pish',
+            description: 'The player with the weakest drink must take a drink'
+        },
+        { 
+            title: 'No one loves me',
+            description: 'Single people drink'
+        },
+        { 
+            title: 'Wispa Gold',
+            description: 'You must only whisper until your next turn'
+        },
+        { 
+            title: 'Je suis une baguette',
+            description: 'You must not speak English until your next turn'
+        },
+        { 
+            title: 'Bearded Players Drink',
+            description: 'You must not speak English until your next turn'
+        },
+
         
        
 

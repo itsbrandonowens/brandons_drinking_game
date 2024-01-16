@@ -20,7 +20,7 @@
 
 /* --------------------------------------------------------------------------------------------------------------------------------------- */
 /* The CSS Below is for mobile in landscape orientation */
-@media only screen and (min-width:768px) and (max-width:991px) and (orientation: landscape) {
+@media only screen and (min-width:650px) and (max-width:991px) and (orientation: landscape) {
     .next_card_button2 {
         position: absolute;
         right: -1%;

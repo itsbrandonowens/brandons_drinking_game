@@ -66,8 +66,8 @@ const RedGameCards = () => {
             description: 'Both players must say their favourite game, everyone else vote which game is worst, the player with the most votes must drink!'
         },
         {
-            title: 'Most Likely To: Win in a fight',
-            description: 'Everyone must vote who, out of these two players, is most likely to win in a fight. Loser must drink'
+            title: 'Most Likely To: Win in a Fight',
+            description: 'Everyone must vote who, out of these two players, is most likely to win in a fight. Loser must drink.'
         },
 
 

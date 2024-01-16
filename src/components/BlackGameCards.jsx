@@ -42,10 +42,7 @@ const BlackGameCards = () => {
             title: 'Chug Card',
             description: 'You may shout "Chug!" at any point and everyone has to finish their drinks! Can only be used once!'
         },
-        {
-            title: 'Tinky Winky',
-            description: 'Starting with you, take it in turns to say another name for a penis, first person to fail drink twice'
-        },
+        
     ]
     
     

@@ -4,7 +4,7 @@
 
 /* --------------------------------------------------------------------------------------------------------------------------------------- */
 /* The CSS Below is for mobile in landscape orientation */
-@media only screen and (min-width:768px) and (max-width:991px) and (orientation: landscape) {
+@media only screen and (min-width:650px) and (max-width:991px) and (orientation: landscape) {
     .cards {
         width: 60%;
     }
@@ -183,7 +183,7 @@
     .dice_description {
         position: absolute;
         color: white;
-        top: 68%;
+        top: 65%;
         right: 30%;
         font-size: 1.2vw;
         width: 40%;
@@ -196,7 +196,7 @@
     .dice_roll_desc {
         position: absolute;
         color: white;
-        top: 80%;
+        top: 72%;
         right: 30%;
         font-size: 1.2vw;
         width: 40%;
@@ -530,7 +530,7 @@
     .dice_description {
         position: absolute;
         color: white;
-        top: 68%;
+        top: 65%;
         right: 30%;
         font-size: 1.2vw;
         width: 40%;
@@ -543,7 +543,7 @@
     .dice_roll_desc {
         position: absolute;
         color: white;
-        top: 80%;
+        top: 72%;
         right: 30%;
         font-size: 1.2vw;
         width: 40%;

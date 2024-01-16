@@ -44,6 +44,14 @@ const OrangeGameCards = () => {
             title: 'Free Pass!',
             description: 'You have a free pass for any future forfeit!'
         },
+        { 
+            title: 'Dead Fish',
+            description: 'Lie on your back and take a drink'
+        },
+        { 
+            title: 'No Hands',
+            description: 'Take a drink without using your hands or arms!'
+        },
         
     ]
     

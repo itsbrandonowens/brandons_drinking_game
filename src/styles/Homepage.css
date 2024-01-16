@@ -356,7 +356,7 @@
 
 /* --------------------------------------------------------------------------------------------------------------------------------------- */
 /* The CSS Below is for Mobile in landscape orientation */
-@media only screen and (min-width:768px) and (max-width:991px) and (orientation: landscape) {
+@media only screen and (min-width:650px) and (max-width:991px) and (orientation: landscape) {
     .home_container {
         text-align: center;
         transition: all 0.8s ease;

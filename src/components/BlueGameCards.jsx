@@ -67,6 +67,34 @@ const BlueGameCards = () => {
             title: 'ET Phone Home!',
             description: 'Everyone must try to phone this player, first to succeed must choose someone to drink'
         },
+        {
+            title: 'Ow me dich',
+            description: 'Starting with you, take it in turns to say another name for a penis, first person to fail drinks'
+        },
+        {
+            title: 'Touch me Daddy ',
+            description: 'First person to touch this player, gives out 2 drinks'
+        },
+        { 
+            title: 'Rule 2',
+            description: 'You must create another rule for everyone to follow for the rest of the game, if they fail they drink. Only 2 rules can be active at one time'
+        },
+        { 
+            title: "No E's'",
+            description: 'You are not allowed to say words containing the letter E for 10 minutes. If you do, you drink'
+        },
+        { 
+            title: "Don't Move!",
+            description: 'Stay completely still until your next turn! Or drink 5 times'
+        },
+        { 
+            title: "Fists of Five!",
+            description: 'On the count of 3, everyone must show a number on their hand 1 to 5. Any players with the same number as somebody else must drink'
+        },
+        { 
+            title: "Animal Bluff!",
+            description: 'You must write an animal in your notes. Give all players a hint about this animal and everyone must take a guess at what animal you wrote. Anyone who doesnt guess it must drink'
+        },
         
     
         

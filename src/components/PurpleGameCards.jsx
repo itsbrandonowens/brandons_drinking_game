@@ -51,8 +51,13 @@ const PurpleGameCards = () => {
         },       
         { 
             title: 'The Dancing Tramp!', 
-            description: 'You have found Johnny Decker on the street, you give him 20p to dance for you',
-            dice_roll_desc: 'If you roll a Nat 1, Johnny smacks the shit out of you... neck your drink and do a shot'
+            description: 'You have found a Hobo on the street, you give him 20p to dance',
+            dice_roll_desc: 'If you roll a 1, The Hobo kicks the shit out of you, neck your drink and do a shot.'
+        },        
+        { 
+            title: 'Bellend Bouncer!', 
+            description: 'The bouncer wont let you in, because your too pissed',
+            dice_roll_desc: 'Roll above a 15 to recieve a free pass for the next forfeit and sober yourself up!'
         },
         
 
