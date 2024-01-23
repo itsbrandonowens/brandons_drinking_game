@@ -228,6 +228,11 @@ const GreenGameCards = () => {
             title: 'Bearded Players Drink',
             description: 'You must not speak English until your next turn'
         },
+        { 
+            title: 'Phones on The Table!',
+            description: 'Everyone put your phones on the table, next person to get a notification must drink!'
+        },
+        
 
         
        

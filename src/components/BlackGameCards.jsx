@@ -42,6 +42,10 @@ const BlackGameCards = () => {
             title: 'Chug Card',
             description: 'You may shout "Chug!" at any point and everyone has to finish their drinks! Can only be used once!'
         },
+        {
+            title: 'Slow Start',
+            description: 'Whoever has the MOST drink left, must finish it!'
+        },
         
     ]
     
