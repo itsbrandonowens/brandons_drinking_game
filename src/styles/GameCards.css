@@ -344,6 +344,7 @@
 @media only screen and (min-width:992px) {
     .cards {
         width: 60%;   
+        
        
     }
 
@@ -531,9 +532,9 @@
         position: absolute;
         color: white;
         top: 65%;
-        right: 30%;
+        left: 15%;
         font-size: 1.2vw;
-        width: 40%;
+        width: 70%;
         filter: drop-shadow(0px 0px 15px #292929);
         transition: all 0.5s;
         animation: fadeIn 0.5s;
@@ -543,10 +544,10 @@
     .dice_roll_desc {
         position: absolute;
         color: white;
-        top: 72%;
-        right: 30%;
+        top: 73%;
+        left: 25%;
         font-size: 1.2vw;
-        width: 40%;
+        width: 50%;
         filter: drop-shadow(0px 0px 15px #292929);
         transition: all 0.5s;
         animation: fadeIn 0.5s;

@@ -46,9 +46,15 @@ const DrinkingGame = () => {
             * (max - min + 1)) + min;
     };
 
+    //HamburgerMenu
+    let [isActive, setActive] = useState(false)
+    let hamburger_function = () => {
+        setActive(!isActive);
+    };
+
     //Genie Function 
     const genieFunction = () => {
-        setGenieNum(randomNumberInRange(1, 80));
+        setGenieNum(randomNumberInRange(1, 100));
         if (genieNum == 1 && earthquakeNum !== 1 && boozenamiNum !== 1) {
             setGenieDetailsStyle("genie_container")
         } else {
@@ -82,6 +88,7 @@ const DrinkingGame = () => {
             setCardStyle("game_container_earthquake")
             setTimeout(() => {
                 setEarthquakeDetailsStyle("earthquake_container")
+
             }, "2000");
 
 
@@ -135,6 +142,18 @@ const DrinkingGame = () => {
                 <img src={rotate_device} className="force_orientation_image" ></img>
             </div>
 
+            <div className="hamburger_icon" onClick={hamburger_function}>
+                <div class={isActive ? "bar1change" : "bar1"}></div>
+                <div class={isActive ? "bar2change" : "bar2"}></div>
+                <div class={isActive ? "bar3change" : "bar3"}></div>
+            </div>
+            <div className="navbar_container">
+                <ul className={isActive ? 'navbar_links_expanded' : 'navbar_links'} >
+                    <Link style={{color:"black", textDecoration: 'none'}} to='/'><li className="menuLinks" onClick={hamburger_function}> 🏠 Home </li> </Link> 
+                    <Link style={{color:"black", textDecoration: 'none'}}to='/Rules'><li className="menuLinks" onClick={hamburger_function}> 📜 Rules </li> </Link>       
+                </ul>
+            </div>
+
             <div className={earthquakeDetailsStyle}>
                 <h1 className="earthquake_title">  EARTHQUAKE</h1>
                 <img src={earthquake_image} className="earthquake_image" ></img>
@@ -152,13 +171,13 @@ const DrinkingGame = () => {
             <div className={genieDetailsStyle}>
                 <h1 className="genie_title"> I grant {randomName}, 3 wishes!</h1>
                 <img src={genie_image} className="genie_image"></img>
-                
-                <h2 className="genie_description">  Create 3 rules, or make 3 people drink as much as you want!</h2>
+
+                <h2 className="genie_description">  Give 1 drink out, create 1 rule and refuse your next forfeit!</h2>
 
             </div>
 
 
-            <Link to='/homepage'> <button className="home_button"> 🏠 </button> </Link>
+            
             {num >= 1 && num <= 2 ?
                 <BlackGameCards /> : null // Black -  2% chance
             }

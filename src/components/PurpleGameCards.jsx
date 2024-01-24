@@ -58,7 +58,7 @@ const PurpleGameCards = () => {
             title: 'Bellend Bouncer!', 
             description: 'The bouncer wont let you in, because your too pissed',
             dice_roll_desc: 'Roll above a 15 to recieve a free pass for the next forfeit and sober yourself up!'
-        },
+        },                  
         
 
     ]

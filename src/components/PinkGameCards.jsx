@@ -23,11 +23,11 @@ const PinkGameCards = () => {
         {
             title: 'Nee Mackems!',
             description: 'Drink if your a mackem, or dont watch football ... and watch these worldies while you do it',
-            video: 'https://www.youtube.com/watch?v=RmN8oMJ8Y5A'
+            video: 'https://www.youtube.com/watch?v=RmN8oMJ8Y5A'        
         },
         {
             title: 'SAMBUCA ALARM!',
-            description: 'You must have a shot! Preferably Sambuca!',
+            description: 'You must have a shot! Preferably Sambuca, but anything will do!',
             video: 'https://www.youtube.com/watch?v=8luGR0ylVuI'
         },
         {
