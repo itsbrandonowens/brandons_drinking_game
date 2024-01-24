@@ -54,15 +54,12 @@ const DrinkingGame = () => {
 
     //Genie Function 
     const genieFunction = () => {
-        setGenieNum(randomNumberInRange(1, 1));
+        setGenieNum(randomNumberInRange(1, 100));
         if (genieNum == 1 && earthquakeNum !== 1 && boozenamiNum !== 1) {
             setGenieDetailsStyle("genie_container")
         } else {
             setGenieDetailsStyle("earthquake_container_gone")
         }
-
-
-
     }
 
     //Boozenami Function 
