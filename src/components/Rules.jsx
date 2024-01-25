@@ -36,7 +36,7 @@ const Rules = () => {
                     <img src={earthquake_image} className="rules_image" alt="shearer"></img>
                 </div>
                 <div className="rules_page_grid_item">
-                    <h2 className="rules_page_text">The screen will start to shake and ALL players must finish their drink before they start the next card.</h2>
+                    <h2 className="rules_page_text">The screen will start to shake and ALL players must finish their drink and then click next card.</h2>
                 </div>
             </div>
 

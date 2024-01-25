@@ -225,7 +225,7 @@ const GreenGameCards = () => {
             description: 'You must not speak English until your next turn'
         },
         { 
-            title: 'Bearded Players Drink',
+            title: 'No hablo ingles',
             description: 'You must not speak English until your next turn'
         },
         { 
