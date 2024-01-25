@@ -2,10 +2,11 @@ import React from 'react'
 import '../styles/Homepage.css'
 import AddPlayerNames from './AddPlayerNames';
 import { useState, } from 'react';
-
-
 import DrinkingGame from './DrinkingGame';
 import LastOrdersLogo from "./images/LastOrdersLogo.png"
+import { Link } from 'react-router-dom';
+import privacy_policy from "./images/privacy_policy.pdf"
+
 const Home = () => {
     
 
@@ -36,26 +37,15 @@ const Home = () => {
 
                 <div className="rules_grid">
                     <div className="rules_grid_item">
-                        <p className="rules_text">You must do what the card says, some cards may last a certain amount of minutes so use a timer when necessary.</p>
-                        <ul>
-                            <li className="rules_text_list"> Black Cards - Cards of Death: Avoid these at ALL costs! </li>
-                            <li className="rules_text_list"> Green Cards - Cards that involve every, or most players </li>
-                            <li className="rules_text_list"> Blue Cards - Mini Game cards, these involve every player </li>
-                            <li className="rules_text_list"> Orange Cards - Solo Drink Cards, just for the current player </li>
-                            <li className="rules_text_list"> Yellow Cards - Cards involving playing Cards </li>
-                            <li className="rules_text_list"> Pink Cards - Video Cards, play the video along with the card </li>
-                            <li className="rules_text_list"> White Cards - Spin the WHEEL, and find your fortune </li>
-                            <li className="rules_text_list"> Purple Cards - Roll The Dice and decide your fate </li>
-                            <li className="rules_text_list"> Red Cards - Versus Cards, puts players against each other </li>
-                        </ul>
+                        <p className="rules_text">You must do what the card says, some cards may last a certain amount of minutes so use a timer if necessary.</p>
+                        <Link style={{color:"black", textDecoration: 'none'}}to='/rules'><li className="rules_page_button"> 📜 Click for all Rules </li> </Link>                 
                         <p className="rules_text"> If a card requires you to take a shot, this can be replaced with a full drink if required.  </p>
-
 
                     </div>
                     <div className="rules_grid_item">
                         <p className="rules_text_legal">⛔ Everyone playing must be over the age of 18</p>
                         <p className="rules_text_legal">🍻 Everyone must drink responsibly</p>
-                        <p className="rules_text_legal">🍪 Continue if you agree to our Privacy and Cookie Policy</p>
+                        <p className="rules_text_legal">🍪 Continue if you agree to our <a href={privacy_policy} target= "_blank" > Privacy </a>  and <a href={privacy_policy} target= "_blank"> Cookie </a>  Policy</p>
                     </div>
                 </div>
                 <button className="rules_button" onClick={secondTransition}> Continue </button>

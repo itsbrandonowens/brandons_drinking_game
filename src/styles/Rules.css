@@ -1,0 +1,226 @@
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+/* The CSS Below is for Mobile in portrait orientation*/
+@media only screen and (max-width: 767px) {
+
+    .go_back_button {    
+        font-size: 5vw;
+        width:30%;
+        margin-top:5%;
+        
+        margin-left:1%;
+        padding:1%;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        list-style:none;
+        outline: none;
+        color: #000000;
+        background-color: #ffffff;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+        font-weight:600;
+       
+    }
+    .rules_page_grid{
+        display:grid;
+        grid-template-columns: 20% 80% ;
+        margin-top:5%;
+    }
+
+    .rules_page_grid_item{
+
+    }
+    .rules_page_text{
+        margin-top:6%;
+        margin-left:15%;
+        color:white;
+        padding:2%;
+        font-size: 3vw;
+        filter: drop-shadow(0px 0px 15px #292929);
+        transition: all 0.5s;
+    }
+    .rules_image{
+        width:150%;
+        margin-left:10%;
+    }
+
+    .rules_image_card{
+        width:150%;
+        margin-top:45%;
+        margin-left:5%;
+    }
+
+    .rules_page_list{
+        padding:1%;
+        margin-left:20%;
+    }
+
+    .rules_page_list_item{
+        font-size: 2.5vw;
+        color: rgb(255, 255, 255);
+        font-family: Arial, Helvetica, sans-serif;
+        filter: drop-shadow(0px 0px 5px #292929);
+        text-decoration: none;
+        font-weight:600;
+        
+    }
+
+    .rules_text_list {
+ 
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+/* The CSS Below is for Mobile in landscape orientation */
+@media only screen and (min-width:650px) and (max-width:991px) and (orientation: landscape) {
+    .go_back_button {
+        
+        font-size: 2vw;
+        width:10%;
+        font-size: 1.5vw;
+        margin-left:1%;
+        padding:1%;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        list-style:none;
+        outline: none;
+        color: #000000;
+        background-color: #ffffff;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+        font-weight:600;
+       
+    }
+    .rules_page_grid{
+        display:grid;
+        grid-template-columns: 10% 40% 10% 40% ;
+        margin-top:1%;
+    }
+
+    .rules_page_grid_item{
+
+    }
+    .rules_page_text{
+        margin-top:1%;
+        color:white;
+        padding:2%;
+        font-size: 1.5vw;
+        filter: drop-shadow(0px 0px 15px #292929);
+        transition: all 0.5s;
+    }
+    .rules_image{
+        width:80%;
+        margin-left:10%;
+    }
+
+    .rules_image_card{
+        width:100%;
+        margin-top:45%;
+        margin-left:5%;
+    }
+
+    .rules_page_list{
+        
+        padding:1%;
+        margin-left:5%;
+    }
+
+    .rules_page_list_item{
+        font-size: 1.3vw;
+        color: rgb(255, 255, 255);
+        font-family: Arial, Helvetica, sans-serif;
+        filter: drop-shadow(0px 0px 5px #292929);
+        text-decoration: none;
+        font-weight:600;
+        
+    }
+
+    .rules_text_list {
+ 
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+/* The CSS Below is for Desktop and Larger Devices */
+
+@media only screen and (min-width:992px) {
+    .go_back_button {
+        
+        font-size: 2vw;
+        width:10%;
+        font-size: 1.5vw;
+        margin-left:1%;
+        padding:1%;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        list-style:none;
+        outline: none;
+        color: #000000;
+        background-color: #ffffff;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+        font-weight:600;
+       
+    }
+    .rules_page_grid{
+        display:grid;
+        grid-template-columns: 10% 40% 10% 40% ;
+        margin-top:1%;
+    }
+
+    .rules_page_grid_item{
+
+    }
+    .rules_page_text{
+        margin-top:1%;
+        color:white;
+        padding:2%;
+        font-size: 1.5vw;
+        filter: drop-shadow(0px 0px 15px #292929);
+        transition: all 0.5s;
+    }
+    .rules_image{
+        width:80%;
+        margin-left:10%;
+    }
+
+    .rules_image_card{
+        width:100%;
+        margin-top:45%;
+        margin-left:5%;
+    }
+
+    .rules_page_list{
+        
+        padding:1%;
+        margin-left:5%;
+    }
+
+    .rules_page_list_item{
+        font-size: 1.3vw;
+        color: rgb(255, 255, 255);
+        font-family: Arial, Helvetica, sans-serif;
+        filter: drop-shadow(0px 0px 5px #292929);
+        text-decoration: none;
+        font-weight:600;
+        
+    }
+
+    .rules_text_list {
+ 
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+}

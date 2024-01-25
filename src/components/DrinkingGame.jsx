@@ -38,6 +38,7 @@ const DrinkingGame = () => {
     const [genieDetailsStyle, setGenieDetailsStyle] = useState("earthquake_container_gone")
     let randomName = storedNames[Math.floor(Math.random() * storedNames.length)];
     const [assignedName, setAssignedName] = useState(0);
+    
 
 
     // Random Number Function 
@@ -46,10 +47,12 @@ const DrinkingGame = () => {
             * (max - min + 1)) + min;
     };
 
+
     //HamburgerMenu
     let [isActive, setActive] = useState(false)
-    let hamburger_function = () => {
+    let hamburger_function = (e) => {
         setActive(!isActive);
+        
     };
 
     //Genie Function 
@@ -139,7 +142,7 @@ const DrinkingGame = () => {
                 <img src={rotate_device} className="force_orientation_image" ></img>
             </div>
 
-            <div className="hamburger_icon" onClick={hamburger_function}>
+            <div className="hamburger_icon"  onClick={hamburger_function}>
                 <div class={isActive ? "bar1change" : "bar1"}></div>
                 <div class={isActive ? "bar2change" : "bar2"}></div>
                 <div class={isActive ? "bar3change" : "bar3"}></div>
@@ -147,7 +150,8 @@ const DrinkingGame = () => {
             <div className="navbar_container">
                 <ul className={isActive ? 'navbar_links_expanded' : 'navbar_links'} >
                     <Link style={{color:"black", textDecoration: 'none'}} to='/'><li className="menuLinks" onClick={hamburger_function}> 🏠 Home </li> </Link> 
-                    <Link style={{color:"black", textDecoration: 'none'}}to='/Rules'><li className="menuLinks" onClick={hamburger_function}> 📜 Rules </li> </Link>       
+                    <Link style={{color:"black", textDecoration: 'none'}}to='/rules'><li className="menuLinks" onClick={hamburger_function}> 📜 Rules </li> </Link>   
+                      
                 </ul>
             </div>
 

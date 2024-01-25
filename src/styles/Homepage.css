@@ -477,6 +477,25 @@
         filter: drop-shadow(0px 0px 2px #292929);
     }
 
+    .rules_page_button {
+        font-size: 2vw;
+        width:90%;
+        font-size: 1.5vw;
+        margin-left:4%;
+        padding:1%;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        list-style:none;
+        outline: none;
+        color: #000000;
+        background-color: #ffffff;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+        font-weight:600;
+    }
+
 
     .start_game_button1 {
         display: inline-block;
@@ -825,6 +844,25 @@
         filter: drop-shadow(0px 0px 2px #292929);
     }
 
+    .rules_page_button {
+        font-size: 2vw;
+        width:90%;
+        font-size: 1.5vw;
+        margin-left:4%;
+        padding:1%;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        list-style:none;
+        outline: none;
+        color: #000000;
+        background-color: #ffffff;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+        font-weight:600;
+    }
+
 
     .start_game_button {
         animation: fadeIn 3s;
@@ -1059,6 +1097,8 @@
             transform: translateX(100px);
         }
     }
+
+    
 
 
 }
