@@ -30,7 +30,7 @@ const Rules = () => {
                     <img src={shearer_image} className="rules_image" alt="shearer"></img>
                 </div>
                 <div className="rules_page_grid_item">
-                    <h2 className="rules_page_text">Wishearer will appear and allow someone to dish out 4 drinks to anybody they want. This can be 4 drinks to 1 person, or spread out between any player/s</h2>
+                    <h2 className="rules_page_text">Walan Wearer will appear and allow someone to dish out 4 drinks to anybody they want. This can be 4 drinks to 1 person, or spread out between any player/s</h2>
                 </div>
                 <div className="rules_page_grid_item">
                     <img src={earthquake_image} className="rules_image" alt="shearer"></img>

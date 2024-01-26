@@ -50,7 +50,7 @@ const DrinkingGame = () => {
 
     //HamburgerMenu
     let [isActive, setActive] = useState(false)
-    let hamburger_function = (e) => {
+    let hamburger_function = () => {
         setActive(!isActive);
         
     };

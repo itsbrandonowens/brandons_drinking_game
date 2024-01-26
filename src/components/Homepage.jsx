@@ -6,7 +6,7 @@ import DrinkingGame from './DrinkingGame';
 import LastOrdersLogo from "./images/LastOrdersLogo.png"
 import { Link } from 'react-router-dom';
 import privacy_policy from "./images/privacy_policy.pdf"
-
+import x_logo from "./images/x_logo.jpg"
 const Home = () => {
 
 
@@ -32,6 +32,7 @@ const Home = () => {
             <div className={homeStyle}>
                 <img src={LastOrdersLogo} className="lologo" alt="last_orders_logo"></img>
                 <button className="start_game_button1" onClick={firstTransition}> Click Here to Start </button>
+               <a href="https://twitter.com/LastOrdersGame" target="_blank"> <img src={x_logo} className="x_logo_homepage" alt="x_logo"></img> </a>
             </div>
             <div className={rulesStyle}>
 

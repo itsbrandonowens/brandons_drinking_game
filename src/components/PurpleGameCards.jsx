@@ -2,6 +2,7 @@ import React from 'react'
 import '../styles/GameCards.css'
 import purple_card from "./images/purple_card.png"
 import DiceComponent from './DiceComponent';
+import { useState, useEffect } from 'react';
 
 const PurpleGameCards = () => {
     const storedNames = JSON.parse(localStorage.getItem("player names"))
@@ -64,6 +65,8 @@ const PurpleGameCards = () => {
     ]
 
     const randomValue = cards[Math.floor(Math.random() * cards.length)]
+   
+
     return (
 
         <div className="card_container">
