@@ -441,7 +441,7 @@
         margin-top:1%;
         margin-bottom:3%;
         margin-left:5.5%;
-        z-index: 1000000000000000000000000000000;
+        
     }
 
 
@@ -453,7 +453,7 @@
         background-color: #000000;
         margin: 18%;
         transition: 0.4s;
-        z-index:1000000000000000000000000000000000000000000000;
+       
         
     }
 
@@ -464,7 +464,7 @@
         margin: 18%;
         transition: 0.4s;
         transform: translate(0, 300%) rotate(-45deg);
-        z-index:1000000000000000000000000000000000000000000000;
+        
     }
     
     .bar2change {
@@ -474,7 +474,7 @@
         margin: 18%;
         transition: 0.4s;
         opacity: 0;
-        z-index:1000000000000000000000000000000000000000000000;
+        
     }
     
     .bar3change {
@@ -502,7 +502,7 @@
         transition: 0.8s ease;
         background-color: rgb(0, 128, 255);
         overflow: hidden;
-        z-index: 1000000;
+        
         text-align: center;
     }
     

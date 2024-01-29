@@ -18,8 +18,14 @@
             margin-top: 25%;
             right:8%;
             width: 90%;
-    
-    
+        }
+
+        .x_logo_homepage {
+            position:absolute;
+            top:1%;
+            left:1%;
+            width:10%;
+            border-radius: 10%;
         }
     
         .home_style_gone {
