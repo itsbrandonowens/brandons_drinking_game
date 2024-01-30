@@ -151,8 +151,8 @@ const DrinkingGame = () => {
             <div className="navbar_container">
                 <ul className={isActive ? 'navbar_links_expanded' : 'navbar_links'} >
                     <Link style={{color:"black", textDecoration: 'none'}} to='/'><li className="menuLinks" onClick={hamburger_function}> 🏠 Home </li> </Link> 
-                    <Link style={{color:"black", textDecoration: 'none'}}to='/rules'><li className="menuLinks" onClick={hamburger_function}> 📜 Rules </li> </Link>   
-                      
+                    <Link style={{color:"black", textDecoration: 'none'}}to='/rules'><li className="menuLinks" onClick={hamburger_function}> 📜 Rules </li> </Link>     
+                    <Link style={{color:"black", textDecoration: 'none'}} to={{pathname: "www.google.com"}} target="_blank"><li className="menuLinks" onClick={hamburger_function}> 📜 Leave a tip </li> </Link>     
                 </ul>
             </div>
 
