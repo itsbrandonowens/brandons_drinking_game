@@ -134,7 +134,8 @@ const DrinkingGame = () => {
         setAssignedName(prev => ([prev + 1] % storedNames.length))
         localStorage.setItem("assignedName", JSON.stringify(assignedName))
     }
-
+// https://paypal.me/LastOrdersGame?country.x=GB&locale.x=en_GB
+// maybe set up donation page
     return (
         <div className={cardStyle} >
 
