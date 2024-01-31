@@ -95,6 +95,10 @@ const BlueGameCards = () => {
             title: "Animal Bluff!",
             description: 'You must write an animal in your notes. Give all players a hint about this animal and everyone must take a guess at what animal you wrote. Anyone who doesnt guess it must drink'
         },
+        { 
+            title: "Quippy Locked Up",
+            description: 'This player has been arrested. Every OTHER player must think of a reason why. The player who has been arrested must say whos answer is the funniest. That person gives out a drink.'
+        },
         
     
         

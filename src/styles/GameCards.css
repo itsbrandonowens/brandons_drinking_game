@@ -1,6 +1,187 @@
 /* --------------------------------------------------------------------------------------------------------------------------------------- */
 /* The CSS Below is for mobile in portrait orientation*/
-@media only screen and (max-width: 767px) {}
+@media only screen and (max-width: 767px) {
+    .cards {
+        display:none; 
+        
+       
+    }
+
+
+    .card_container {
+        display:none;
+        
+    }
+
+
+    .card_title {
+        display:none;
+        
+    }
+
+
+    .card_player_name {
+        display:none;
+    }
+
+    .card_description {
+        display:none;
+    }
+
+    .card_description_video {
+        display:none;
+    }
+
+    .card_video {
+        display:none;
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .versus_label {
+        display:none;
+    }
+
+    .playing_card1 {
+        display:none;
+
+    }
+
+    .playing_card2 {
+        display:none;
+    }
+
+    .higher_or_lower_description {
+        display:none;
+    }
+
+    .rof_card {
+        display:none;
+    }
+
+    .rof_description {
+        display:none;
+    }
+
+
+    .nat20_container {
+        display:none;
+    }
+    .nat1wizard {
+        display:none;
+    }
+
+    .nat20 {
+        display:none;
+    }
+
+    .dice_nat20 {
+        display:none;
+    }
+
+    .dice_nat20_desc {
+        display:none;
+    }
+
+
+    .dice_description {
+        display:none;
+    }
+
+    .dice_roll_desc {
+        display:none;
+    }
+
+    .dice_image {
+        display:none;
+    }
+
+    .dice_image[wobble="1"] {
+        animation-name: wobble;
+        animation-duration: 2s;
+        display:none;
+    }
+
+
+
+
+    /* Setting Animation effect to the 
+     dice using css keyframe */
+    @keyframes wobble {
+        from {
+            transform: translate3d(0, 0, 0);
+        }
+
+        15% {
+            transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+        }
+
+        30% {
+            transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+        }
+
+        45% {
+            transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+        }
+
+        60% {
+            transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+        }
+
+        75% {
+            transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+        }
+
+        to {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .cards_and_button_container {
+        display:none;
+
+    }
+
+    .check_button {
+        display:none;
+    }
+
+    .check_button:active {
+        display:none;
+    }
+
+    .timer_container {
+        display:none;
+
+    }
+
+    .timer_function {
+        display:none;
+    }
+
+    .timer_button {
+        display:none;
+    }
+
+
+    .timer_button:active {
+        display:none;
+    }
+
+    .all_timer_buttons {
+        display:none;
+
+    }
+    
+}
 
 /* --------------------------------------------------------------------------------------------------------------------------------------- */
 /* The CSS Below is for mobile in landscape orientation */
@@ -138,18 +319,6 @@
 
 
     .nat20_container {
-        position: absolute;
-        color: white;
-        top: 62%;
-        right: 26%;
-        filter: drop-shadow(0px 0px 15px #ffffff);
-        transition: all 0.5s;
-        animation: fadeIn 0.5s;
-        background-color: rgba(199, 171, 181, 0.9);
-        border: 5px solid rgb(255, 255, 255);
-
-        padding: 1%;
-        width: 45%;
     }
 
     .nat20 {
@@ -157,6 +326,15 @@
         top: -5%;
         right: 30%;
 
+    }
+
+    .nat1wizard {
+        width:25%;
+        position:absolute;
+        top:25%;
+        right:55%;
+        filter: drop-shadow(0px 0px 15px #000000);
+        animation: fadeIn 0.5s;
     }
 
     .dice_nat20 {
@@ -171,12 +349,22 @@
     }
 
     .dice_nat20_desc {
-        color: rgb(0, 0, 0);
-        font-size: 1.2vw;
+        font-size: 3vw;
         filter: drop-shadow(0px 0px 15px #292929);
         transition: all 0.5s;
         animation: fadeIn 0.5s;
         font-family: Arial, Helvetica, sans-serif;
+        color:white;
+        padding:2%;
+        position: absolute;
+        top: 80%;
+        right: 21%;
+        transition: all 0.5s;
+        animation: fadeIn 0.5s;
+        background-color: rgba(0, 0, 0, 0.8);
+        border: 5px solid rgb(255, 255, 255);
+        padding: 1%;
+        width: 55%;
     }
 
 
@@ -352,7 +540,7 @@
     .card_container {
         text-align: center;
         position: relative;
-        animation: fadeIn 0.5s;
+        animation: fadeIn 0.5s;  
         
     }
 

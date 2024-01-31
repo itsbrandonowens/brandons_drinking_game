@@ -134,8 +134,7 @@ const DrinkingGame = () => {
         setAssignedName(prev => ([prev + 1] % storedNames.length))
         localStorage.setItem("assignedName", JSON.stringify(assignedName))
     }
-// https://paypal.me/LastOrdersGame?country.x=GB&locale.x=en_GB
-// maybe set up donation page
+
     return (
         <div className={cardStyle} >
 
@@ -152,7 +151,7 @@ const DrinkingGame = () => {
                 <ul className={isActive ? 'navbar_links_expanded' : 'navbar_links'} >
                     <Link style={{color:"black", textDecoration: 'none'}} to='/'><li className="menuLinks" onClick={hamburger_function}> 🏠 Home </li> </Link> 
                     <Link style={{color:"black", textDecoration: 'none'}}to='/rules'><li className="menuLinks" onClick={hamburger_function}> 📜 Rules </li> </Link>     
-                    <Link style={{color:"black", textDecoration: 'none'}} to={{pathname: "www.google.com"}} target="_blank"><li className="menuLinks" onClick={hamburger_function}> 📜 Leave a tip </li> </Link>     
+                   <a style={{color:"black", textDecoration: 'none'}} href="https://www.paypal.com/donate/?hosted_button_id=D5BVW5S73QRYE"  target="_blank"> <li className="tipLink" onClick={hamburger_function}> 🫙 Leave a tip </li> </a>
                 </ul>
             </div>
 

@@ -9,11 +9,7 @@ import Rules from './components/Rules';
 
 
 function App() {
-  const scrollLock = () => {
-    document.body.style.overflow = 'hidden';
-   }
-
-   scrollLock();
+  
   
   return (
     <div className ="App">

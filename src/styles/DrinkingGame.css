@@ -4,19 +4,285 @@
     .force_orientation {
         background-color: black;
         width: 100%;
-        height: 100%;
-
-
+        top:0;
+        bottom:0;
+        right:0;
+        left:0;
+        position:fixed;
+        
     }
 
     .force_orientation_image {
         width: 100%;
-        position: absolute;
-        margin-top: -1%;
-        height: 100%;
+        height: 150vw;
+    }
+
+    .next_card_button2 {
+        display: none;
+    }
+
+    .next_card_button2:hover {
+        display: none;
+    }
+
+    .next_card_button2:active {
+        display: none;
+    }
+
+    .home_button {
+        display: none;
+    }
+
+    .shearer_popup {
+        display: none;
+    }
+
+    .shearer_popup_gone {
+        display: none;
+    }
+
+    .speech_bubble {
+        display: none;
+    }
+
+    .speech_bubble_gone {
+        display: none;
+    }
+
+    .shearer_text_name {
+        display: none;
+    }
+
+    .shearer_text_name_gone {
+        display: none;
+    }
+
+    .shearer_text {
+        display: none;
+    }
+
+    .shearer_text_gone {
+        display: none;
+    }
+
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+
+        }
+
+        100% {
+            opacity: 100;
+
+        }
+    }
+
+    @keyframes fadeOut {
+        0% {
+            opacity: 100;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @keyframes shearerPulse {
+        0% {
+            width: 15%;
+        }
+
+        50% {
+            width: 15.5%;
+        }
+
+        100% {
+            width: 15%;
+        }
+    }
+
+    .white_wheel_container {
+        display: none;
+    }
+
+    .nameDivs {
+        display: none;
+
+    }
+
+
+
+    .game_container_earthquake {
+        display: none;
+    }
+
+    @keyframes rotating {
+        0% {
+            transform: rotate(2deg);
+        }
+
+        50% {
+            transform: rotate(-2deg);
+        }
+
+        100% {
+            transform: rotate(2deg);
+        }
+    }
+
+    .earthquake_container {
+        display: none;
+    }
+
+    .allcards {
+        display: none;
+    }
+
+    .earthquake_container_gone {
+        display: none;
+    }
+
+    .earthquake_image {
+        display: none;
+    }
+
+    .earthquake_title {
+        display: none;
+
+    }
+
+    .earthquake_description {
+        display: none;
+    }
+
+
+
+    .boozenami_container {
+        display: none;
+    }
+
+    .waves_image {
+        display: none;
+
+    }
+
+    @keyframes waves_moving {
+        0% {
+            transform: translateX(-10%);
+        }
+
+        50% {
+            transform: translateX(-90%);
+        }
+
+        100% {
+            transform: translateX(0%);
+        }
+    }
+
+    .boozenami_image {
+        display: none;
+    }
+
+    .boozenami_title {
+        display: none;
+
+    }
+
+    .boozenami_description {
+        display: none;
+    }
+
+    .genie_image {
+        display: none;
+    }
+
+    .genie_title {
+        display: none;
+
+    }
+
+    .genie_description {
+        display: none;
+    }
+
+    @keyframes genieFadeIn {
+        0% {
+            opacity: 0;
+
+        }
+
+        20% {
+            opacity: 50%;
+
+        }
+
+        40% {
+            opacity: 0;
+
+        }
+
+        60% {
+            opacity: 50%;
+
+        }
+
+        80% {
+            opacity: 0;
+
+        }
+
+
+        100% {
+            opacity: 100;
+
+        }
+    }
+
+    .hamburger_icon {
+        display: none;
+    }
+
+
+    .bar1,
+    .bar2,
+    .bar3 {
+        display: none;
+
+    }
+
+    .bar1change {
+        display: none;
+    }
+
+    .bar2change {
+        display: none;
+    }
+
+    .bar3change {
+        display: none;
+
+    }
+
+    .navbar_links_expanded {
+        display: none;
+    }
+
+    .navbar_links {
+        display: none;
+    }
+
+    .menuLinks {
+        display: none;
+    }
+
+    .tipLink {
+        display: none;
     }
 
 }
+
 
 /* --------------------------------------------------------------------------------------------------------------------------------------- */
 /* The CSS Below is for mobile in landscape orientation */
@@ -241,6 +507,15 @@
         animation: rotating 0.5s linear infinite;
     }
 
+    .game_container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        overflow: auto;
+    }
+
     @keyframes rotating {
         0% {
             transform: rotate(2deg);
@@ -306,7 +581,7 @@
         z-index: 1000;
         width: 1000%;
         animation: waves_moving 60s infinite;
-        margin-top:-10%;
+        margin-top: -10%;
     }
 
     @keyframes waves_moving {
@@ -425,9 +700,9 @@
     }
 
     .hamburger_icon {
-        position:relative;
+        position: relative;
         display: inline-block;
-        padding-right:2%;
+        padding-right: 2%;
         font-size: 2vw;
         cursor: pointer;
         text-align: center;
@@ -438,11 +713,11 @@
         border: none;
         border-radius: 15px;
         box-shadow: 0 9px #999;
-        margin-top:1%;
-        margin-bottom:3%;
-        margin-left:5.5%;
-        z-index:100000000000;
-        
+        margin-top: 1%;
+        margin-bottom: 3%;
+        margin-left: 5.5%;
+        z-index: 100000000000;
+
     }
 
 
@@ -454,8 +729,8 @@
         background-color: #000000;
         margin: 18%;
         transition: 0.4s;
-       
-        
+
+
     }
 
     .bar1change {
@@ -465,9 +740,9 @@
         margin: 18%;
         transition: 0.4s;
         transform: translate(0, 300%) rotate(-45deg);
-        
+
     }
-    
+
     .bar2change {
         width: 5vw;
         height: 0.4vw;
@@ -475,9 +750,9 @@
         margin: 18%;
         transition: 0.4s;
         opacity: 0;
-        
+
     }
-    
+
     .bar3change {
         width: 5vw;
         height: 0.4vw;
@@ -485,45 +760,46 @@
         margin: 18%;
         transition: 0.4s;
         transform: translate(0, -300%) rotate(45deg);
-        
+
     }
 
     .navbar_links_expanded {
         position: absolute;
         top: -3%;
-        padding-top:12%;
-        padding-right:2%;
-        height:100%;
+        padding-top: 12%;
+        padding-right: 2%;
+        height: 100%;
         left: 0%;
         width: 10%;
         display: inline;
         list-style-type: none;
-        text-decoration:none;
-        font-size: 1.5vw;
+        text-decoration: none;
+
         transition: 0.8s ease;
-        background-color: rgb(0, 128, 255);
+        background-color: rgba(0, 0, 0, 0.5);
         overflow: hidden;
         text-align: center;
+        z-index: 10000000;
     }
-    
+
     .navbar_links {
         position: absolute;
         width: 10%;
-        height:100%;
+        height: 100%;
         text-align: center;
         display: inline;
         list-style-type: none;
         left: 0%;
         transition: 1s ease;
         transform: translateY(-200%);
-        text-decoration:none;
+        text-decoration: none;
     }
 
     .menuLinks {
-        margin-bottom:30%;
-        font-size:2vw;
-        padding:20%;
-        font-size: 2vw;
+        margin-bottom: 30%;
+        font-size: 1.5vw;
+        padding: 20%;
+        font-size: 1.5vw;
         cursor: pointer;
         text-align: center;
         text-decoration: none;
@@ -537,12 +813,28 @@
 
     }
 
+    .tipLink {
+        margin-bottom: 30%;
+        font-size: 2vw;
+        padding: 5%;
+        font-size: 1.2vw;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #000000;
+        background-color: #d2d2d2;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+        font-weight: 600;
+    }
+
 }
 
 /* --------------------------------------------------------------------------------------------------------------------------------------- */
 /* The CSS Below is for Desktop */
 @media only screen and (min-width:992px) {
-
 
     .next_card_button2 {
         position: absolute;
@@ -835,7 +1127,7 @@
         z-index: 1000;
         width: 1000%;
         animation: waves_moving 60s infinite;
-        margin-top:-10%;
+        margin-top: -10%;
 
     }
 
@@ -956,9 +1248,9 @@
     }
 
     .hamburger_icon {
-        position:relative;
+        position: relative;
         display: inline-block;
-        padding-right:2%;
+        padding-right: 2%;
         font-size: 2vw;
         cursor: pointer;
         text-align: center;
@@ -969,10 +1261,10 @@
         border: none;
         border-radius: 15px;
         box-shadow: 0 9px #999;
-        margin-top:1%;
-        margin-bottom:1.5%;
-        margin-left:3.5%;
-        z-index:100000000000;
+        margin-top: 1%;
+        margin-bottom: 1.5%;
+        margin-left: 3.5%;
+        z-index: 10000000000000;
     }
 
 
@@ -984,7 +1276,7 @@
         background-color: #000000;
         margin: 18%;
         transition: 0.4s;
-        
+
     }
 
     .bar1change {
@@ -995,7 +1287,7 @@
         transition: 0.4s;
         transform: translate(0, 300%) rotate(-45deg);
     }
-    
+
     .bar2change {
         width: 5vw;
         height: 0.4vw;
@@ -1004,7 +1296,7 @@
         transition: 0.4s;
         opacity: 0;
     }
-    
+
     .bar3change {
         width: 5vw;
         height: 0.4vw;
@@ -1012,44 +1304,45 @@
         margin: 18%;
         transition: 0.4s;
         transform: translate(0, -300%) rotate(45deg);
-        
+
     }
 
     .navbar_links_expanded {
         position: absolute;
         top: -3%;
-        padding-top:12%;
-        padding-right:2%;
-        height:100%;
+        padding-top: 12%;
+        padding-right: 2%;
+        height: 100%;
         left: 0%;
         width: 10%;
         display: inline;
         list-style-type: none;
-        text-decoration:none;
+        text-decoration: none;
         font-size: 1.5vw;
         transition: 0.8s ease;
         background-color: rgba(0, 0, 0, 0.5);
         overflow: hidden;
         text-align: center;
+        z-index: 10000000;
     }
-    
+
     .navbar_links {
         position: absolute;
         width: 10%;
-        height:100%;
+        height: 100%;
         text-align: center;
         display: inline;
         list-style-type: none;
         left: 0%;
         transition: 1s ease;
         transform: translateY(-200%);
-        text-decoration:none;
+        text-decoration: none;
     }
 
     .menuLinks {
-        margin-bottom:30%;
-        font-size:2vw;
-        padding:20%;
+        margin-bottom: 30%;
+        font-size: 2vw;
+        padding: 20%;
         font-size: 2vw;
         cursor: pointer;
         text-align: center;
@@ -1061,9 +1354,26 @@
         border-radius: 15px;
         box-shadow: 0 9px #999;
         font-weight: 600;
-
     }
-    
+
+    .tipLink {
+        margin-bottom: 30%;
+        font-size: 2vw;
+        padding: 5%;
+        font-size: 1.5vw;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #000000;
+        background-color: #d2d2d2;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+        font-weight: 600;
+    }
+
+
 
 
 }
