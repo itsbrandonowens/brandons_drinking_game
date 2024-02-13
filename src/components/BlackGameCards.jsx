@@ -1,6 +1,7 @@
 import React from 'react'
 import '../styles/GameCards.css'
 import black_card from "./images/black_card.png"
+import black_card_mobile from "./images/black_card_mobile.png"
 import { useState, } from 'react';
 
 const BlackGameCards = () => {
@@ -54,7 +55,7 @@ const BlackGameCards = () => {
     return (
 
         <div className="card_container">
-           <img src={black_card} className="cards" alt="black_card"></img>
+           <img src={window.innerWidth > 767 ? black_card : black_card_mobile} className="cards" alt="black_card"></img>
            <div className="card_contents">
                 <h2 className="card_title"> {randomValue.title} </h2>
                 <p className="card_player_name">{storedNames[assignedNameCard]}</p>

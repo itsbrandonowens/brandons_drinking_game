@@ -1,6 +1,7 @@
 import React from 'react'
 import '../styles/GameCards.css'
 import white_card from "./images/white_card.png"
+import white_card_mobile from "./images/white_card_mobile.png"
 import SpinningWheel from './SpinningWheel'
 
 const WhiteGameCards = () => {
@@ -18,7 +19,7 @@ const WhiteGameCards = () => {
     return (
 
         <div className="card_container">
-            <img src={white_card} className="cards" alt="white_card"></img>
+            <img src={window.innerWidth > 767 ? white_card : white_card_mobile} className="cards" alt="white_card"></img>
             <div className="card_contents">
                 <h2 className="card_title"> {randomValue.title} </h2>
                 <p className="card_player_name">{storedNames[assignedNameCard]}</p>

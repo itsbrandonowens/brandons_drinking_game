@@ -1,6 +1,7 @@
 import React from 'react'
 import '../styles/GameCards.css'
 import purple_card from "./images/purple_card.png"
+import purple_card_mobile from "./images/purple_card_mobile.png"
 import DiceComponent from './DiceComponent';
 import { useState, useEffect } from 'react';
 
@@ -70,7 +71,7 @@ const PurpleGameCards = () => {
     return (
 
         <div className="card_container">
-            <img src={purple_card} className="cards" alt="purple_card"></img>
+            <img src={window.innerWidth > 767 ? purple_card : purple_card_mobile} className="cards" alt="purple_card"></img>
             <div className="card_contents">
                 <h2 className="card_title"> {randomValue.title} </h2>
                 <p className="card_player_name">{storedNames[assignedNameCard]}</p>

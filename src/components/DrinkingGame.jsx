@@ -19,12 +19,15 @@ import earthquake_image from './images/earthquake_image.png'
 import boozenami_image from './images/boozenami.png'
 import waves_image from './images/waves_image.png'
 import genie_image from './images/genie_image.png'
+import reflect_shield from './images/reflect_shield.png'
 
 const DrinkingGame = () => {
     const [num, setNum] = useState(5);
     const [prevNum, setPrevNum] = useState(5);
     const [shearerNum, setShearerNum] = useState(0);
     const storedNames = JSON.parse(localStorage.getItem("player names"))
+    let randomName = storedNames[Math.floor(Math.random() * storedNames.length)];
+    const [assignedName, setAssignedName] = useState(0);
     const [shearerStyle, setShearerStyle] = useState("shearer_popup_gone")
     const [speechBubbleStyle, setSpeechBubbleStyle] = useState("speech_bubble_gone")
     const [shearerTextStyle, setShearerTextStyle] = useState("shearer_text_gone")
@@ -36,8 +39,8 @@ const DrinkingGame = () => {
     const [boozenamiNum, setBoozenamiNum] = useState(0);
     const [genieNum, setGenieNum] = useState(0);
     const [genieDetailsStyle, setGenieDetailsStyle] = useState("earthquake_container_gone")
-    let randomName = storedNames[Math.floor(Math.random() * storedNames.length)];
-    const [assignedName, setAssignedName] = useState(0);
+    const [shieldNum, setShieldNum] = useState(0);
+    const [shieldDetailsStyle, setShieldDetailsStyle] = useState("earthquake_container_gone")
     
 
 
@@ -52,37 +55,69 @@ const DrinkingGame = () => {
     let [isActive, setActive] = useState(false)
     let hamburger_function = () => {
         setActive(!isActive);
-        
+        setIsFeatureDisableActive(false)
     };
 
-    //Genie Function 
-    const genieFunction = () => {
-        setGenieNum(randomNumberInRange(1, 100));
-        if (genieNum == 1 && earthquakeNum !== 1 && boozenamiNum !== 1) {
-            setGenieDetailsStyle("genie_container")
-        } else {
-            setGenieDetailsStyle("earthquake_container_gone")
-        }
+    /////////////////////////////////////////////////////////////////////////// Disable Features
+    let [isFeatureDisableActive, setIsFeatureDisableActive] = useState(false)
+    let disable_feature_popup = () => {
+        setIsFeatureDisableActive(!isFeatureDisableActive)
     }
 
-    //Boozenami Function 
-    const boozenamiFunction = () => {
-        setBoozenamiNum(randomNumberInRange(1, 100));
+    //Disable Shearer
+    let [featureDisableS, setFeatureDisableS] = useState(false)
+    let disable_shearer = () => {
+        setFeatureDisableS(!featureDisableS);
+    };
 
-        if (boozenamiNum == 1 && earthquakeNum !== 1) {
-            setBoozenamiDetailsStyle("boozenami_container")
-            setNum("101")
+    //Disable Earthquake
+    let [featureDisableE, setFeatureDisableE] = useState(false)
+    let disable_earthquake = () => {
+        setFeatureDisableE(!featureDisableE);
+    };
+
+    //Disable Boozenami
+    let [featureDisableB, setFeatureDisableB] = useState(false)
+    let disable_boozenami = () => {
+        setFeatureDisableB(!featureDisableB);
+    };
+
+    //Disable Genie
+    let [featureDisableG, setFeatureDisableG] = useState(false)
+    let disable_genie = () => {
+        setFeatureDisableG(!featureDisableG);
+    };
+
+    //Disable Shield
+    let [featureDisableShield, setFeatureDisableShield] = useState(false)
+    let disable_shield = () => {
+        setFeatureDisableShield(!featureDisableShield);
+    };
+
+
+
+    /////////////////////////////////////////////////////////////////////////// Features
+    //Shearer Function
+    const shearerFunction = () => {
+        setShearerNum(randomNumberInRange(1, 50));
+
+        if (shearerNum == 1) {
+            setShearerStyle("shearer_popup")
+            setSpeechBubbleStyle("speech_bubble")
+            setShearerNameStyle("shearer_text_name")
+            setShearerTextStyle("shearer_text")
         } else {
-
-            setBoozenamiDetailsStyle("earthquake_container_gone")
-
+            setShearerStyle("shearer_popup_gone")
+            setSpeechBubbleStyle("speech_bubble_gone")
+            setShearerNameStyle("shearer_text_name_gone")
+            setShearerTextStyle("shearer_text_gone")
         }
 
     }
 
     // Earthquake Function
     const earthquakeFunction = () => {
-        setEarthquakeNum(randomNumberInRange(1, 80));
+        setEarthquakeNum(randomNumberInRange(1, 120));
 
         if (earthquakeNum == 1) {
             setCardStyle("game_container_earthquake")
@@ -100,24 +135,45 @@ const DrinkingGame = () => {
 
     }
 
-    //Shearer Function
-    const shearerFunction = () => {
-        setShearerNum(randomNumberInRange(1, 30));
 
-        if (shearerNum == 1) {
-            setShearerStyle("shearer_popup")
-            setSpeechBubbleStyle("speech_bubble")
-            setShearerNameStyle("shearer_text_name")
-            setShearerTextStyle("shearer_text")
+    //Boozenami Function 
+    const boozenamiFunction = () => {
+        setBoozenamiNum(randomNumberInRange(1, 150));
+
+        if (boozenamiNum == 1 && earthquakeNum !== 1) {
+            setBoozenamiDetailsStyle("boozenami_container")
+            setNum("101")
         } else {
-            setShearerStyle("shearer_popup_gone")
-            setSpeechBubbleStyle("speech_bubble_gone")
-            setShearerNameStyle("shearer_text_name_gone")
-            setShearerTextStyle("shearer_text_gone")
+
+            setBoozenamiDetailsStyle("earthquake_container_gone")
+
         }
 
     }
-    // This is called everytime the "next card" button is pressed  
+
+    //Genie Function 
+    const genieFunction = () => {
+        setGenieNum(randomNumberInRange(1, 120));
+        if (genieNum == 1 && earthquakeNum !== 1 && boozenamiNum !== 1) {
+            setGenieDetailsStyle("genie_container")
+        } else {
+            setGenieDetailsStyle("earthquake_container_gone")
+        }
+    }
+
+    //Shield Function 
+    const shieldFunction = () => {
+        setShieldNum(randomNumberInRange(1, 100));
+        if (shieldNum == 1 && earthquakeNum !== 1 && boozenamiNum !== 1 && genieNum !== 1) {
+            setShieldDetailsStyle("shield_container")
+        } else {
+            setShieldDetailsStyle("earthquake_container_gone")
+        }
+    }
+
+
+
+    /////////////////////////////////////////////////////////////////////////// Next Card Function 
     const OnClick = () => {
         setPrevNum(num);
         setNum(randomNumberInRange(1, 100));
@@ -127,13 +183,58 @@ const DrinkingGame = () => {
             setNum(randomNumberInRange(1, 100));
             //This prevents the wheel from spinning twice in a row  
         }
-        shearerFunction();
-        earthquakeFunction();
-        boozenamiFunction();
-        genieFunction();
+
+        //Shearer
+        if (featureDisableS === true) {
+            setShearerNum(2)
+            setShearerStyle("shearer_popup_gone")
+            setSpeechBubbleStyle("speech_bubble_gone")
+            setShearerNameStyle("shearer_text_name_gone")
+            setShearerTextStyle("shearer_text_gone")
+
+        } else {
+            shearerFunction();
+        }
+
+        //Earthquake
+        if (featureDisableE === true) {
+            setEarthquakeNum(2)
+            setEarthquakeDetailsStyle("earthquake_container_gone")
+            setCardStyle("game_container")
+        } else {
+            earthquakeFunction();
+        }
+
+        //Boozenami
+        if (featureDisableB === true) {
+            setBoozenamiNum(2)
+            setBoozenamiDetailsStyle("earthquake_container_gone")
+        } else {
+            boozenamiFunction();
+        }
+
+        //Genie
+        if (featureDisableG === true) {
+            setGenieNum(2)
+            setGenieDetailsStyle("earthquake_container_gone")
+        } else {
+            genieFunction();
+        }
+
+        //Shield
+        if (featureDisableShield === true) {
+            setShieldNum(2)
+            setShieldDetailsStyle("earthquake_container_gone")
+        } else {
+            shieldFunction();
+        }
+
+        //Sets Name
         setAssignedName(prev => ([prev + 1] % storedNames.length))
         localStorage.setItem("assignedName", JSON.stringify(assignedName))
     }
+
+    /////////////////////////////////////////////////////////////////////////// HTML
 
     return (
         <div className={cardStyle} >
@@ -142,17 +243,26 @@ const DrinkingGame = () => {
                 <img src={rotate_device} className="force_orientation_image" ></img>
             </div>
 
-            <div className="hamburger_icon"  onClick={hamburger_function}>
+            <div className="hamburger_icon" onClick={hamburger_function}>
                 <div class={isActive ? "bar1change" : "bar1"}></div>
                 <div class={isActive ? "bar2change" : "bar2"}></div>
                 <div class={isActive ? "bar3change" : "bar3"}></div>
             </div>
             <div className="navbar_container">
                 <ul className={isActive ? 'navbar_links_expanded' : 'navbar_links'} >
-                    <Link style={{color:"black", textDecoration: 'none'}} to='/'><li className="menuLinks" onClick={hamburger_function}> 🏠 Home </li> </Link> 
-                    <Link style={{color:"black", textDecoration: 'none'}}to='/rules'><li className="menuLinks" onClick={hamburger_function}> 📜 Rules </li> </Link>     
-                   <a style={{color:"black", textDecoration: 'none'}} href="https://www.paypal.com/donate/?hosted_button_id=D5BVW5S73QRYE"  target="_blank"> <li className="tipLink" onClick={hamburger_function}> 🫙 Leave a tip </li> </a>
+                    <Link style={{ color: "black", textDecoration: 'none' }} to='/'><li className="menuLinks" onClick={hamburger_function}> 🏠 Home </li> </Link>
+                    <Link style={{ color: "black", textDecoration: 'none' }} to='/rules'><li className="menuLinks" onClick={hamburger_function}> 📜 Rules </li> </Link>
+                    <li className="menuLinks" onClick={disable_feature_popup}> 📜 Disable Features </li>
+                    <a style={{ color: "black", textDecoration: 'none' }} href="https://www.paypal.com/donate/?hosted_button_id=D5BVW5S73QRYE" target="_blank"> <li className="tipLink" onClick={hamburger_function}> 🫙 Leave a tip </li> </a>
                 </ul>
+            </div>
+
+            <div className={isFeatureDisableActive ? "disable_features_popup" : "disable_features_popup_gone"}>
+                <button className={featureDisableS ? "feature_checkbox_off" : "feature_checkbox_on"} onClick={disable_shearer}>  <img src={shearer_image} className="feature_popup_image" />  </button>
+                <button className={featureDisableE ? "feature_checkbox_off" : "feature_checkbox_on"} onClick={disable_earthquake}>  <img src={earthquake_image} className="feature_popup_image" />  </button>
+                <button className={featureDisableB ? "feature_checkbox_off" : "feature_checkbox_on"} onClick={disable_boozenami}>  <img src={boozenami_image} className="feature_popup_image" />  </button>
+                <button className={featureDisableG ? "feature_checkbox_off" : "feature_checkbox_on"} onClick={disable_genie}>  <img src={genie_image} className="feature_popup_image" />  </button>
+                <button className={featureDisableShield ? "feature_checkbox_off" : "feature_checkbox_on"} onClick={disable_shield}>  <img src={reflect_shield} className="feature_popup_image" />  </button>
             </div>
 
             <div className={earthquakeDetailsStyle}>
@@ -174,11 +284,17 @@ const DrinkingGame = () => {
                 <img src={genie_image} className="genie_image"></img>
 
                 <h2 className="genie_description">  Give 1 drink out, create 1 rule and refuse your next forfeit!</h2>
+            </div>
 
+            <div className={shieldDetailsStyle}>
+                <h1 className="shield_title"> {randomName} found a shield!</h1>
+                <img src={reflect_shield} className="shield_image"></img>
+                <h2 className="shield_description"> Pass your next forfeit onto a player of your choosing!</h2>
+                
             </div>
 
 
-            
+
             {num >= 1 && num <= 2 ?
                 <BlackGameCards /> : null // Black -  2% chance
             }
@@ -216,7 +332,7 @@ const DrinkingGame = () => {
 
 
 
-            <button className="next_card_button2" onClick={OnClick}>Next Card</button>
+            <button className="next_card_button" onClick={OnClick}>Next Card</button>
         </div>
 
 

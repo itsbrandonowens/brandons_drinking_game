@@ -1,6 +1,7 @@
 import React from 'react'
 import '../styles/GameCards.css'
 import yellow_card from "./images/yellow_card.png"
+import yellow_card_mobile from "./images/yellow_card_mobile.png"
 import HigherOrLowerComponent from './HigherOrLowerComponent'
 import RingOfFireComponent from './RingOfFireComponent'
 
@@ -28,7 +29,7 @@ const YellowGameCards = () => {
     return ( 
 
         <div className="card_container">
-            <img src={yellow_card} className="cards" alt="yellow_card"></img>
+            <img src={window.innerWidth > 767 ? yellow_card : yellow_card_mobile} className="cards" alt="yellow_card"></img>
             <div className="card_contents">
                 <h2 className="card_title"> {randomValue.title} </h2>
                 <p className="card_player_name">{storedNames[assignedNameCard]}</p>

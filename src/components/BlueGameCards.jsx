@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/GameCards.css'
 import blue_card from "./images/blue_card.png"
-
+import blue_card_mobile from "./images/blue_card_mobile.png"
 const BlueGameCards = () => {
     const storedNames = JSON.parse(localStorage.getItem("player names"))
     let randomName = storedNames[Math.floor(Math.random() * storedNames.length)];
@@ -110,7 +110,7 @@ const BlueGameCards = () => {
     return (
 
         <div className="card_container">
-           <img src={blue_card} className="cards" alt="blue_card"></img>
+           <img src={window.innerWidth > 767 ? blue_card : blue_card_mobile} className="cards" alt="blue_card"></img>
            <div className="card_contents">
                 <h2 className="card_title"> {randomValue.title} </h2>
                 <p className="card_player_name">{storedNames[assignedNameCard]}</p>
