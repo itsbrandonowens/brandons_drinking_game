@@ -233,6 +233,46 @@ const GreenGameCards = () => {
             title: 'Phones on The Table!',
             description: 'Everyone put your phones on the table, next person to get a notification must drink!'
         },
+        { 
+            title: 'Nutter Ex!',
+            description: 'Point to the person with the craziest ex, they must drink!'
+        },
+        { 
+            title: 'Top Shaggas!',
+            description: 'All players must take a drink for each person they have slept with!'
+        },
+        { 
+            title: 'Top and Bottom Shaggas!',
+            description: 'Players with the highest and lowest body count must drink!'
+        },
+        { 
+            title: 'Say it or drink it!',
+            description: 'Say your most embarrasing sex story, or drink half of your drink!'
+        },
+        { 
+            title: 'Say it or drink it!',
+            description: 'Say the worst thing you have ever done in your life, or drink 5 sips!'
+        },
+        { 
+            title: 'Caught White Handed!',
+            description: 'Drink if you have ever been caught masturbating'
+        },
+        { 
+            title: 'Caught Balls Deep!',
+            description: 'Drink if you have ever been caught having sex'
+        },
+        { 
+            title: 'Piercings!',
+            description: 'Everyone, take a drink for every piercing you have'
+        },
+        { 
+            title: 'Tattoos!',
+            description: 'Everyone, take a drink for every tattoo you have'
+        },
+        { 
+            title: 'Hobbit!',
+            description: 'Take a drink for every person, in this game, who is taller than you'
+        },
         
 
         

@@ -70,6 +70,18 @@ const RedGameCards = () => {
             title: 'Most Likely To: Win in a Fight',
             description: 'Everyone must vote who, out of these two players, is most likely to win in a fight. Loser must drink.'
         },
+        {
+            title: 'Awful Lodger',
+            description: 'Everyone must vote who, out of these two players, would be the most annoying person to live with, they must drink.'
+        },
+        {
+            title: 'Dont Drop The Soap!',
+            description: 'Everyone must vote, if these two players were in prison, who would be the prison bitch?'
+        },
+        {
+            title: 'Reeel Badman!',
+            description: 'Everyone must vote who, out of these two players, could end up having a kid first?'
+        },
 
 
 

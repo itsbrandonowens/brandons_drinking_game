@@ -7,8 +7,11 @@ import LastOrdersLogo from "./images/LastOrdersLogo.png"
 import { Link } from 'react-router-dom';
 import privacy_policy from "./images/privacy_policy.pdf"
 import cookie_policy from "./images/cookie_policy.pdf"
-import x_logo from "./images/x_logo.jpg"
+import x_logo from "./images/x_logo.png"
 import facebook_logo from "./images/facebook_logo.png"
+import tiktok_logo from "./images/tiktok_logo.png"
+
+
 const Home = () => {
     const [rulesStyle, setRulesStyle] = useState("rules_container_gone")
     const [enterNamesStyle, setEnterNamesStyle] = useState("enter_names_gone");
@@ -31,20 +34,11 @@ const Home = () => {
         <div className="home_container">
             <div className={homeStyle}>
                 <a href="https://twitter.com/LastOrdersGame" target="_blank"> <img src={x_logo} className="x_logo_homepage" alt="x_logo"></img> </a>
-                <a href="https://www.facebook.com/profile.php?id=61556201727778" target="_blank"> <img src={facebook_logo} className="facebook_logo_homepage" alt="x_logo"></img> </a>
+                <a href="https://www.facebook.com/profile.php?id=61556201727778" target="_blank"> <img src={facebook_logo} className="facebook_logo_homepage" alt="facebook_logo"></img> </a>
+                <a href="https://www.tiktok.com/@lastordersgame" target="_blank"> <img src={tiktok_logo} className="tiktok_logo_homepage" alt="tiktok_logo"></img> </a>
                 <img src={LastOrdersLogo} className="lologo" alt="last_orders_logo"></img>
                 <button className="start_game_button" onClick={firstTransition}> Click Here to Start </button>
             </div>
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3401357378524890"
-                crossorigin="anonymous"></script>
-            <ins class="adsbygoogle"
-                data-ad-client="ca-pub-3401357378524890"
-                data-ad-slot="1335311516"
-                data-ad-format="auto"
-                data-full-width-responsive="true"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({ });
-            </script>
             <div className={rulesStyle}>
 
                 <div className="rules_grid">
@@ -56,7 +50,7 @@ const Home = () => {
                     </div>
                     <div className="rules_grid_item">
                         <div className="legal_rules_container">
-                            <p className="rules_text_legal">⛔ Everyone playing must be over the age of 18</p>
+                            <p className="rules_text_legal">⛔ Everyone playing must be 18 or over</p>
                             <p className="rules_text_legal">🍻 Everyone must drink responsibly</p>
                             <p className="rules_text_legal">🍪 Continue if you agree to our <a href={privacy_policy} className="policy_links" target="_blank" > Privacy</a>  and <a href={cookie_policy} className="policy_links" target="_blank"> Cookie</a>  Policy</p>
                         </div>

@@ -23,6 +23,12 @@
         -webkit-user-select: none;
         touch-action: manipulation;
         margin-top: 125%;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    }
+    .game_without_menu_container{
+        opacity:0.4;
+        pointer-events:none;
     }
 
     .next_card_button:hover {
@@ -35,11 +41,46 @@
 
     }
 
+    .next_card_button_feature {
+        position: absolute;
+        right: 22%;
+        padding: 15px 25px;
+        font-size: 10vw;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #000000;
+        z-index: 2000;
+        background-color: #ffffff;
+        border: 2px solid #000000;
+        border-radius: 30px;
+        box-shadow: #000000 4px 4px 0 0;
+        color: #000000;
+        font-weight: 600;
+        text-decoration: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        margin-top: 125%;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .next_card_button_feature:hover {
+        background-color: #fff;
+    }
+
+    .next_card_button_feature:active {
+        box-shadow: #000000 2px 2px 0 0;
+        transform: translate(2px, 2px);
+
+    }
+
     .shearer_popup {
         position: absolute;
         top: 25%;
         width: 40%;
-        left:-10%;
+        left: -10%;
         transition: 4s;
     }
 
@@ -47,7 +88,7 @@
         position: absolute;
         top: 25%;
         width: 40%;
-        left:-10%;
+        left: -10%;
         transition: 4s;
         transform: translateX(4000px);
 
@@ -130,7 +171,7 @@
         position: absolute;
         top: 12%;
         left: 28%;
-        font-size:5vw;
+        font-size: 5vw;
         animation-name: fadeOut;
         animation-duration: 0.2s;
         animation-iteration-count: 1;
@@ -250,7 +291,7 @@
         z-index: 10000;
         width: 80%;
         top: 35%;
-        left:10%;
+        left: 10%;
         animation: fadeIn 1s;
     }
 
@@ -290,7 +331,7 @@
         z-index: 1000;
         width: 3500%;
         animation: waves_moving 60s infinite;
-        margin-top:-5%;
+        margin-top: -5%;
     }
 
     @keyframes waves_moving {
@@ -312,14 +353,14 @@
         z-index: 100000;
         top: 25%;
         width: 70%;
-        left:10%;
+        left: 10%;
         filter: drop-shadow(0px 0px 15px #292929);
     }
 
     .boozenami_title {
         position: absolute;
         top: 10%;
-        left:20%;
+        left: 20%;
         z-index: 100000;
         font-size: 10vw;
         filter: drop-shadow(0px 0px 15px #292929);
@@ -346,7 +387,7 @@
         z-index: 100000;
         top: 60%;
         width: 40%;
-        left:-10%;
+        left: -10%;
         filter: drop-shadow(0px 0px 15px #292929);
         animation: genieFadeIn 5s;
     }
@@ -490,7 +531,7 @@
         top: -3%;
         padding-top: 5%;
         padding-left: 25%;
-        padding-bottom: 8%;
+        padding-bottom: 5%;
         width: 100%;
         list-style-type: none;
         text-decoration: none;
@@ -498,7 +539,6 @@
         background-color: rgba(0, 0, 0, 0.5);
         overflow: hidden;
         z-index: 10000000;
-
     }
 
     .navbar_links {
@@ -508,7 +548,7 @@
         top: -3%;
         padding-top: 5%;
         padding-left: 25%;
-        padding-bottom: 8%;
+        padding-bottom: 5%;
         width: 100%;
         list-style-type: none;
         text-decoration: none;
@@ -532,15 +572,13 @@
         background-color: #ffffff;
         border: none;
         border-radius: 15px;
-        box-shadow: 0 9px #999;
+        box-shadow: 0 4px #999;
         font-weight: 600;
         height: 10vw;
         width: 10vw;
         margin-right: 10px;
-        padding: 10px;
+        padding: 12px;
     }
-
-
 
     .menuLinks:active {
         box-shadow: #000000 2px 2px 0 0;
@@ -557,7 +595,7 @@
         background-color: #d2d2d2;
         border: none;
         border-radius: 15px;
-        box-shadow: 0 9px #999;
+        box-shadow: 0 4px #999;
         font-weight: 600;
         padding: 10px;
         height: 10vw;
@@ -709,6 +747,91 @@
         }
     }
 
+    .chest_container {
+        width: 100%;
+        margin-top: 50%;
+        margin-bottom:-60%;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: 50% 50%;
+    }
+
+    .chest_individual_container{
+    }
+
+    .chest_individual_container_not_picked{
+        opacity:0.6;
+        pointer-events:none;
+    }
+
+    .chest_grid_item {
+    }
+
+    .chest_title_container{
+        position: absolute;
+        left:0;
+        right:0;
+        
+    }
+    .chest_title {
+        margin-top:-30%;
+        z-index: 100000;
+        font-size: 7vw;
+        filter: drop-shadow(0px 0px 15px #292929);
+        color: white;
+        padding: 2%;
+        justify-content:center;
+        align-items: center;
+        display:flex;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .chest_title_gone {
+        display: none;
+    }
+
+    .chest_bottom_image {
+        position: absolute;
+        width: 30%;
+    }
+
+    .chest_top_image {
+        position: absolute;
+        width: 30%;
+        margin-top:1%;
+        z-index:10;
+    }
+
+    .chest_top_image_moved {
+        position: absolute;
+        margin-top:1%;
+        width: 30%;
+        transform: translateY(-80px);
+        transition: 1s;
+        z-index:10;
+    }
+
+    .forfeit_container{
+        position:absolute;
+        width:25%;
+        z-index: 100;
+        margin-left:2%;
+    }
+
+    .random_forfeit_text {
+        justify-content:center;
+        align-items: center;
+        display:flex;
+        margin-top:20%;
+        font-size: 2.5vw;
+        font-weight:10000;
+        filter: drop-shadow(0px 0px 20px #727272);
+        color: rgb(255, 255, 255);
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background:rgb(0, 0, 0,0.7);
+        border-radius: 10px;    
+    }
+
 }
 
 /* --------------------------------------------------------------------------------------------------------------------------------------- */
@@ -737,6 +860,11 @@
         -webkit-user-select: none;
         touch-action: manipulation;
         margin-top: 7%;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .game_without_menu_container{
+        opacity:0.4;
+        pointer-events:none;
     }
 
     .next_card_button:hover {
@@ -746,6 +874,42 @@
     .next_card_button:active {
         box-shadow: #000000 2px 2px 0 0;
         transform: translate(2px, 2px);
+        -webkit-transform: rotate(90deg);
+    }
+
+    .next_card_button_feature {
+        position: absolute;
+        right: 1%;
+        padding: 15px 25px;
+        font-size: 5.6vw;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        -webkit-transform: rotate(90deg);
+        outline: none;
+        color: #000000;
+        z-index: 2000;
+        background-color: #ffffff;
+        border: 2px solid #000000;
+        border-radius: 30px;
+        box-shadow: #000000 4px 4px 0 0;
+        color: #000000;
+        font-weight: 600;
+        text-decoration: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        top: 40%;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .next_card_button_feature:hover {
+        background-color: #ededed;
+    }
+
+    .next_card_button_feature:active {
+        box-shadow: #000000 2px 2px 0 0;
+        transform: translate(4px, 4px);
         -webkit-transform: rotate(90deg);
     }
 
@@ -1277,12 +1441,27 @@
         transform: translate(2px, 2px);
     }
 
+    
+
     .disable_features_popup {
         position: absolute;
         z-index: 10000;
         top: 2%;
         margin-left: 18%;
         filter: drop-shadow(0px 0px 15px #292929);
+
+    }
+
+    .disable_features_popup {
+        position: absolute;
+        display:flex;
+        z-index: 10000;
+        top: 2%;
+        left: 0%;
+        filter: drop-shadow(0px 0px 15px #292929);
+        background:white;
+        border-radius:10px;
+        width:65%;
 
     }
 
@@ -1300,24 +1479,26 @@
 
     .feature_checkbox_on {
         background-color: rgb(71, 177, 65);
-        margin: 5%;
+        margin: 1%;
         display: flex;
         text-decoration: none;
         user-select: none;
         -webkit-user-select: none;
         touch-action: manipulation;
         border: none;
+        padding:1%;
     }
 
     .feature_checkbox_off {
         background-color: rgb(172, 56, 56);
-        margin: 5%;
+        margin: 1%;
         display: flex;
         text-decoration: none;
         user-select: none;
         -webkit-user-select: none;
         touch-action: manipulation;
         border: none;
+        padding:1%;
     }
 
     .shield_image {
@@ -1407,6 +1588,94 @@
         }
     }
 
+    .chest_container {
+        width: 75%;
+        margin-left: 5%;
+        margin-top: 12%;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: 50% 50%;
+    }
+
+    .chest_individual_container{
+
+    }
+
+    .chest_individual_container_not_picked{
+        opacity:0.6;
+        pointer-events:none;
+    }
+
+    .chest_grid_item {}
+
+    .chest_title_container{
+        position: absolute;
+        width:70%;
+
+    }
+    .chest_title {
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin-top:-15%;
+        z-index: 100000;
+        font-size: 4vw;
+        width:100%;
+        filter: drop-shadow(0px 0px 15px #292929);
+        color: white;
+        padding: 2%;
+        justify-content:center;
+        align-items: center;
+        display:flex;
+    }
+
+    .chest_title_gone {
+        display: none;
+    }
+
+    .chest_bottom_image {
+        position: absolute;
+        width: 20%;
+
+    }
+
+    .chest_top_image {
+        position: absolute;
+        width: 20%;
+        margin-top:1%;
+        z-index:10;
+        cursor:pointer;
+    }
+
+    .chest_top_image_moved {
+        position: absolute;
+        margin-top:1%;
+        width: 20%;
+        transform: translateY(-100px);
+        transition: 1s;
+        z-index:10;
+    }
+
+    .forfeit_container{
+        position:absolute;
+        width:22%;
+        z-index: 100;
+        margin-left:-1%;
+    }
+
+    .random_forfeit_text {
+        justify-content:center;
+        align-items: center;
+        display:flex;
+        margin-top:20%;
+        font-size: 2vw;
+        font-weight:10000;
+        filter: drop-shadow(0px 0px 20px #727272);
+        color: rgb(255, 255, 255);
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background:rgb(0, 0, 0,0.7);
+        border-radius: 10px;    
+    }
+ 
+
 }
 
 /* --------------------------------------------------------------------------------------------------------------------------------------- */
@@ -1437,6 +1706,7 @@
         user-select: none;
         -webkit-user-select: none;
         touch-action: manipulation;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 
     .next_card_button:hover {
@@ -1444,6 +1714,42 @@
     }
 
     .next_card_button:active {
+        box-shadow: #000000 2px 2px 0 0;
+        transform: translate(4px, 4px);
+        -webkit-transform: rotate(90deg);
+    }
+
+    .next_card_button_feature {
+        position: absolute;
+        right: 1%;
+        padding: 15px 25px;
+        font-size: 5.6vw;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        -webkit-transform: rotate(90deg);
+        outline: none;
+        color: #000000;
+        z-index: 2000;
+        background-color: #ffffff;
+        border: 2px solid #000000;
+        border-radius: 30px;
+        box-shadow: #000000 4px 4px 0 0;
+        color: #000000;
+        font-weight: 600;
+        text-decoration: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        top: 40%;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .next_card_button_feature:hover {
+        background-color: #ededed;
+    }
+
+    .next_card_button_feature:active {
         box-shadow: #000000 2px 2px 0 0;
         transform: translate(4px, 4px);
         -webkit-transform: rotate(90deg);
@@ -1915,6 +2221,7 @@
         transition: 2s ease;
         transform: translateY(-300%);
         text-decoration: none;
+        z-index: 10000000;
     }
 
     .menuLinks {
@@ -1972,11 +2279,20 @@
 
     .disable_features_popup {
         position: absolute;
+        display:flex;
         z-index: 10000;
-        top: 5%;
+        top: 2%;
         left: 15%;
         filter: drop-shadow(0px 0px 15px #292929);
+        background:white;
+        border-radius:10px;
+        width:65%;
 
+    }
+
+    .game_without_menu_container{
+        opacity:0.4;
+        pointer-events:none;
     }
 
     .disable_features_popup_gone {
@@ -1993,24 +2309,26 @@
 
     .feature_checkbox_on {
         background-color: rgb(71, 177, 65);
-        margin: 5%;
+        margin: 1%;
         display: flex;
         text-decoration: none;
         user-select: none;
         -webkit-user-select: none;
         touch-action: manipulation;
         border: none;
+        padding:1%;
     }
 
     .feature_checkbox_off {
         background-color: rgb(172, 56, 56);
-        margin: 5%;
+        margin: 1%;
         display: flex;
         text-decoration: none;
         user-select: none;
         -webkit-user-select: none;
         touch-action: manipulation;
         border: none;
+        padding:1%;
     }
 
     .shield_image {
@@ -2077,7 +2395,7 @@
         padding: 2%;
         animation: shieldTextFadeIn 7s;
         opacity: 0;
-        
+
     }
 
     @keyframes shieldTextFadeIn {
@@ -2099,6 +2417,102 @@
             opacity: 0;
 
         }
+    }
+
+    .chest_container {
+        width: 75%;
+        margin-left: 5%;
+        margin-top: 12%;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: 50% 50%;
+    }
+
+    .chest_individual_container{
+
+    }
+
+    .chest_individual_container_not_picked{
+        opacity:0.6;
+        pointer-events:none;
+    }
+
+    .chest_grid_item {}
+
+    .chest_title_container{
+        position: absolute;
+        width:70%;
+
+    }
+    .chest_title {
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin-top:-15%;
+        z-index: 100000;
+        font-size: 4vw;
+        width:100%;
+        filter: drop-shadow(0px 0px 15px #292929);
+        color: white;
+        padding: 2%;
+        justify-content:center;
+        align-items: center;
+        display:flex;
+    }
+
+    .chest_title_gone {
+        display: none;
+    }
+
+    .chest_bottom_image {
+        position: absolute;
+        width: 20%;
+    }
+
+    .chest_top_image {
+        position: absolute;
+        width: 20%;
+        margin-top:1%;
+        z-index:10;
+        cursor:pointer;
+    }
+
+    .chest_top_image_moved {
+        position: absolute;
+        margin-top:1%;
+        width: 20%;
+        transform: translateY(-200px);
+        transition: 1s;
+        z-index:10;
+        pointer-events:none;
+    }
+
+    .forfeit_container{
+        position:absolute;
+        width:22%;
+        z-index: 100;
+        margin-left:-1%;
+        pointer-events:none;
+    }
+
+    .random_forfeit_text {
+        justify-content:center;
+        align-items: center;
+        display:flex;
+        margin-top:20%;
+        font-size: 2vw;
+        font-weight:10000;
+        filter: drop-shadow(0px 0px 20px #727272);
+        color: rgb(255, 255, 255);
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background:rgb(0, 0, 0,0.7);
+        border-radius: 10px;   
+        pointer-events:none; 
+    }
+
+    .google_ad {
+        display:block;
+        background-color: #000000;
+        position:absolute;
+        bottom:0;
     }
 
 }

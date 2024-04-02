@@ -12,6 +12,7 @@
         animation: fadeIn 0.5s;
         position: absolute;
         margin-top: 30%;
+        
     }
 
     .card_title {
@@ -19,7 +20,7 @@
         color: white;
         top:-30%;
         left:25%;
-        text-align: left;
+        text-align: center;
         font-size:5vw;
         filter: drop-shadow(0px 0px 15px #292929);
         transition: all 0.5s;
@@ -31,11 +32,12 @@
 
     .card_player_name {
         position: absolute;
-        color: rgb(255, 255, 255);
-        top: -12%;
-        left: 25%;
+        text-align: center;
+        color: #ffffff;
+        top: 110%;
+        left: 24%;
         font-size: 4vw;
-        filter: drop-shadow(0px 0px 15px #000000);
+        filter: drop-shadow(0px 0px 15px #292929);
         transition: all 0.5s;
         animation: fadeIn 0.5s;
         font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -614,6 +616,7 @@
         position: relative;
         animation: fadeIn 0.5s;
         margin-top:1%;
+        
     }
 
 
