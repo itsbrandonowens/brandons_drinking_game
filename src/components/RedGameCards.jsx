@@ -32,7 +32,7 @@ const RedGameCards = () => {
         },
         {
             title: 'Race to call!',
-            description: 'First person to call someone not in this room and get an answer wins! Loser must do 5 sips'
+            description: 'First person to call someone not in this room and get an answer wins! Loser must do 3 sips'
         },
         {
             title: 'Race for a dildo',
@@ -40,23 +40,23 @@ const RedGameCards = () => {
         },
         {
             title: 'Most Likely To: Get an STD',
-            description: 'Everyone must vote who, out of these two players, is most likely to get an STD, loser must drink twice'
+            description: 'Everyone must vote who, out of these two players, is most likely to get an STD, loser must drink'
         },
         {
             title: 'Most Likely To: Be a Nonce',
-            description: 'Everyone must vote who, out of these two players, is most likely to be a nonce, loser must drink twice'
+            description: 'Everyone must vote who, out of these two players, is most likely to be a nonce, loser must drink'
         },
         {
             title: 'Most Likely To: Get Arrested',
-            description: 'Everyone must vote who, out of these two players, is most likely to get arrested, loser must drink twice'
+            description: 'Everyone must vote who, out of these two players, is most likely to get arrested, loser must drink'
         },
         {
             title: 'Most Likely To: Be Kicked of a Plane',
-            description: 'Everyone must vote who, out of these two players, is most likely to be kicked off a plane, loser must drink twice'
+            description: 'Everyone must vote who, out of these two players, is most likely to be kicked off a plane, loser must drink '
         },
         {
             title: 'Short Arse',
-            description: 'Shortest player out of you two must drink twice, tallest player then gives out 2 drinks'
+            description: 'Shortest player out of you two must drink, tallest player then gives out 2 drinks'
         },
         {
             title: 'Blockbuster',
@@ -69,6 +69,26 @@ const RedGameCards = () => {
         {
             title: 'Most Likely To: Win in a Fight',
             description: 'Everyone must vote who, out of these two players, is most likely to win in a fight. Loser must drink.'
+        },
+        {
+            title: 'Awful Lodger',
+            description: 'Everyone must vote who, out of these two players, would be the most annoying person to live with, they must drink.'
+        },
+        {
+            title: 'Dont Drop The Soap!',
+            description: 'Everyone must vote, if these two players were in prison, who would be the prison bitch? They must drink'
+        },
+        {
+            title: 'Reeel Badman!',
+            description: 'Everyone must vote who, out of these two players, could end up having a kid first? They must drink'
+        },
+        {
+            title: 'Cereal Categories!',
+            description: 'These 2 players must go back and forth naming types or brands of cereal, first to mess up, drinks!'
+        },
+        {
+            title: 'Currency Categories!',
+            description: 'These 2 players must go back and forth naming as many currencies as they can, first to mess up, drinks!'
         },
 
 

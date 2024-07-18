@@ -1,0 +1,7 @@
+{
+  "name": "Last Orders",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}

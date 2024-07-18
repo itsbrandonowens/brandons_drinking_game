@@ -42,10 +42,10 @@ const BlueGameCards = () => {
         {
             title: 'Boulder',
             description: 'You must drink once, and then the player to your left must drink twice and so on until it comes back to you'
-        },
-        {
+        },                           
+        { 
             title: 'Finger Game',
-            description: 'Grab a pint glass and play the finger game!'
+            description: 'Everyone pour some of your drink in a pint glass and place your finger on the rim. Each player can either leave their finger, or take it off the glass and Player 1 must guess how many are left on the glass. If you get it right, you are out of the game. Last person standing must drink the pint!'
         },
         {
             title: 'Waterfall',
@@ -73,7 +73,7 @@ const BlueGameCards = () => {
         },
         {
             title: 'Touch me Daddy ',
-            description: 'First person to touch this player, gives out 2 drinks'
+            description: 'Last person to touch this player must drink'
         },
         { 
             title: 'Rule 2',
@@ -88,20 +88,21 @@ const BlueGameCards = () => {
             description: 'Stay completely still until your next turn! Or drink 5 times'
         },
         { 
-            title: "Fists of Five!",
-            description: 'On the count of 3, everyone must show a number on their hand 1 to 5. Any players with the same number as somebody else must drink'
+            title: "Medusa!",
+            description: 'Each player must put their heads down, on the count of 3, everyone must raise their head and stare directly at someone else. If you lock eyes with another player you must drink.'
         },
         { 
-            title: "Animal Bluff!",
-            description: 'You must write an animal in your notes. Give all players a hint about this animal and everyone must take a guess at what animal you wrote. Anyone who doesnt guess it must drink'
+            title: "Paranoia!",
+            description: 'You must whisper a question about the group into the person on your lefts ear, for example "Who is the ugliest?". This person then must answer the question out loud. If you want to know the answer, you must take a drink. The person who said the name can then choose to either respond or take a drink.'
         },
         { 
-            title: "Quippy Locked Up",
-            description: 'This player has been arrested. Every OTHER player must think of a reason why. The player who has been arrested must say whos answer is the funniest. That person gives out a drink.'
+            title: "Arrogance!",
+            description: 'You must pour as much of your drink into a glass as you want then flip a coin. If you get it wrong, you must drink the whole glass. If you get it right, the person to your left must play. Keep going until someone has to drink it.'
+        },                                          
+        {                               
+            title: "Lord of the Light!",
+            description: 'You can now tell anyone to turn the lights on or off, if they dont comply they must drink'
         },
-        
-    
-        
         
 
     ]

@@ -119,11 +119,11 @@ const GreenGameCards = () => {
         },
         { 
             title: 'Einstein',
-            description: 'Everyone vote who the smartest player is, they must down their drink'
+            description: 'Everyone vote who the smartest player is, they must drink'
         },
         { 
             title: 'my fav colour is carrot',
-            description: 'Everyone vote who the thickest player is, they must down their drink'
+            description: 'Everyone vote who the thickest player is, they must drink'
         },
         { 
             title: 'FULL names',
@@ -143,7 +143,7 @@ const GreenGameCards = () => {
         },
         {
             title: 'Hop to it!',
-            description: 'Do 10 pushups then drink! If you cant do it, then 4 drinks'
+            description: 'Do 10 pushups then drink! If you cant do it, then 2 drinks'
         },
         {
             title: 'Its a Banksy!',
@@ -159,11 +159,11 @@ const GreenGameCards = () => {
         },
         {
             title: 'Men are Pigs!',
-            description: 'All men, take 2 drinks!'
+            description: 'All men, take a drink!'
         },
         {
             title: 'I hate women!',
-            description: 'All women, take 2 drinks!'
+            description: 'All women, take a drink!'
         },
         {
             title: 'Short Kings!',
@@ -233,15 +233,102 @@ const GreenGameCards = () => {
             title: 'Phones on The Table!',
             description: 'Everyone put your phones on the table, next person to get a notification must drink!'
         },
-        
+        { 
+            title: 'Nutter Ex!',
+            description: 'Point to the person with the craziest ex, they must drink!'
+        },
+        { 
+            title: 'Top and Bottom Shaggas!',
+            description: 'Players with the highest and lowest body count must drink!'
+        },
+        { 
+            title: 'Say it or drink it!',
+            description: 'Say your most embarrasing sex story, or drink half of your drink!'
+        },
+        { 
+            title: 'Say it or drink it!',
+            description: 'Say the nastiest thing you have ever done in your life, or drink 5 sips!'
+        },
+        { 
+            title: 'Caught White Handed!',
+            description: 'Drink if you have ever been caught masturbating'
+        },
+        { 
+            title: 'Caught Balls Deep!',
+            description: 'Drink if you have ever been caught having sex'
+        },
+        { 
+            title: 'Piercings!',
+            description: 'Everyone, take a drink for every piercing you have'
+        },
+        { 
+            title: 'Tattoos!',
+            description: 'Everyone, take a drink for every tattoo you have'
+        },
+        { 
+            title: 'Hobbit!',
+            description: 'Take a drink for every person, in this game, who is taller than you'
+        },
+        { 
+            title: 'High Ceiling!',
+            description: 'Try touch the ceiling without jumping, if you cant then drink'
+        },
+        { 
+            title: 'Sock Swappers!',
+            description: 'Swap an item of clothing with someone in the room'
+        },
+        { 
+            title: 'The Floor is Lava!',
+            description: 'Next person to touch the floor must drink'
+        },
+        { 
+            title: 'Global Knowledge!',
+            description: 'Name 10 countries in 10 seconds, if you fail then drink'
+        },
+        { 
+            title: 'Twins!',
+            description: 'Choose which 2 players look the most alike, they must both drink'
+        },
+        { 
+            title: 'Childish Occupation!',
+            description: 'What did you want to be when you were a kid? If this is your profession now, everyone else must drink. If not, then you drink'
+        },
+        { 
+            title: 'Speccy Git!',
+            description: 'Anyone wearing glasses, take a drink'
+        },
+        { 
+            title: 'Fat Scranner!',
+            description: 'Anyone who has eaten during this game, take a drink'
+        },
+        { 
+            title: 'Ikea Colour Chart!',
+            description: 'Everyone say your favourite colour at the same time, any players who say the same colour as someone else, drink!'
+        },
+        { 
+            title: 'Sharing is Caring!',
+            description: 'Everyone must offer you their drink, you can choose one and take a drink from it!'
+        },
+        { 
+            title: 'Im Thinking of a Number!',
+            description: 'Think of a number between 1-10, whoever guesses it right can choose someone to drink!'
+        },
+        { 
+            title: 'Pirate!',
+            description: 'Stand on one leg and drink!'
+        },
+        { 
+            title: 'Uber Chunder!',
+            description: 'Drink if you have ever been sick in a taxi!'
+        },
+        { 
+            title: ';)!',
+            description: 'Send a winky face to the last person, not in this room, that you messaged, or drink 5 times!'
+        },
 
-        
-       
-
-        
-        
 
     ]
+    
     
     let randomValue = cards[Math.floor(Math.random() * cards.length)];
     return (

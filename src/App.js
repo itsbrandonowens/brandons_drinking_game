@@ -1,23 +1,18 @@
-
-import './App.css'; 
-import { Route, Routes } from 'react-router-dom'; 
-import Homepage from './components/Homepage'; 
-import DrinkingGame from './components/DrinkingGame'; 
+import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import Homepage from './components/Homepage';
+import DrinkingGame from './components/DrinkingGame';
 import Rules from './components/Rules';
 
-const scrollLock = () => {
-  document.body.style.overflow = 'hidden';
-}
+function App() {
+  const scrollLock = () => {
+    document.body.style.overflow = 'hidden';
+   }
 
-function App(
-
-   
+   scrollLock();
   
-     
-   ) { 
-    
-    return (
-<div className ="App">
+  return (
+    <div className ="App">
       <Routes>
         <Route path='/' element={<Homepage/>} />
         <Route path='/brandons_drinking_game' element={<Homepage/>} />
@@ -28,7 +23,9 @@ function App(
        
       </Routes>
     </div>
-    ); }
+  );
+}
 
 export default App;
+
 

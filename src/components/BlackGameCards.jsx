@@ -8,48 +8,48 @@ const BlackGameCards = () => {
     const storedNames = JSON.parse(localStorage.getItem("player names"))
     let randomName = storedNames[Math.floor(Math.random() * storedNames.length)];
     let assignedNameCard = JSON.parse(localStorage.getItem("assignedName"))
-    const[score,setScore] = useState(0);
+    
 
     const cards = [ 
         { 
-            title: 'Neck your Drink',
+            title: 'Black Card #1',
             description: 'Finish your drink, no matter how full!'
         },
         {
-            title: 'Take a Shot',
+            title: 'Black Card #2',
             description: 'Take a shot, of any spirit you like!'
         },
         { 
-            title: 'Neck your Drink and Take a Shot',
+            title: 'Black Card #3',
             description: 'Finish your drink, no matter how full and take a shot of any spirit you like!'
         },
         { 
-            title: 'Neck a FULL drink and take a shot!',
+            title: 'Black Card #4',
             description: 'Pour yourself a new, full drink, and take a shot!'
         },
         {
-            title: 'EVERYONE DOWN IT',
+            title: 'Black Card #5',
             description: 'Everybody finish your drinks! '
         },
         {
-            title: 'Lucky Black Card',
+            title: 'Black Card #6',
             description: 'Your off the hook, pick someone to down their drink!'
         },
         {
-            title: 'Deadly Rock Paper Scissors',
+            title: 'Black Card #7',
             description: 'Play Rock, Paper, Scissors with everyone in the room, do a shot for every player you lose too!'
         },
         {
-            title: 'Chug Card',
+            title: 'Black Card #8',
             description: 'You may shout "Chug!" at any point and everyone has to finish their drinks! Can only be used once!'
         },
         {
-            title: 'Slow Start',
+            title: 'Black Card #9',
             description: 'Whoever has the MOST drink left, must finish it!'
         },
         
     ]
-    
+     
     
     let randomValue = cards[Math.floor(Math.random() * cards.length)];
     return (

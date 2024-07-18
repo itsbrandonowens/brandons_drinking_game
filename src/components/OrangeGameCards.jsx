@@ -53,6 +53,38 @@ const OrangeGameCards = () => {
             title: 'No Hands',
             description: 'Take a drink without using your hands or arms!'
         },
+        { 
+            title: 'Cheers!!',
+            description: 'Everyone raise your drinks, cheers and take a drink!'
+        },
+        { 
+            title: 'Heres to you',
+            description: 'Pick a buddy to take a drink with'
+        },
+        { 
+            title: "Three's a crowd",
+            description: 'Choose 3 people to drink'
+        },
+        { 
+            title: "Dual Weild",
+            description: 'Take a drink from the players to your left and right'
+        },
+        { 
+            title: "Hand Holders",
+            description: 'You must hold hands with the player to your right for one round'
+        },
+        { 
+            title: "Dare",
+            description: 'Do whatever the player on your right wants, if you cant then drink'
+        },
+        { 
+            title: "Right is Right",
+            description: 'The player on your right can choose someone to drink'
+        },
+        { 
+            title: "Safety Partner",
+            description: 'Choose a player, everyone BUT you and that person must drink'
+        },
         
     ]
     

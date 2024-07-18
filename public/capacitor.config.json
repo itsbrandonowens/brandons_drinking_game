@@ -1,0 +1,8 @@
+{
+    "appId": "io.ionic.lastorders",
+    "appName": "lastorders",
+    "bundledWebRuntime": false,
+    "npmClient": "npm",
+    "webDir": "build",
+    "cordova": {}
+  }

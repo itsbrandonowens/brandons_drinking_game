@@ -13,13 +13,13 @@ const PurpleGameCards = () => {
     const cards = [
         {
             title: 'Your Knicked!',
-            description: 'You have been caught by the guard and sentenced to 5 drinks! ',
+            description: 'You have been caught by the guard and sentenced to 3 drinks! ',
             dice_roll_desc: 'Roll above a 15 to escape!'
         },
         {
             title: 'Goblin Boss!',
             description: 'You have stumbled upon the goblin boss, he tells you to neck your poisoned drink! ',
-            dice_roll_desc: 'Roll above a 10 to defeat him! or else, neck your poisoned drink'
+            dice_roll_desc: 'Roll above a 6 to defeat him! or else, neck your poisoned drink'
         }, 
         { 
             title: 'The Bartender!', 
@@ -29,18 +29,13 @@ const PurpleGameCards = () => {
         { 
             title: 'Sneak 100!', 
             description: 'You have been caught stealing! ',
-            dice_roll_desc: 'Roll 16 or above to get away with it! Or else, drink 3 times.'
+            dice_roll_desc: 'Roll 16 or above to get away with it! Or else, take 2 drinks.'
         },
         { 
             title: 'Cthulu!', 
             description: 'You have been found by The Almighty Cthulu! ',
             dice_roll_desc: 'Roll 10 or above to defeat him! Or else, take a shot!'
         },    
-        { 
-            title: 'Hail Mary!', 
-            description: 'You have been approached by The Queen!',
-            dice_roll_desc: 'Roll a Nat 20 to tell someone to neck their drink for rizzing up the Queen! Or else, you drink once to gain some confidence'
-        },
         { 
             title: 'Frost Giant!', 
             description: 'You have been challenged by the Frost Giant!',
