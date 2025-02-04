@@ -1,70 +1,13 @@
-# Getting Started with Create React App
+-------------- Last Orders --------------
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+https://itsbrandonowens.github.io/brandons_drinking_game/
 
-## Available Scripts
+lastordersgame.com
 
-In the project directory, you can run:
+Last Orders is a card-based drinking game that I started creating in August of 2023.
 
-### `npm start`
+I started creating Last Orders just as something to use with my friends on a weekend. I did not anticipate it to become something that I would eventually release to the App Store to the world. It just worked out that way. It started off as a really basic game, with no images, and some horrendous CSS. However, I started really enjoying adding in little features to the game, and updating it every other week from feedback from my mates. Eventually, I decided to make the game into a website, and then an app on the Google Play Store.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Last Orders is created using ReactJS, JavaScript, HTML5 and CSS3 as shown in the tech stack below. I started off by going into photoshop and designing wireframes for how I wanted each page to look and function. This then became a design document including a Brand Manual which includes all of the hex colour codes. I took all of my documentation and just started creating the game. After a few weeks of developing the game in my spare time, the first version was created, simply called "Brandons Drinking Game". After deciding that I was incredibly proud of my work, I came up with the name and logo of the game and added more and more features were added such as the Earthquake, Boozenami and the Chest. The game has continued to recieve little updates and added features and cards until this day.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+I want to get Last Orders on IOS, which is currently being worked on. I then will continue to being releasing updates to the game every other month, including new features, new cards and updated graphics. I want to get all of the graphics in the game to become animations that smoothly flow across the screen. I also want to continue expanding the social media associated with the game and get the game to as many people as possible.
