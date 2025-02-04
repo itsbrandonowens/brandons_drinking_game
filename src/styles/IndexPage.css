@@ -1,0 +1,306 @@
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+/* The CSS Below is for Mobile in portrait orientation*/
+@media only screen and (max-width: 649px) {
+
+    .index_container {
+        text-align: center;
+        transition: all 0.8s ease;
+        overflow: hidden;
+        
+    }
+
+    .continue_to_lo_button {
+        position:absolute;
+        bottom:10%;
+        right:5%;
+        padding: 15px 25px;
+        font-size: 8vw;
+        cursor: pointer;
+        text-align: center;
+        outline: none;
+        color: #000000;
+        z-index: 2000;
+        background-color: #ffffff;
+        border: 2px solid #000000;
+        border-radius: 30px;
+        box-shadow: #000000 4px 4px 0 0;
+        color: #000000;
+        font-weight: 600;
+        font-family: "Bubblegum Sans", serif;
+        font-weight:200;
+        width:80%;
+    }
+
+
+
+    .lologo_index {
+        position:absolute;
+        width:30%;
+        top:5%;
+        left:2%;
+    }
+
+    .lologoATT_index {
+        position:absolute;
+        width:30%;
+        top:55%;
+        left:2%;
+    }
+
+    .google_download {
+        position:absolute;
+        width:30%;
+        top:10%;
+        left:35%;
+        z-index: 1000000;
+        }
+
+    .apple_download {
+        position:absolute;
+        width:30%;
+        top:10%;
+        left:65%;
+        z-index: 1000000;
+    }
+
+    .google_download_att {
+        position:absolute;
+        width:30%;
+        top:60%;
+        left:35%;
+        z-index: 1000000;
+     
+        }
+    .apple_download_att {
+        position:absolute;
+        width:30%;
+        top:60%;
+        left:65%;
+        z-index: 1000000;
+    }
+
+    .waves_index {
+        position: absolute;
+        bottom:-10%;
+        width: 2000%;
+        animation: waves_moving 60s infinite;
+        filter: drop-shadow(0px 0px 15px #292929);
+
+    }
+    @keyframes waves_moving {
+        0% {
+            transform: translateX(-20%);
+        }
+
+        50% {
+            transform: translateX(-90%);
+        }
+
+        100% {
+            transform: translateX(-20%);
+        }
+    }
+
+    .index_cards_image {
+        position:absolute;
+        top:22%;
+        left:10%;
+        width:80%;
+        
+    }
+
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+/* The CSS Below is for Mobile in landscape orientation */
+@media only screen and (min-width:650px) and (max-width:993px) and (orientation: landscape) {
+    .index_container {
+        text-align: center;
+        transition: all 0.8s ease;
+        overflow: hidden;
+        
+    }
+
+    .continue_to_lo_button {
+        position: absolute;
+        right: -8%;
+        top:25%;
+        padding: 15px 25px;
+        font-size: 5.6vw;
+        cursor: pointer;
+        text-align: center;
+        -webkit-transform: rotate(90deg);
+        outline: none;
+        color: #000000;
+        z-index: 2000;
+        background-color: #ffffff;
+        border: 2px solid #000000;
+        border-radius: 30px;
+        box-shadow: #000000 4px 4px 0 0;
+        color: #000000;
+        font-weight: 600;
+        font-family: "Bubblegum Sans", serif;
+        font-weight:200;
+        width:25vw;
+    }
+
+    .lologo_index {
+        position:absolute;
+        width:15%;
+        top:10%;
+        left:10%;
+    }
+
+    .lologoATT_index {
+        position:absolute;
+        width:15%;
+        top:10%;
+        right:10%;
+    }
+
+    .google_download {
+        position:absolute;
+        width:15%;
+        top:40%;
+        left:10.5%;
+        }
+
+    .apple_download {
+        position:absolute;
+        width:15%;
+        top:50%;
+        left:10.5%;
+    }
+
+    .google_download_att {
+        position:absolute;
+        width:15%;
+        top:40%;
+        right:9.5%;
+     
+        }
+    .apple_download_att {
+        position:absolute;
+        width:15%;
+        top:50%;
+        right:9.5%;
+    }
+
+    .waves_index {
+        position: absolute;
+        bottom:0;
+        width: 500%;
+        
+        animation: waves_moving 45s infinite;
+        filter: drop-shadow(0px 0px 15px #292929);
+
+    }
+    @keyframes waves_moving {
+        0% {
+            transform: translateX(-20%);
+        }
+
+        50% {
+            transform: translateX(-90%);
+        }
+
+        100% {
+            transform: translateX(-20%);
+        }
+    }
+
+    .index_cards_image {
+
+        width:30%;
+        margin-top:5%;
+    }
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+/* The CSS Below is for Desktop and Larger Devices */
+@media only screen and (min-width:992px) {
+
+    .index_container {
+        text-align: center;
+        transition: all 0.8s ease;
+        overflow: hidden;
+        
+    }
+
+    .continue_to_lo_button {
+        position: absolute;
+        right: -10%;
+        top:30%;
+        padding: 15px 25px;
+        font-size: 5.6vw;
+        cursor: pointer;
+        text-align: center;
+        -webkit-transform: rotate(90deg);
+        outline: none;
+        color: #000000;
+        z-index: 2000;
+        background-color: #ffffff;
+        border: 2px solid #000000;
+        border-radius: 30px;
+        box-shadow: #000000 4px 4px 0 0;
+        color: #000000;
+        font-weight: 600;
+        font-family: "Bubblegum Sans", serif;
+        font-weight:200;
+        width:30vw;
+    }
+
+    .lologo_index {
+        position:absolute;
+        width:15%;
+        top:10%;
+        left:10%;
+    }
+
+
+    .google_download {
+        position:absolute;
+        width:15%;
+        top:40%;
+        left:10.5%;
+        }
+
+    .apple_download {
+        position:absolute;
+        width:15%;
+        top:50%;
+        left:10.5%;
+    }
+
+
+    .waves_index {
+        position: absolute;
+        bottom:0;
+        width: 500%;
+        
+        animation: waves_moving 45s infinite;
+        filter: drop-shadow(0px 0px 15px #292929);
+
+    }
+    @keyframes waves_moving {
+        0% {
+            transform: translateX(-20%);
+        }
+
+        50% {
+            transform: translateX(-90%);
+        }
+
+        100% {
+            transform: translateX(-20%);
+        }
+    }
+
+    .index_cards_image {
+
+        width:30%;
+        margin-top:5%;
+    }
+
+    
+}

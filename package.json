@@ -1,17 +1,31 @@
 {
-  "homepage": "https://itsbrandonowens.github.io/brandons_drinking_game/",
+  "homepage": "https://lastordersgame.com",
   "name": "drinking_game",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@capacitor/android": "^5.7.2",
+    "@capacitor/app": "5.0.7",
+    "@capacitor/core": "^5.7.2",
+    "@capacitor/filesystem": "^5.2.1",
+    "@capacitor/haptics": "5.0.7",
+    "@capacitor/ios": "^6.0.0",
+    "@capacitor/keyboard": "5.0.8",
+    "@capacitor/status-bar": "5.0.7",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "drinking_game": "file:",
+    "expo-cli": "^6.3.10",
+    "framer-motion": "^12.0.8",
     "react": "^18.2.0",
     "react-adsense": "^0.1.0",
     "react-canvas-confetti": "^1.4.0",
     "react-confetti": "^6.1.0",
     "react-dom": "^18.2.0",
+    "react-ga": "^3.3.1",
+    "react-ga4": "^2.1.0",
+    "react-helmet": "^6.1.0",
     "react-player": "^2.12.0",
     "react-router-dom": "^6.15.0",
     "react-scripts": "5.0.1",
@@ -47,6 +61,7 @@
     ]
   },
   "devDependencies": {
+    "@capacitor/cli": "^5.7.2",
     "gh-pages": "^6.0.0"
   }
 }

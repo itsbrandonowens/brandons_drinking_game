@@ -1,17 +1,129 @@
+/*
+@keyframes animate {
+  0%{
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+      border-radius: 0;
+  }
+  100%{
+      transform: translateY(-1000px) rotate(720deg);
+      opacity: 0;
+      border-radius: 50%;
+  }
+}
+
+.background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  background: #02a5ea;
+  overflow: hidden;
+}
+.background li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: animate 23s linear infinite;
+}
+
+.background li:nth-child(0) {
+  left: 55%;
+  width: 119px;
+  height: 119px;
+  bottom: -119px;
+  animation-delay: 1s;
+}
+.background li:nth-child(1) {
+  left: 25%;
+  width: 117px;
+  height: 117px;
+  bottom: -117px;
+  animation-delay: 4s;
+}
+.background li:nth-child(2) {
+  left: 52%;
+  width: 55px;
+  height: 55px;
+  bottom: -55px;
+  animation-delay: 4s;
+}
+.background li:nth-child(3) {
+  left: 32%;
+  width: 71px;
+  height: 71px;
+  bottom: -71px;
+  animation-delay: 4s;
+}
+.background li:nth-child(4) {
+  left: 18%;
+  width: 117px;
+  height: 117px;
+  bottom: -117px;
+  animation-delay: 11s;
+}
+.background li:nth-child(5) {
+  left: 41%;
+  width: 111px;
+  height: 111px;
+  bottom: -111px;
+  animation-delay: 12s;
+}
+.background li:nth-child(6) {
+  left: 81%;
+  width: 67px;
+  height: 67px;
+  bottom: -67px;
+  animation-delay: 20s;
+}
+.background li:nth-child(7) {
+  left: 9%;
+  width: 69px;
+  height: 69px;
+  bottom: -69px;
+  animation-delay: 27s;
+}
+.background li:nth-child(8) {
+  left: 65%;
+  width: 119px;
+  height: 119px;
+  bottom: -119px;
+  animation-delay: 32s;
+}
+.background li:nth-child(9) {
+  left: 86%;
+  width: 100px;
+  height: 100px;
+  bottom: -100px;
+  animation-delay: 6s;
+}
+  */
+/* This is the import for Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Caveat+Brush&family=Gluten:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 .App {
   width: 100%;
   height: 100vh;
+  min-height:100%;
   justify-content: center;
-  background-size: 300% 300%;
-  background-image: linear-gradient(-45deg, rgb(16, 0, 123) 0%, rgb(61, 106, 133) 25%, rgb(0, 213, 255) 51%, #7f35ff 100%);
+  background-size: 200% 200%;
+  background-image: linear-gradient(-45deg, rgb(41,100,156,1) 0%, rgb(61, 106, 133) 25%, rgb(2,165,234,1) 51%, #942DFF 100%);
   -webkit-animation: AnimateBG 20s ease infinite;
           animation: AnimateBG 20s ease infinite;
 }
+/*
 
+font-family: "Bubblegum Sans", serif;
 
-/* background-image: linear-gradient(-45deg, rgb(123, 0, 88) 0%, rgb(255, 137, 218) 25%, rgb(255, 238, 0) 51%, #ff357f 100%); */
+font-family: "Caveat Brush", serif;
 
-
+*/
 @-webkit-keyframes AnimateBG {
   0% {
     background-position: 0% 50%;

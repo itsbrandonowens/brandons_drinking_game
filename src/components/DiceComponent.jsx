@@ -47,17 +47,13 @@ const DiceComponent = () => {
     
     return (
         <div className="dice_container">
-            
             <img src={randomDice} className={"dice_image"} alt="dice_image" onClick={diceHandler} wobble={wobble} onAnimationEnd={() => setWobble(0)}></img>
             {
                 randomDice == d20 ?
                     <div>
-                        <Confetti
-                            width={width}
-                            height={height}
-                        />
+                       
                         <div className="nat20_container">
-                        <img src={nat20wizard} className="nat1wizard" alt="dice_image"></img>
+                        <img src={nat20wizard} className="natwizard" alt="dice_image"></img>
                         <h2 className="dice_nat20_desc">Congrats! Give the punishment to a player of your choosing </h2>
                           
 
@@ -68,7 +64,7 @@ const DiceComponent = () => {
             {
                 randomDice == d1 ?
                     <div className="nat20_container"> 
-                        <img src={nat1wizard} className="nat1wizard" alt="dice_image"></img>
+                        <img src={nat1wizard} className="natwizard" alt="dice_image"></img>
                         <h2 className="dice_nat20_desc">Unlucky! Double your punishment! </h2>
                     </div> : null
             }

@@ -1,83 +1,430 @@
 /* --------------------------------------------------------------------------------------------------------------------------------------- */
 /* The CSS Below is for mobile in portrait orientation*/
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 649px) {
+    .card_container {
+        position: absolute;
+        margin-top: 42%;
+        height: 80%;
+        animation: fadeIn 0.5s;
+        text-align: center;
+        width:100%;
+    }
+
     .cards {
         width: 120%;
         -webkit-transform: rotate(90deg);
-        margin-left:-10%;     
-    }
+        margin-left: -10%;
 
-    .card_container {
-        text-align: center;
-        animation: fadeIn 0.5s;
-        position: absolute;
-        margin-top: 30%;
     }
 
     .card_title {
         position: absolute;
+        top: -16%;
         color: white;
-        top:-30%;
-        left:25%;
-        text-align: left;
-        font-size:5vw;
-        filter: drop-shadow(0px 0px 15px #292929);
         transition: all 0.5s;
         animation: fadeIn 0.5s;
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        width:50%;
+        filter: drop-shadow(0px 0px 2px #000000);
+        font-size: 5vw;
+        font-family: "Bubblegum Sans", serif;
+        font-weight: 200;
+        width: 58%;
+        left: 21%;
     }
 
 
     .card_player_name {
         position: absolute;
-        color: rgb(255, 255, 255);
-        top: -12%;
-        left: 25%;
-        font-size: 4vw;
-        filter: drop-shadow(0px 0px 15px #000000);
+        bottom: 31%;
+        width: 30%;
+        left: 24%;
+        text-align: left;
+        color: white;
         transition: all 0.5s;
         animation: fadeIn 0.5s;
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        filter: drop-shadow(0px 0px 2px #000000);
+        font-size: 4vw;
+        font-family: "Bubblegum Sans", serif;
+        font-weight: 200;
+
     }
 
     .card_description {
         position: absolute;
+        top: 10%;
+        width: 52%;
+        left: 24%;
+        text-align: left;
         color: white;
-        top: 45%;
-        right: 24%;
+        transition: all 0.5s;
+        animation: fadeIn 0.5s;
+        filter: drop-shadow(0px 0px 3px #000000);
         font-size: 4vw;
-        text-align:center;
+        font-family: "Bubblegum Sans", serif;
+        font-weight: 200;
+        text-align: center;
+    }
+
+    /* LO+ */
+    .versus_label {
+        font-size: 4vw;
+        color: rgba(95, 0, 0, 0.749);
+        filter: drop-shadow(0px 0px 3px #ffffff);
+        font-family: "Bubblegum Sans", serif;
+    }
+
+    .wheel_stopper {
+        position: absolute;
+        top: 24.5%;
+        right: 22%;
+        width: 7%;
+        z-index: 100;
+    }
+
+    .wheel_still {
+        position: absolute;
+        top: 8%;
+        left: 26%;
         width: 50%;
+        z-index: 99;
+        cursor: pointer;
+    }
+
+    .wheel1 {
+        position: absolute;
+        top: 8%;
+        left: 26%;
+        width: 50%;
+        transform: rotate(1815deg);
+        transition: 6s;
+        z-index: 99;
+    }
+
+    .wheel2 {
+        position: absolute;
+        top: 8%;
+        left: 26%;
+        width: 50%;
+        transform: rotate(1845deg);
+        transition: 6s;
+        z-index: 99;
+    }
+
+    .wheel3 {
+        position: absolute;
+        top: 8%;
+        left: 26%;
+        width: 50%;
+        transform: rotate(1875deg);
+        transition: 6s;
+        z-index: 99;
+    }
+
+    .wheel4 {
+        position: absolute;
+        top: 8%;
+        left: 26%;
+        width: 50%;
+        transform: rotate(1905deg);
+        transition: 6s;
+        z-index: 99;
+    }
+
+    .wheel5 {
+        position: absolute;
+        top: 8%;
+        left: 26%;
+        width: 50%;
+        transform: rotate(1935deg);
+        transition: 6s;
+        z-index: 99;
+    }
+
+    .wheel6 {
+        position: absolute;
+        top: 8%;
+        left: 26%;
+        width: 50%;
+        transform: rotate(1965deg);
+        transition: 6s;
+        z-index: 99;
+    }
+
+    .wheel7 {
+        position: absolute;
+        top: 8%;
+        left: 26%;
+        width: 50%;
+        transform: rotate(1995deg);
+        transition: 6s;
+        z-index: 99;
+    }
+
+    .wheel8 {
+        position: absolute;
+        top: 8%;
+        left: 26%;
+        width: 50%;
+        transform: rotate(2025deg);
+        transition: 6s;
+        z-index: 99;
+    }
+
+    .wheel9 {
+        position: absolute;
+        top: 8%;
+        left: 26%;
+        width: 50%;
+        transform: rotate(2055deg);
+        transition: 6s;
+        z-index: 99;
+    }
+
+    .wheel10 {
+        position: absolute;
+        top: 8%;
+        left: 26%;
+        width: 50%;
+        transform: rotate(2085deg);
+        transition: 6s;
+        z-index: 99;
+    }
+
+    .wheel11 {
+        position: absolute;
+        top: 8%;
+        left: 26%;
+        width: 50%;
+        transform: rotate(2115deg);
+        transition: 6s;
+        z-index: 99;
+    }
+
+    .wheel12 {
+        position: absolute;
+        top: 8%;
+        left: 26%;
+        width: 50%;
+        transform: rotate(2145deg);
+        transition: 6s;
+        z-index: 99;
+    }
+
+    .dice_image{
+        position: absolute;
+        top: -10%;
+        left:25%;
+        width: 50%;
+        font-size: 1vw;
+        cursor: pointer;
+    }
+
+    .dice_image[wobble="1"] {
+        animation-name: wobble;
+        animation-duration: 2s;
+    }
+
+    .dice_description{
+        position: absolute; 
+        top: 20%;
+        left: 22%;
+        width: 55%;
+        text-align: center;
+        font-size: 4vw;
+        color: white;
         filter: drop-shadow(0px 0px 15px #292929);
         transition: all 0.5s;
         animation: fadeIn 0.5s;
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-family: "Bubblegum Sans", serif;
+ 
+    }
+
+    .dice_roll_desc{
+        position: absolute; 
+        top: 35%;
+        left: 22%;
+        width: 55%;
+        text-align: center;
+        font-size: 4vw;
+        color: white;
+        filter: drop-shadow(0px 0px 15px #292929);
+        transition: all 0.5s;
+        animation: fadeIn 0.5s;
+        font-family: "Bubblegum Sans", serif;
+    }
+
+    .natwizard{
+        position:absolute;
+        width:50%;
+        top:45%;
+        left:-1%;
+        filter: drop-shadow(0px 0px 15px #292929);
+    }
+
+    .dice_nat20_desc{
+        position:absolute;
+        bottom:24.5%;
+        width:60%;
+        right:1%;
+        text-align:center;
+        font-size: 3.5vw;
+        filter: drop-shadow(0px 0px 2px #292929);
+        transition: all 0.5s;
+        animation: fadeIn 0.5s;
+        font-family: "Bubblegum Sans", serif;
+        color: white;
+    }
+
+    .RPS_before_game_container_gone {
+        display: none;
+        visibility: hidden;
+    }
+
+    .RPS_before_click {
+        position: absolute;
+        top: 20%;
+        left:25%;
+        width: 50%;
+        color: rgb(255, 255, 255);
+        background-color: #29649C;
+        border-radius: 10px;
+        font-size: 5vw;
+        text-align:center;
+        padding: 2% 0% 2% 0% ;
+        transition: all 0.5s;
+        animation: fadeIn 0.5s;
+        font-family: "Bubblegum Sans", serif;
+        cursor: pointer;
+        filter: drop-shadow(0px 0px 5px #292929);
+        font-weight:200;
+    }
+
+    .RPS_before_description {
+        position: absolute;
+        top: 35%;
+        right: 22%;
+        text-align:center;
+        width: 55%;
+        color: rgb(0, 0, 0);
+        font-size: 3.5vw;
+        transition: all 0.5s;
+        animation: fadeIn 0.5s;
+        font-family: "Bubblegum Sans", serif;
+    }
+
+    .RPS_countdown {
+        position: absolute;
+        top: 20%;
+        left:22%;
+        width: 55%;
+        text-align:center;
+        color: rgb(0, 0, 0);
+        font-size: 6vw;
+        font-weight:200;
+        transition: all 0.5s;
+        animation: fadeIn 0.5s;
+        font-family: "Bubblegum Sans", serif;
+    }
+
+    .rps_image {
+        position: absolute;
+        top: 15%;
+        left: 31%;
+        width: 40%;
+    }
+    
+
+    /* 52 Deck */
+    .playing_card1 {
+        position:absolute;
+        top:2%;
+        left:22%;
+        width: 22%;
+        margin: 1%;
+
+    }
+
+    .playing_card2 {
+        position:absolute;
+        top:2%;
+        right:22%;
+        width: 22%;
+        margin: 1%;
+        cursor:pointer;
+    }
+
+    .higher_or_lower_description {
+        position: absolute;
+        top:30%;
+        left:22%;
+        width: 55%;
+        text-align: center;
+        font-size: 3.5vw;
+        color: white;
+        filter: drop-shadow(0px 0px 2px #292929);
+        transition: all 0.5s;
+        animation: fadeIn 0.5s;
+        font-family: "Bubblegum Sans", serif;
+    }
+
+   .rof_card {
+        position:absolute;
+        top:-5%;
+        left:34%;
+        width: 30%;
+        margin: 1%;
+        cursor: pointer;
+    }
+
+    .rof_description {
+        position: absolute;
+        top:30%;
+        left:22%;
+        width: 55%;
+        text-align: center;
+        font-size: 3.5vw;
+        color: white;
+        filter: drop-shadow(0px 0px 2px #292929);
+        transition: all 0.5s;
+        animation: fadeIn 0.5s;
+        font-family: "Bubblegum Sans", serif;
+    }
+
+    .fiftytwocards {
+        position:absolute;
+        top:-5%;
+        right:34%;
+        width: 30%;
+        margin: 1%;
+        cursor: pointer;
+    }
+    .fiftytwocard_back {
+        position:absolute;
+        top:-5%;
+        right:34%;
+        width: 30%;
+        margin: 1%;
+        cursor: pointer;
+        z-index:10000;
         
     }
+    .fiftytwocard_back_gone{
+        display:none;
+    }
 
-    .card_description_video {
+    .rtb_description {
         position: absolute;
         color: white;
-        top: 55%;
-        right: 24%;
+        top: 30%;
+        left:22%;
         font-size: 3vw;
-        width: 50%;
-        filter: drop-shadow(0px 0px 15px #292929);
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        width: 55%;
+        filter: drop-shadow(0px 0px 2px #292929);
+        transition: all 0.5s;
+        animation: fadeIn 0.5s;
+        font-family: "Bubblegum Sans", serif;
     }
 
-    .card_video {
-        position: absolute;
-        color: white;
-        top: 5%;
-        right: 24%;
-        width:50%;
-        height: 38%;
-        filter: drop-shadow(0px 0px 15px #292929);
-        border: 5px solid rgba(193, 193, 193, 0.8);
-    }
-
+    /* Animations */
     @keyframes fadeIn {
         0% {
             opacity: 0;
@@ -88,158 +435,6 @@
         }
     }
 
-    .versus_label {
-        font-size: 3vw;
-        color: rgba(95, 0, 0, 0.749);
-        filter: drop-shadow(0px 0px 15px #ffffff);
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    }
-
-    .playing_card1 {
-        width:25%;
-        position:absolute;
-        margin-top:-30%;
-        left:15%;
-    }
-
-    .playing_card2 {
-        width:25%;
-        position:absolute;
-        margin-top:-30%;
-        left:45%;
-        cursor: pointer;
-    }
-
-    .higher_or_lower_description {
-        position: absolute;
-        color: white;
-        top: 50%;
-        left: 24%;
-        font-size: 4vw;
-        width: 50%;
-        filter: drop-shadow(0px 0px 15px #292929);
-        transition: all 0.5s;
-        animation: fadeIn 0.5s;
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    }
-
-    .rof_card {
-        position: absolute;
-        right: 35%;
-        width: 30%;
-        margin-top: -20%;
-        cursor: pointer;
-    }
-
-    .rof_description {
-        position: absolute;
-        color: white;
-        margin-top:35%;
-        left: 18%;
-        font-size: 4vw;
-        padding: 1%;
-        width: 65%;
-        filter: drop-shadow(0px 0px 15px #292929);
-        transition: all 0.5s;
-        animation: fadeIn 0.5s;
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    }
-
-
-    .nat20_container {}
-
-    .nat20 {
-        position: absolute;
-        top: -5%;
-        right: 30%;
-        
-    }
-
-    .nat1wizard {
-        width: 40%;
-        position: absolute;
-        top: 65%;
-        right: 45%;
-        filter: drop-shadow(0px 0px 15px #000000);
-        animation: fadeIn 0.5s;
-    }
-
-    .dice_nat20 {
-        color: rgb(0, 0, 0);
-        font-size: 1.5vw;
-        filter: drop-shadow(0px 0px 15px #ffffff);
-        transition: all 0.5s;
-        animation: fadeIn 0.5s;
-        font-weight: bold;
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        z-index: 10000;
-    }
-
-    .dice_nat20_desc {
-        font-size: 3vw;
-        filter: drop-shadow(0px 0px 15px #292929);
-        transition: all 0.5s;
-        animation: fadeIn 0.5s;
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        color: white;
-        padding: 2%;
-        position: absolute;
-        top: 105%;
-        right: 21%;
-        transition: all 0.5s;
-        animation: fadeIn 0.5s;
-        background-color: rgba(0, 0, 0, 0.8);
-        border: 2px solid rgb(255, 255, 255);
-        padding: 1%;
-        width: 55%;
-    }
-
-
-    .dice_description {
-        position: absolute;
-        color: white;
-        top: 48%;
-        right: 30%;
-        font-size: 3vw;
-        width: 40%;
-        filter: drop-shadow(0px 0px 15px #292929);
-        transition: all 0.5s;
-        animation: fadeIn 0.5s;
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    }
-
-    .dice_roll_desc {
-        position: absolute;
-        color: white;
-        top: 75%;
-        right: 30%;
-        font-size: 3vw;
-        width: 40%;
-        filter: drop-shadow(0px 0px 15px #292929);
-        transition: all 0.5s;
-        animation: fadeIn 0.5s;
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    }
-
-    .dice_image {
-        position: absolute;
-        color: white;
-        top: -20%;
-        right: 20%;
-        font-size: 1vw;
-        width: 60%;
-        filter: drop-shadow(0px 0px 15px #292929);
-        cursor: pointer;
-    }
-
-    .dice_image[wobble="1"] {
-        animation-name: wobble;
-        animation-duration: 2s;
-    }
-
-
-    /* Setting Animation effect to the 
-     dice using css keyframe */
     @keyframes wobble {
         from {
             transform: translate3d(0, 0, 0);
@@ -268,116 +463,438 @@
         to {
             transform: translate3d(0, 0, 0);
         }
-    }
-
-    .cards_and_button_container {
-        position: absolute;
-        color: white;
-        top: 40%;
-        right: 15%;
-        filter: drop-shadow(0px 0px 15px #292929);
-        width: 70%;
-
-    }
-
-    .check_button {
-        display: inline-block;
-        padding: 15px 25px;
-        font-size: 1vw;
-        cursor: pointer;
-        text-align: center;
-        text-decoration: none;
-        outline: none;
-        color: #000000;
-        background-color: #ffffff;
-        border: none;
-        border-radius: 15px;
-        box-shadow: 0 9px #999;
-        margin: 5%;
-    }
-
-    .check_button:active {
-        background-color: #979797;
-        box-shadow: 0 5px #666;
-        transform: translateY(4px);
     }
 }
 
 /* --------------------------------------------------------------------------------------------------------------------------------------- */
 /* The CSS Below is for mobile in landscape orientation */
-@media only screen and (min-width:650px) and (max-width:991px) and (orientation: landscape) {
-    .cards {
-        width: 60%;
-    }
+@media only screen and (min-width:650px) and (max-width:991px) {
 
     .card_container {
-        text-align: center;
-        animation: fadeIn 0.5s;
         position: absolute;
-        margin-top: -5%;
+        left: 20%;
+        margin-top: 6%;
+        width: 60%;
+        height: 30vw;
+        animation: fadeIn 0.5s;
+    }
+
+    .cards {
+        width: 100%;
     }
 
 
     .card_title {
         position: absolute;
-        color: white;
         top: 5%;
-        right: 24%;
-        font-size: 2.5vw;
-        filter: drop-shadow(0px 0px 15px #292929);
+        right: 7%;
+        color: white;
         transition: all 0.5s;
         animation: fadeIn 0.5s;
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        filter: drop-shadow(0px 0px 3px #000000);
+        font-size: 2.5vw;
+        font-family: "Bubblegum Sans", serif;
+        font-weight: 200;
     }
-
 
     .card_player_name {
         position: absolute;
-        color: rgb(255, 255, 255);
         top: 15%;
-        right: 24%;
-        font-size: 2vw;
-        filter: drop-shadow(0px 0px 15px #000000);
+        right: 7%;
+        color: rgb(255, 255, 255);
         transition: all 0.5s;
         animation: fadeIn 0.5s;
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        filter: drop-shadow(0px 0px 3px #000000);
+        font-size: 2vw;
+        font-family: "Bubblegum Sans", serif;
+        font-weight: 200;
     }
 
     .card_description {
         position: absolute;
         color: white;
-        top: 45%;
-        right: 24%;
-        font-size: 2.2vw;
-        width: 50%;
+        top: 50%;
+        left: 8%;
+        width: 85%;
+        transition: all 0.5s;
+        animation: fadeIn 0.5s;
+        filter: drop-shadow(0px 0px 3px #000000);
+        font-size: 1.6vw;
+        font-family: "Bubblegum Sans", serif;
+        font-weight: 200;
+        text-align: center;
+
+    }
+
+    /* LO+ */
+
+    .versus_label {
+        font-size: 3vw;
+        color: rgba(95, 0, 0, 0.749);
+        filter: drop-shadow(0px 0px 15px #ffffff);
+        font-family: "Bubblegum Sans", serif;
+    }
+
+    .wheel_stopper {
+        position: absolute;
+        top: 50%;
+        right: 28%;
+        width: 7%;
+        z-index: 100;
+    }
+
+    .wheel_still {
+        position: absolute;
+        top: 12%;
+        left: 25%;
+        width: 45%;
+        z-index: 99;
+        cursor: pointer;
+    }
+
+    .wheel1 {
+        position: absolute;
+        top: 12%;
+        left: 25%;
+        width: 45%;
+        transform: rotate(1815deg);
+        transition: 6s;
+        z-index: 99;
+    }
+
+    .wheel2 {
+        position: absolute;
+        top: 12%;
+        left: 25%;
+        width: 45%;
+        transform: rotate(1845deg);
+        transition: 6s;
+        z-index: 99;
+    }
+
+    .wheel3 {
+        position: absolute;
+        top: 12%;
+        left: 25%;
+        width: 45%;
+        transform: rotate(1875deg);
+        transition: 6s;
+        z-index: 99;
+    }
+
+    .wheel4 {
+        position: absolute;
+        top: 12%;
+        left: 25%;
+        width: 45%;
+        transform: rotate(1905deg);
+        transition: 6s;
+        z-index: 99;
+    }
+
+    .wheel5 {
+        position: absolute;
+        top: 12%;
+        left: 25%;
+        width: 45%;
+        transform: rotate(1935deg);
+        transition: 6s;
+        z-index: 99;
+    }
+
+    .wheel6 {
+        position: absolute;
+        top: 12%;
+        left: 25%;
+        width: 45%;
+        transform: rotate(1965deg);
+        transition: 6s;
+        z-index: 99;
+    }
+
+    .wheel7 {
+        position: absolute;
+        top: 12%;
+        left: 25%;
+        width: 45%;
+        transform: rotate(1995deg);
+        transition: 6s;
+        z-index: 99;
+    }
+
+    .wheel8 {
+        position: absolute;
+        top: 12%;
+        left: 25%;
+        width: 45%;
+        transform: rotate(2025deg);
+        transition: 6s;
+        z-index: 99;
+    }
+
+    .wheel9 {
+        position: absolute;
+        top: 12%;
+        left: 25%;
+        width: 45%;
+        transform: rotate(2055deg);
+        transition: 6s;
+        z-index: 99;
+    }
+
+    .wheel10 {
+        position: absolute;
+        top: 12%;
+        left: 25%;
+        width: 45%;
+        transform: rotate(2085deg);
+        transition: 6s;
+        z-index: 99;
+    }
+
+    .wheel11 {
+        position: absolute;
+        top: 12%;
+        left: 25%;
+        width: 45%;
+        transform: rotate(2115deg);
+        transition: 6s;
+        z-index: 99;
+    }
+
+    .wheel12 {
+        position: absolute;
+        top: 12%;
+        left: 25%;
+        width: 45%;
+        transform: rotate(2145deg);
+        transition: 6s;
+        z-index: 99;
+    }
+
+    .dice_image {
+        position: absolute;
+        top: 5%;
+        left: 30%;
+        width: 40%;
+        font-size: 1vw;
+        cursor: pointer;
+    }
+
+    .dice_image[wobble="1"] {
+        animation-name: wobble;
+        animation-duration: 2s;
+    }
+
+    .dice_description {
+        position: absolute;
+        top: 68%;
+        left: 10%;
+        width: 80%;
+        text-align: center;
+        font-size: 1.3vw;
+        color: white;
         filter: drop-shadow(0px 0px 15px #292929);
         transition: all 0.5s;
         animation: fadeIn 0.5s;
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-family: "Bubblegum Sans", serif;
     }
 
-    .card_description_video {
+    .dice_roll_desc {
+        position: absolute;
+        top: 80%;
+        left: 10%;
+        width: 80%;
+        text-align: center;
+        font-size: 1.3vw;
+        color: white;
+        filter: drop-shadow(0px 0px 15px #292929);
+        transition: all 0.5s;
+        animation: fadeIn 0.5s;
+        font-family: "Bubblegum Sans", serif;
+    }
+
+    .nat20_container {
+        position: absolute;
+        margin-top: -45%;
+        margin-left: -15%;
+    }
+
+    .natwizard {
+        width: 40%;
+        filter: drop-shadow(0px 0px 15px #292929);
+    }
+
+    .dice_nat20_desc {
+        position: absolute;
+        top: 75%;
+        width: 100%;
+        text-align: center;
+        font-size: 3vw;
+        filter: drop-shadow(0px 0px 5px #292929);
+        transition: all 0.5s;
+        animation: fadeIn 0.5s;
+        font-family: "Bubblegum Sans", serif;
+        color: white;
+    }
+
+    .RPS_before_game_container_gone {
+        display: none;
+        visibility: hidden;
+    }
+
+    .RPS_before_click {
+        position: absolute;
+        top: 45%;
+        right: 34%;
+        width: 30%;
+        color: rgb(255, 255, 255);
+        background-color: #29649C;
+        border-radius: 50px;
+        font-size: 3vw;
+        text-align: center;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        transition: all 0.5s;
+        animation: fadeIn 0.5s;
+        font-family: "Bubblegum Sans", serif;
+        cursor: pointer;
+        filter: drop-shadow(0px 0px 5px #292929);
+        font-weight: 200;
+    }
+
+    .RPS_before_description {
+        position: absolute;
+        top: 75%;
+        right: 10%;
+        text-align: center;
+        width: 80%;
+        color: rgb(0, 0, 0);
+        font-size: 1.5vw;
+        transition: all 0.5s;
+        animation: fadeIn 0.5s;
+        font-family: "Bubblegum Sans", serif;
+    }
+
+    .RPS_countdown {
+        position: absolute;
+        top: 15%;
+        left: 10%;
+        width: 80%;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        font-size: 8vw;
+        font-weight: 200;
+        transition: all 0.5s;
+        animation: fadeIn 0.5s;
+        font-family: "Bubblegum Sans", serif;
+    }
+
+    .rps_image {
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        width: 20%;
+    }
+
+
+
+    /* 52 Deck */
+    .playing_card1 {
+        position: absolute;
+        top: 35%;
+        left: 32%;
+        width: 15%;
+        margin: 1%;
+
+    }
+
+    .playing_card2 {
+        position: absolute;
+        top: 35%;
+        left: 52%;
+        width: 15%;
+        margin: 1%;
+        cursor: pointer;
+    }
+
+    .higher_or_lower_description {
+        position: absolute;
+        bottom: 3%;
+        left: 12%;
+        width: 80%;
+        text-align: center;
+        font-size: 1.2vw;
+        color: white;
+        filter: drop-shadow(0px 0px 15px #292929);
+        transition: all 0.5s;
+        animation: fadeIn 0.5s;
+        font-family: "Bubblegum Sans", serif;
+    }
+
+    .rof_card {
+        position: absolute;
+        top: 35%;
+        left: 42%;
+        width: 15%;
+        margin: 1%;
+        cursor: pointer;
+    }
+
+    .rof_description {
+        position: absolute;
+        bottom: 3%;
+        left: 11%;
+        width: 80%;
+        text-align: center;
+        font-size: 1.4vw;
+        color: white;
+        filter: drop-shadow(0px 0px 2px #292929);
+        transition: all 0.5s;
+        animation: fadeIn 0.5s;
+        font-family: "Bubblegum Sans", serif;
+    }
+
+    .fiftytwocards {
+        position: absolute;
+        top: 20%;
+        right: 42%;
+        width: 25%;
+        margin: 1%;
+        cursor: pointer;
+    }
+
+    .fiftytwocard_back {
+        position: absolute;
+        top: 20%;
+        right: 42%;
+        width: 25%;
+        margin: 1%;
+        cursor: pointer;
+        z-index: 10000;
+
+    }
+
+    .fiftytwocard_back_gone {
+        display: none;
+    }
+
+    .rtb_description {
         position: absolute;
         color: white;
-        top: 55%;
-        right: 24%;
-        font-size: 2vw;
-        width: 50%;
-        filter: drop-shadow(0px 0px 15px #292929);
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        top: 40%;
+        right: 8%;
+        font-size: 1.2vw;
+        width: 30%;
+        filter: drop-shadow(0px 0px 2px #292929);
+        transition: all 0.5s;
+        animation: fadeIn 0.5s;
+        font-family: "Bubblegum Sans", serif;
     }
 
-    .card_video {
-        position: absolute;
-        color: white;
-        top: 10%;
-        right: 52%;
-        width: 22%;
-        height: 38%;
-        filter: drop-shadow(0px 0px 15px #292929);
-        border: 5px solid rgba(193, 193, 193, 0.8);
-    }
 
+
+    /* Animations */
     @keyframes fadeIn {
         0% {
             opacity: 0;
@@ -388,155 +905,6 @@
         }
     }
 
-    .versus_label {
-        font-size: 3vw;
-        color: rgba(95, 0, 0, 0.749);
-        filter: drop-shadow(0px 0px 15px #ffffff);
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    }
-
-    .playing_card1 {
-        width: 15%;
-        margin: 1%;
-
-    }
-
-    .playing_card2 {
-        width: 15%;
-        margin: 1%;
-        cursor: pointer;
-    }
-
-    .higher_or_lower_description {
-        position: absolute;
-        color: white;
-        top: 28%;
-        right: 24%;
-        font-size: 1vw;
-        width: 40%;
-        filter: drop-shadow(0px 0px 15px #292929);
-        transition: all 0.5s;
-        animation: fadeIn 0.5s;
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    }
-
-    .rof_card {
-        position: absolute;
-        right: 47%;
-        width: 15%;
-        margin: 1%;
-        cursor: pointer;
-    }
-
-    .rof_description {
-        position: absolute;
-        color: white;
-        top: 28%;
-        right: 12%;
-        font-size: 1.6vw;
-        padding: 1%;
-        width: 30%;
-        filter: drop-shadow(0px 0px 15px #292929);
-        transition: all 0.5s;
-        animation: fadeIn 0.5s;
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    }
-
-
-    .nat20_container {}
-
-    .nat20 {
-        position: absolute;
-        top: -5%;
-        right: 30%;
-        
-    }
-
-    .nat1wizard {
-        width: 25%;
-        position: absolute;
-        top: 25%;
-        right: 55%;
-        filter: drop-shadow(0px 0px 15px #000000);
-        animation: fadeIn 0.5s;
-    }
-
-    .dice_nat20 {
-        color: rgb(0, 0, 0);
-        font-size: 1.5vw;
-        filter: drop-shadow(0px 0px 15px #ffffff);
-        transition: all 0.5s;
-        animation: fadeIn 0.5s;
-        font-weight: bold;
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        z-index: 10000;
-    }
-
-    .dice_nat20_desc {
-        font-size: 3vw;
-        filter: drop-shadow(0px 0px 15px #292929);
-        transition: all 0.5s;
-        animation: fadeIn 0.5s;
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        color: white;
-        padding: 2%;
-        position: absolute;
-        top: 80%;
-        right: 21%;
-        transition: all 0.5s;
-        animation: fadeIn 0.5s;
-        background-color: rgba(0, 0, 0, 0.8);
-        border: 5px solid rgb(255, 255, 255);
-        padding: 1%;
-        width: 55%;
-    }
-
-
-    .dice_description {
-        position: absolute;
-        color: white;
-        top: 65%;
-        right: 30%;
-        font-size: 1.2vw;
-        width: 40%;
-        filter: drop-shadow(0px 0px 15px #292929);
-        transition: all 0.5s;
-        animation: fadeIn 0.5s;
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    }
-
-    .dice_roll_desc {
-        position: absolute;
-        color: white;
-        top: 72%;
-        right: 30%;
-        font-size: 1.2vw;
-        width: 40%;
-        filter: drop-shadow(0px 0px 15px #292929);
-        transition: all 0.5s;
-        animation: fadeIn 0.5s;
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    }
-
-    .dice_image {
-        position: absolute;
-        color: white;
-        top: 5%;
-        right: 37%;
-        font-size: 1vw;
-        width: 25%;
-        filter: drop-shadow(0px 0px 15px #292929);
-        cursor: pointer;
-    }
-
-    .dice_image[wobble="1"] {
-        animation-name: wobble;
-        animation-duration: 2s;
-    }
-
-
-    /* Setting Animation effect to the 
-     dice using css keyframe */
     @keyframes wobble {
         from {
             transform: translate3d(0, 0, 0);
@@ -565,38 +933,6 @@
         to {
             transform: translate3d(0, 0, 0);
         }
-    }
-
-    .cards_and_button_container {
-        position: absolute;
-        color: white;
-        top: 40%;
-        right: 15%;
-        filter: drop-shadow(0px 0px 15px #292929);
-        width: 70%;
-
-    }
-
-    .check_button {
-        display: inline-block;
-        padding: 15px 25px;
-        font-size: 1vw;
-        cursor: pointer;
-        text-align: center;
-        text-decoration: none;
-        outline: none;
-        color: #000000;
-        background-color: #ffffff;
-        border: none;
-        border-radius: 15px;
-        box-shadow: 0 9px #999;
-        margin: 5%;
-    }
-
-    .check_button:active {
-        background-color: #979797;
-        box-shadow: 0 5px #666;
-        transform: translateY(4px);
     }
 }
 
@@ -604,79 +940,431 @@
 /* --------------------------------------------------------------------------------------------------------------------------------------- */
 /* The CSS Below is for Desktop */
 @media only screen and (min-width:992px) {
-    .cards {
+    .card_container {
+        position: absolute;
+        left: 15%;
+        margin-top: 6%;
         width: 60%;
+        height: 30vw;
+        animation: fadeIn 0.5s;
     }
 
-
-    .card_container {
-        text-align: center;
-        position: relative;
-        animation: fadeIn 0.5s;
-        margin-top:1%;
+    .cards {
+        width: 100%;
     }
 
 
     .card_title {
         position: absolute;
-        color: white;
         top: 5%;
-        right: 24%;
-        font-size: 2.5vw;
-        filter: drop-shadow(0px 0px 15px #292929);
+        right: 7%;
+        color: white;
         transition: all 0.5s;
         animation: fadeIn 0.5s;
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        filter: drop-shadow(0px 0px 3px #000000);
+        font-size: 2.5vw;
+        font-family: "Bubblegum Sans", serif;
+        font-weight: 200;
     }
-
 
     .card_player_name {
         position: absolute;
-        color: rgb(255, 255, 255);
         top: 15%;
-        right: 24%;
-        font-size: 2vw;
-        filter: drop-shadow(0px 0px 15px #000000);
+        right: 7%;
+        color: rgb(255, 255, 255);
         transition: all 0.5s;
         animation: fadeIn 0.5s;
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        filter: drop-shadow(0px 0px 3px #000000);
+        font-size: 2vw;
+        font-family: "Bubblegum Sans", serif;
+        font-weight: 200;
     }
 
     .card_description {
         position: absolute;
         color: white;
-        top: 45%;
-        right: 24%;
-        font-size: 2.2vw;
-        width: 50%;
+        top: 50%;
+        left: 8%;
+        width: 85%;
+        transition: all 0.5s;
+        animation: fadeIn 0.5s;
+        filter: drop-shadow(0px 0px 3px #000000);
+        font-size: 1.6vw;
+        font-family: "Bubblegum Sans", serif;
+        font-weight: 200;
+        text-align: center;
+
+    }
+
+    /* LO+ */
+
+    .versus_label {
+        font-size: 3vw;
+        color: rgba(95, 0, 0, 0.749);
+        filter: drop-shadow(0px 0px 15px #ffffff);
+        font-family: "Bubblegum Sans", serif;
+    }
+
+    .wheel_stopper {
+        position: absolute;
+        top: 50%;
+        right: 28%;
+        width: 7%;
+        z-index: 100;
+    }
+
+    .wheel_still {
+        position: absolute;
+        top: 12%;
+        left: 25%;
+        width: 45%;
+        z-index: 99;
+        cursor: pointer;
+    }
+
+    .wheel1 {
+        position: absolute;
+        top: 12%;
+        left: 25%;
+        width: 45%;
+        transform: rotate(1815deg);
+        transition: 6s;
+        z-index: 99;
+    }
+
+    .wheel2 {
+        position: absolute;
+        top: 12%;
+        left: 25%;
+        width: 45%;
+        transform: rotate(1845deg);
+        transition: 6s;
+        z-index: 99;
+    }
+
+    .wheel3 {
+        position: absolute;
+        top: 12%;
+        left: 25%;
+        width: 45%;
+        transform: rotate(1875deg);
+        transition: 6s;
+        z-index: 99;
+    }
+
+    .wheel4 {
+        position: absolute;
+        top: 12%;
+        left: 25%;
+        width: 45%;
+        transform: rotate(1905deg);
+        transition: 6s;
+        z-index: 99;
+    }
+
+    .wheel5 {
+        position: absolute;
+        top: 12%;
+        left: 25%;
+        width: 45%;
+        transform: rotate(1935deg);
+        transition: 6s;
+        z-index: 99;
+    }
+
+    .wheel6 {
+        position: absolute;
+        top: 12%;
+        left: 25%;
+        width: 45%;
+        transform: rotate(1965deg);
+        transition: 6s;
+        z-index: 99;
+    }
+
+    .wheel7 {
+        position: absolute;
+        top: 12%;
+        left: 25%;
+        width: 45%;
+        transform: rotate(1995deg);
+        transition: 6s;
+        z-index: 99;
+    }
+
+    .wheel8 {
+        position: absolute;
+        top: 12%;
+        left: 25%;
+        width: 45%;
+        transform: rotate(2025deg);
+        transition: 6s;
+        z-index: 99;
+    }
+
+    .wheel9 {
+        position: absolute;
+        top: 12%;
+        left: 25%;
+        width: 45%;
+        transform: rotate(2055deg);
+        transition: 6s;
+        z-index: 99;
+    }
+
+    .wheel10 {
+        position: absolute;
+        top: 12%;
+        left: 25%;
+        width: 45%;
+        transform: rotate(2085deg);
+        transition: 6s;
+        z-index: 99;
+    }
+
+    .wheel11 {
+        position: absolute;
+        top: 12%;
+        left: 25%;
+        width: 45%;
+        transform: rotate(2115deg);
+        transition: 6s;
+        z-index: 99;
+    }
+
+    .wheel12 {
+        position: absolute;
+        top: 12%;
+        left: 25%;
+        width: 45%;
+        transform: rotate(2145deg);
+        transition: 6s;
+        z-index: 99;
+    }
+
+    .dice_image {
+        position: absolute;
+        top: 5%;
+        left: 30%;
+        width: 40%;
+        font-size: 1vw;
+        cursor: pointer;
+    }
+
+    .dice_image[wobble="1"] {
+        animation-name: wobble;
+        animation-duration: 2s;
+    }
+
+    .dice_description {
+        position: absolute;
+        top: 68%;
+        left: 10%;
+        width: 80%;
+        text-align: center;
+        font-size: 1.3vw;
+        color: white;
         filter: drop-shadow(0px 0px 15px #292929);
         transition: all 0.5s;
         animation: fadeIn 0.5s;
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-family: "Bubblegum Sans", serif;
     }
 
-    .card_description_video {
+    .dice_roll_desc {
+        position: absolute;
+        top: 80%;
+        left: 10%;
+        width: 80%;
+        text-align: center;
+        font-size: 1.3vw;
+        color: white;
+        filter: drop-shadow(0px 0px 15px #292929);
+        transition: all 0.5s;
+        animation: fadeIn 0.5s;
+        font-family: "Bubblegum Sans", serif;
+    }
+
+    .nat20_container {
+        position: absolute;
+        margin-top: -35%;
+        margin-left: -15%;
+    }
+
+    .natwizard {
+        width: 40%;
+        filter: drop-shadow(0px 0px 15px #292929);
+    }
+
+    .dice_nat20_desc {
+        position: absolute;
+        top: 75%;
+        width: 100%;
+        text-align: center;
+        font-size: 3vw;
+        filter: drop-shadow(0px 0px 5px #292929);
+        transition: all 0.5s;
+        animation: fadeIn 0.5s;
+        font-family: "Bubblegum Sans", serif;
+        color: white;
+    }
+
+    .RPS_before_game_container_gone {
+        display: none;
+        visibility: hidden;
+    }
+
+    .RPS_before_click {
+        position: absolute;
+        top: 45%;
+        right: 34%;
+        width: 30%;
+        color: rgb(255, 255, 255);
+        background-color: #29649C;
+        border-radius: 50px;
+        font-size: 3vw;
+        text-align: center;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        transition: all 0.5s;
+        animation: fadeIn 0.5s;
+        font-family: "Bubblegum Sans", serif;
+        cursor: pointer;
+        filter: drop-shadow(0px 0px 5px #292929);
+        font-weight: 200;
+    }
+
+    .RPS_before_description {
+        position: absolute;
+        top: 75%;
+        right: 10%;
+        text-align: center;
+        width: 80%;
+        color: rgb(0, 0, 0);
+        font-size: 1.5vw;
+        transition: all 0.5s;
+        animation: fadeIn 0.5s;
+        font-family: "Bubblegum Sans", serif;
+    }
+
+    .RPS_countdown {
+        position: absolute;
+        top: 15%;
+        left: 10%;
+        width: 80%;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        font-size: 8vw;
+        font-weight: 200;
+        transition: all 0.5s;
+        animation: fadeIn 0.5s;
+        font-family: "Bubblegum Sans", serif;
+    }
+
+    .rps_image {
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        width: 20%;
+    }
+
+
+
+    /* 52 Deck */
+    .playing_card1 {
+        position: absolute;
+        top: 35%;
+        left: 32%;
+        width: 15%;
+        margin: 1%;
+
+    }
+
+    .playing_card2 {
+        position: absolute;
+        top: 35%;
+        left: 52%;
+        width: 15%;
+        margin: 1%;
+        cursor: pointer;
+    }
+
+    .higher_or_lower_description {
+        position: absolute;
+        bottom: 3%;
+        left: 12%;
+        width: 80%;
+        text-align: center;
+        font-size: 1.2vw;
+        color: white;
+        filter: drop-shadow(0px 0px 15px #292929);
+        transition: all 0.5s;
+        animation: fadeIn 0.5s;
+        font-family: "Bubblegum Sans", serif;
+    }
+
+    .rof_card {
+        position: absolute;
+        top: 35%;
+        left: 42%;
+        width: 15%;
+        margin: 1%;
+        cursor: pointer;
+    }
+
+    .rof_description {
+        position: absolute;
+        bottom: 3%;
+        left: 11%;
+        width: 80%;
+        text-align: center;
+        font-size: 1.4vw;
+        color: white;
+        filter: drop-shadow(0px 0px 2px #292929);
+        transition: all 0.5s;
+        animation: fadeIn 0.5s;
+        font-family: "Bubblegum Sans", serif;
+    }
+
+    .fiftytwocards {
+        position: absolute;
+        top: 20%;
+        right: 42%;
+        width: 25%;
+        margin: 1%;
+        cursor: pointer;
+    }
+
+    .fiftytwocard_back {
+        position: absolute;
+        top: 20%;
+        right: 42%;
+        width: 25%;
+        margin: 1%;
+        cursor: pointer;
+        z-index: 10000;
+
+    }
+
+    .fiftytwocard_back_gone {
+        display: none;
+    }
+
+    .rtb_description {
         position: absolute;
         color: white;
-        top: 55%;
-        right: 24%;
-        font-size: 2vw;
-        width: 50%;
-        filter: drop-shadow(0px 0px 15px #292929);
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        top: 40%;
+        right: 8%;
+        font-size: 1.2vw;
+        width: 30%;
+        filter: drop-shadow(0px 0px 2px #292929);
+        transition: all 0.5s;
+        animation: fadeIn 0.5s;
+        font-family: "Bubblegum Sans", serif;
     }
 
-    .card_video {
-        position: absolute;
-        color: white;
-        top: 10%;
-        right: 52%;
-        width: 22%;
-        height: 38%;
-        filter: drop-shadow(0px 0px 15px #292929);
-        border: 5px solid rgba(193, 193, 193, 0.8);
-    }
 
+
+    /* Animations */
     @keyframes fadeIn {
         0% {
             opacity: 0;
@@ -687,156 +1375,6 @@
         }
     }
 
-    .versus_label {
-        font-size: 3vw;
-        color: rgba(95, 0, 0, 0.749);
-        filter: drop-shadow(0px 0px 15px #ffffff);
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    }
-
-    .playing_card1 {
-        width: 15%;
-        margin: 1%;
-
-    }
-
-    .playing_card2 {
-        width: 15%;
-        margin: 1%;
-        cursor: pointer;
-    }
-
-    .higher_or_lower_description {
-        position: absolute;
-        color: white;
-        top: 28%;
-        right: 24%;
-        font-size: 1vw;
-        width: 40%;
-        filter: drop-shadow(0px 0px 15px #292929);
-        transition: all 0.5s;
-        animation: fadeIn 0.5s;
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    }
-
-    .rof_card {
-        position: absolute;
-        right: 47%;
-        width: 15%;
-        margin: 1%;
-        cursor: pointer;
-    }
-
-    .rof_description {
-        position: absolute;
-        color: white;
-        top: 28%;
-        right: 12%;
-        font-size: 1.6vw;
-        padding: 1%;
-        width: 30%;
-        filter: drop-shadow(0px 0px 15px #292929);
-        transition: all 0.5s;
-        animation: fadeIn 0.5s;
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    }
-
-
-    .nat20_container {}
-
-    .nat1wizard {
-        width: 30%;
-        position: absolute;
-        top: 15%;
-        right: 50%;
-        filter: drop-shadow(0px 0px 15px #000000);
-        animation: fadeIn 0.5s;
-    }
-
-    .nat20 {
-        position: absolute;
-        top: -5%;
-        right: 30%;
-    }
-
-    .dice_nat20 {
-        color: rgb(0, 0, 0);
-        font-size: 1.5vw;
-        filter: drop-shadow(0px 0px 15px #ffffff);
-        transition: all 0.5s;
-        animation: fadeIn 0.5s;
-        font-weight: bold;
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        z-index: 10000;
-    }
-
-    .dice_nat20_desc {
-        font-size: 3vw;
-        filter: drop-shadow(0px 0px 15px #292929);
-        transition: all 0.5s;
-        animation: fadeIn 0.5s;
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        color: white;
-        padding: 2%;
-        position: absolute;
-        top: 80%;
-        right: 21%;
-        transition: all 0.5s;
-        animation: fadeIn 0.5s;
-        background-color: rgba(0, 0, 0, 0.8);
-        border: 5px solid rgb(255, 255, 255);
-        padding: 1%;
-        width: 55%;
-    }
-
-
-    .dice_description {
-        position: absolute;
-        color: white;
-        top: 65%;
-        left: 15%;
-        font-size: 1.2vw;
-        width: 70%;
-        filter: drop-shadow(0px 0px 15px #292929);
-        transition: all 0.5s;
-        animation: fadeIn 0.5s;
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    }
-
-    .dice_roll_desc {
-        position: absolute;
-        color: white;
-        top: 73%;
-        left: 25%;
-        font-size: 1.2vw;
-        width: 50%;
-        filter: drop-shadow(0px 0px 15px #292929);
-        transition: all 0.5s;
-        animation: fadeIn 0.5s;
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    }
-
-    .dice_image {
-        position: absolute;
-        color: white;
-        top: 5%;
-        right: 37%;
-        font-size: 1vw;
-        width: 25%;
-        filter: drop-shadow(0px 0px 15px #292929);
-        cursor: pointer;
-    }
-
-    .dice_image[wobble="1"] {
-        animation-name: wobble;
-        animation-duration: 2s;
-    }
-
-
-
-
-    /* Setting Animation effect to the 
-     dice using css keyframe */
     @keyframes wobble {
         from {
             transform: translate3d(0, 0, 0);
@@ -866,39 +1404,4 @@
             transform: translate3d(0, 0, 0);
         }
     }
-
-    .cards_and_button_container {
-        position: absolute;
-        color: white;
-        top: 40%;
-        right: 15%;
-        filter: drop-shadow(0px 0px 15px #292929);
-        width: 70%;
-
-    }
-
-    .check_button {
-        display: inline-block;
-        padding: 15px 25px;
-        font-size: 1vw;
-        cursor: pointer;
-        text-align: center;
-        text-decoration: none;
-        outline: none;
-        color: #000000;
-        background-color: #ffffff;
-        border: none;
-        border-radius: 15px;
-        box-shadow: 0 9px #999;
-        margin: 5%;
-    }
-
-    .check_button:active {
-        background-color: #979797;
-        box-shadow: 0 5px #666;
-        transform: translateY(4px);
-    }
-
-  
-
 }

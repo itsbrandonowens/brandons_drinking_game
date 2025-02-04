@@ -2,47 +2,49 @@ import React from 'react'
 import '../styles/DrinkingGame.css'
 import { Link } from 'react-router-dom';
 import { useState, } from 'react';
-
-import BlackGameCards from './BlackGameCards';
-import OrangeGameCards from './OrangeGameCards';
-import BlueGameCards from './BlueGameCards';
-import GreenGameCards from './GreenGameCards';
-import RedGameCards from './RedGameCards';
-import PinkGameCards from './PinkGameCards';
-import YellowGameCards from './YellowGameCards';
+import card_back from "./images/card_back.png"
+import card_back_fiftytwo from "./images/card_back_fiftytwo.png"
+import card_back_att from "./images/card_back_att.png"
+import card_back_loplus from "./images/card_back_loplus.png"
+import OriginalDeck from './OriginalDeck';
+import LOPlusDeck from './LOPlusDeck';
+import FiftyTwoDeck from './52Deck';
+import ATTDeck from './ATTDeck';
 import shearer_image from './images/shearer.png'
 import speech_bubble from './images/speech_bubble.png'
-import WhiteGameCards from './WhiteGameCards';
-import PurpleGameCards from './PurpleGameCards';
-import rotate_device from './images/rotate_device.png'
 import earthquake_image from './images/earthquake_image.png'
 import boozenami_image from './images/boozenami.png'
 import waves_image from './images/waves_image.png'
 import genie_image from './images/genie_image.png'
 import reflect_shield from './images/reflect_shield.png'
+import ChestFeatureComponent from './ChestFeatureComponent';
+import GambleFeatureComponent from './GambleFeatureComponent';
 
-const DrinkingGame = () => {
-    const [num, setNum] = useState(5);
-    const [prevNum, setPrevNum] = useState(5);
-    const [shearerNum, setShearerNum] = useState(0);
+function DrinkingGame() {
+    const [num, setNum] = useState(1000); // Starts the game off in the original deck 
+
+    //This sets the names for the cards
     const storedNames = JSON.parse(localStorage.getItem("player names"))
     let randomName = storedNames[Math.floor(Math.random() * storedNames.length)];
     const [assignedName, setAssignedName] = useState(0);
-    const [shearerStyle, setShearerStyle] = useState("shearer_popup_gone")
-    const [speechBubbleStyle, setSpeechBubbleStyle] = useState("speech_bubble_gone")
-    const [shearerTextStyle, setShearerTextStyle] = useState("shearer_text_gone")
-    const [shearerNameStyle, setShearerNameStyle] = useState("shearer_text_name_gone")
-    const [cardStyle, setCardStyle] = useState("game_container")
-    const [earthquakeDetailsStyle, setEarthquakeDetailsStyle] = useState("earthquake_container_gone")
-    const [earthquakeNum, setEarthquakeNum] = useState(0);
-    const [boozenamiDetailsStyle, setBoozenamiDetailsStyle] = useState("earthquake_container_gone")
-    const [boozenamiNum, setBoozenamiNum] = useState(0);
-    const [genieNum, setGenieNum] = useState(0);
-    const [genieDetailsStyle, setGenieDetailsStyle] = useState("earthquake_container_gone")
-    const [shieldNum, setShieldNum] = useState(0);
-    const [shieldDetailsStyle, setShieldDetailsStyle] = useState("earthquake_container_gone")
-    
 
+
+    //This is for picking decks that the user has chosen to play with
+    const chosenDecks = JSON.parse(localStorage.getItem("decks"))
+    const [randomDeck, setRandomDeck] = useState(0);
+    const [deckChanceNumber, setDeckChanceNumber] = useState(0); // This allows me to "maniplate" the chances that a deck will appear 
+
+    //This is for picking features that the user has chosen to play with
+    const chosenFeatures = JSON.parse(localStorage.getItem("features"))
+    const [cardStyle, setCardStyle] = useState("game_container")//for changing the whole container if the feature needs it
+    const [fNum, setFnum] = useState(0); // This is to set the correct feature to appear when the odds are hit 
+    const [WwNum, setWwNum] = useState(0); //This number is to set the chances of when the Shearer feature appears
+    const [eqNum, setEqNum] = useState(0); //"" but Earthquake 
+    const [BNum, setBNum] = useState(0); //"" but Boozenami 
+    const [GNum, setGNum] = useState(0); //"" but Genie
+    const [SNum, setSNum] = useState(0); //"" but Shield
+    const [CNum, setCNum] = useState(0); //"" but Chests
+    const [GambleNum, setGambleNum] = useState(0); //"" but Gamble
 
     // Random Number Function 
     const randomNumberInRange = (min, max) => {
@@ -50,294 +52,218 @@ const DrinkingGame = () => {
             * (max - min + 1)) + min;
     };
 
-
-    //HamburgerMenu
-    let [isActive, setActive] = useState(false)
-    let hamburger_function = () => {
-        setActive(!isActive);
-        setIsFeatureDisableActive(false)
-    };
-
-    /////////////////////////////////////////////////////////////////////////// Disable Features
-    let [isFeatureDisableActive, setIsFeatureDisableActive] = useState(false)
-    let disable_feature_popup = () => {
-        setIsFeatureDisableActive(!isFeatureDisableActive)
-    }
-
-    //Disable Shearer
-    let [featureDisableS, setFeatureDisableS] = useState(false)
-    let disable_shearer = () => {
-        setFeatureDisableS(!featureDisableS);
-    };
-
-    //Disable Earthquake
-    let [featureDisableE, setFeatureDisableE] = useState(false)
-    let disable_earthquake = () => {
-        setFeatureDisableE(!featureDisableE);
-    };
-
-    //Disable Boozenami
-    let [featureDisableB, setFeatureDisableB] = useState(false)
-    let disable_boozenami = () => {
-        setFeatureDisableB(!featureDisableB);
-    };
-
-    //Disable Genie
-    let [featureDisableG, setFeatureDisableG] = useState(false)
-    let disable_genie = () => {
-        setFeatureDisableG(!featureDisableG);
-    };
-
-    //Disable Shield
-    let [featureDisableShield, setFeatureDisableShield] = useState(false)
-    let disable_shield = () => {
-        setFeatureDisableShield(!featureDisableShield);
-    };
-
-
-
-    /////////////////////////////////////////////////////////////////////////// Features
-    //Shearer Function
-    const shearerFunction = () => {
-        setShearerNum(randomNumberInRange(1, 50));
-
-        if (shearerNum == 1) {
-            setShearerStyle("shearer_popup")
-            setSpeechBubbleStyle("speech_bubble")
-            setShearerNameStyle("shearer_text_name")
-            setShearerTextStyle("shearer_text")
-        } else {
-            setShearerStyle("shearer_popup_gone")
-            setSpeechBubbleStyle("speech_bubble_gone")
-            setShearerNameStyle("shearer_text_name_gone")
-            setShearerTextStyle("shearer_text_gone")
-        }
-
-    }
-
-    // Earthquake Function
-    const earthquakeFunction = () => {
-        setEarthquakeNum(randomNumberInRange(1, 120));
-
-        if (earthquakeNum == 1) {
-            setCardStyle("game_container_earthquake")
-            setTimeout(() => {
-                setEarthquakeDetailsStyle("earthquake_container")
-
-            }, "2000");
-
-
-        } else {
-            setCardStyle("game_container")
-            setEarthquakeDetailsStyle("earthquake_container_gone")
-
-        }
-
-    }
-
-
-    //Boozenami Function 
-    const boozenamiFunction = () => {
-        setBoozenamiNum(randomNumberInRange(1, 150));
-
-        if (boozenamiNum == 1 && earthquakeNum !== 1) {
-            setBoozenamiDetailsStyle("boozenami_container")
-            setNum("101")
-        } else {
-
-            setBoozenamiDetailsStyle("earthquake_container_gone")
-
-        }
-
-    }
-
-    //Genie Function 
-    const genieFunction = () => {
-        setGenieNum(randomNumberInRange(1, 120));
-        if (genieNum == 1 && earthquakeNum !== 1 && boozenamiNum !== 1) {
-            setGenieDetailsStyle("genie_container")
-        } else {
-            setGenieDetailsStyle("earthquake_container_gone")
-        }
-    }
-
-    //Shield Function 
-    const shieldFunction = () => {
-        setShieldNum(randomNumberInRange(1, 100));
-        if (shieldNum == 1 && earthquakeNum !== 1 && boozenamiNum !== 1 && genieNum !== 1) {
-            setShieldDetailsStyle("shield_container")
-        } else {
-            setShieldDetailsStyle("earthquake_container_gone")
-        }
-    }
-
-
-
-    /////////////////////////////////////////////////////////////////////////// Next Card Function 
     const OnClick = () => {
-        setPrevNum(num);
-        setNum(randomNumberInRange(1, 100));
-        console.log("The previous number is " + prevNum)
-        console.log("The current number is " + num)
-        if (num >= 83 && num <= 92 && prevNum >= 83 && prevNum <= 92) {
-            setNum(randomNumberInRange(1, 100));
-            //This prevents the wheel from spinning twice in a row  
-        }
+        //These functions reset any changes that features have done and allows for new decks to be chosen
+        setCardStyle("game_container")
+        setFnum(0);
+        setRandomDeck(chosenDecks[Math.floor(Math.random() * chosenDecks.length)]);
+        setDeckChanceNumber(randomNumberInRange(1, 100));
 
-        //Shearer
-        if (featureDisableS === true) {
-            setShearerNum(2)
-            setShearerStyle("shearer_popup_gone")
-            setSpeechBubbleStyle("speech_bubble_gone")
-            setShearerNameStyle("shearer_text_name_gone")
-            setShearerTextStyle("shearer_text_gone")
-
+        // This sets the backs of the cards to the corresponding deck that its about to show 
+        if (randomDeck == "Original") {
+            setNum(1000);
+        } else if (randomDeck == "LO+") {
+            setNum(1001);
+        } else if (randomDeck == "52Deck" && deckChanceNumber < 33) {
+            setNum(1002);
+        } else if (randomDeck == "ATT" && deckChanceNumber < 33) {
+            setNum(1003);
         } else {
-            shearerFunction();
+            setNum(1000)
         }
 
-        //Earthquake
-        if (featureDisableE === true) {
-            setEarthquakeNum(2)
-            setEarthquakeDetailsStyle("earthquake_container_gone")
-            setCardStyle("game_container")
-        } else {
-            earthquakeFunction();
-        }
 
-        //Boozenami
-        if (featureDisableB === true) {
-            setBoozenamiNum(2)
-            setBoozenamiDetailsStyle("earthquake_container_gone")
-        } else {
-            boozenamiFunction();
-        }
+        setTimeout(() => { // This sets the deck, decided by math and what decks the user has chosen to play with 
+            if (randomDeck == "Original") {
+                setNum(1);
+            } else if (randomDeck == "LO+") {
+                setNum(2);
+            } else if (randomDeck == "52Deck" && deckChanceNumber < 33) {
+                setNum(3);
+            } else if (randomDeck == "ATT" && deckChanceNumber < 33) {
+                setNum(4);
+            } else {
+                setNum(1)
+            }
+        }, "1000");
 
-        //Genie
-        if (featureDisableG === true) {
-            setGenieNum(2)
-            setGenieDetailsStyle("earthquake_container_gone")
-        } else {
-            genieFunction();
-        }
 
-        //Shield
-        if (featureDisableShield === true) {
-            setShieldNum(2)
-            setShieldDetailsStyle("earthquake_container_gone")
-        } else {
-            shieldFunction();
-        }
-
-        //Sets Name
+        //This sets the name on the card to the next person on the list
         setAssignedName(prev => ([prev + 1] % storedNames.length))
         localStorage.setItem("assignedName", JSON.stringify(assignedName))
+
+
+        //This is for setting the odds of when a feature should appear 
+        setWwNum(randomNumberInRange(1, 80))
+        setEqNum(randomNumberInRange(1, 150))
+        setBNum(randomNumberInRange(1, 180))
+        setGNum(randomNumberInRange(1, 100))
+        setSNum(randomNumberInRange(1, 100))
+        setCNum(randomNumberInRange(1, 50))
+        setGambleNum(randomNumberInRange(1, 70))
+
+        //This code is for displaying all of the features when they roll in
+        if (WwNum == 1 && chosenFeatures.includes("WW")) {
+            setFnum(1);
+        }
+        else if (eqNum == 1 && chosenFeatures.includes("EQ")) {
+            setFnum(2);
+            setCardStyle("game_container_earthquake ")
+        }
+        else if (BNum == 1 && chosenFeatures.includes("BN")) {
+            setFnum(3);
+            setNum(-1);
+            setTimeout(() => { // this makes sure that once the card has been removed it doesnt then reset after a second
+                setNum(-1);
+            }, "1000");
+        }
+        else if (GNum == 1 && chosenFeatures.includes("Genie")) {
+            setFnum(4);
+        }
+        else if (SNum == 1 && chosenFeatures.includes("Shield")) {
+            setFnum(5);
+        }
+        else if (CNum == 1 && chosenFeatures.includes("Chests")) {
+            setFnum(6);
+            setNum(-1);
+            setTimeout(() => { // this makes sure that once the card has been removed it doesnt then reset after a second
+                setNum(-1);
+            }, "1000");
+        }
+        else if (GambleNum == 1 && chosenFeatures.includes("Gamble")) {
+            setFnum(7);
+            setNum(-1);
+            setTimeout(() => { // this makes sure that once the card has been removed it doesnt then reset after a second
+                setNum(-1);
+            }, "1000");
+        }
     }
 
-    /////////////////////////////////////////////////////////////////////////// HTML
+
+
 
     return (
         <div className={cardStyle} >
+            <Link style={{ color: "white", textDecoration: 'none' }} to="/">
+                <button className="home_button">🏠</button>
+            </Link>
+            <Link style={{ color: "white", textDecoration: 'none' }} to="/card_details">
+                <button className="q_button">?</button>
+            </Link>
 
-            <div className="force_orientation">
-                <img src={rotate_device} className="force_orientation_image" ></img>
-            </div>
-
-            <div className="hamburger_icon" onClick={hamburger_function}>
-                <div class={isActive ? "bar1change" : "bar1"}></div>
-                <div class={isActive ? "bar2change" : "bar2"}></div>
-                <div class={isActive ? "bar3change" : "bar3"}></div>
-            </div>
-            <div className="navbar_container">
-                <ul className={isActive ? 'navbar_links_expanded' : 'navbar_links'} >
-                    <Link style={{ color: "black", textDecoration: 'none' }} to='/'><li className="menuLinks" onClick={hamburger_function}> 🏠 Home </li> </Link>
-                    <Link style={{ color: "black", textDecoration: 'none' }} to='/rules'><li className="menuLinks" onClick={hamburger_function}> 📜 Rules </li> </Link>
-                    <li className="menuLinks" onClick={disable_feature_popup}> 📜 Disable Features </li>
-                    <a style={{ color: "black", textDecoration: 'none' }} href="https://www.paypal.com/donate/?hosted_button_id=D5BVW5S73QRYE" target="_blank"> <li className="tipLink" onClick={hamburger_function}> 🫙 Leave a tip </li> </a>
-                </ul>
-            </div>
-
-            <div className={isFeatureDisableActive ? "disable_features_popup" : "disable_features_popup_gone"}>
-                <button className={featureDisableS ? "feature_checkbox_off" : "feature_checkbox_on"} onClick={disable_shearer}>  <img src={shearer_image} className="feature_popup_image" />  </button>
-                <button className={featureDisableE ? "feature_checkbox_off" : "feature_checkbox_on"} onClick={disable_earthquake}>  <img src={earthquake_image} className="feature_popup_image" />  </button>
-                <button className={featureDisableB ? "feature_checkbox_off" : "feature_checkbox_on"} onClick={disable_boozenami}>  <img src={boozenami_image} className="feature_popup_image" />  </button>
-                <button className={featureDisableG ? "feature_checkbox_off" : "feature_checkbox_on"} onClick={disable_genie}>  <img src={genie_image} className="feature_popup_image" />  </button>
-                <button className={featureDisableShield ? "feature_checkbox_off" : "feature_checkbox_on"} onClick={disable_shield}>  <img src={reflect_shield} className="feature_popup_image" />  </button>
-            </div>
-
-            <div className={earthquakeDetailsStyle}>
-                <h1 className="earthquake_title">  EARTHQUAKE</h1>
-                <img src={earthquake_image} className="earthquake_image" ></img>
-                <h2 className="earthquake_description">  NECK YOUR DRINK QUICK!</h2>
-            </div>
-
-            <div className={boozenamiDetailsStyle}>
-                <h1 className="boozenami_title"> Boozenami</h1>
-                <img src={boozenami_image} className="boozenami_image"></img>
-                <img src={waves_image} className="waves_image"></img>
-                <h2 className="boozenami_description">  EVERYONE NECK SOMEONE ELSES DRINK!</h2>
-
-            </div>
-
-            <div className={genieDetailsStyle}>
-                <h1 className="genie_title"> I grant {randomName}, 3 wishes!</h1>
-                <img src={genie_image} className="genie_image"></img>
-
-                <h2 className="genie_description">  Give 1 drink out, create 1 rule and refuse your next forfeit!</h2>
-            </div>
-
-            <div className={shieldDetailsStyle}>
-                <h1 className="shield_title"> {randomName} found a shield!</h1>
-                <img src={reflect_shield} className="shield_image"></img>
-                <h2 className="shield_description"> Pass your next forfeit onto a player of your choosing!</h2>
-                
-            </div>
-
-
-
-            {num >= 1 && num <= 2 ?
-                <BlackGameCards /> : null // Black -  2% chance
-            }
-            {num >= 3 && num <= 23 ?
-                <GreenGameCards /> : null  // Green -  21% chance
-            }
-            {num >= 24 && num <= 32 ?
-                <OrangeGameCards /> : null // Orange -  9% chance
-            }
-            {num >= 33 && num <= 51 ?
-                <BlueGameCards /> : null // Blue -  19% chance
-            }
-            {num >= 52 && num <= 65 ?
-                <RedGameCards /> : null // Red -  14% chance
-            }
-            {num >= 66 && num <= 74 ?
-                <PinkGameCards /> : null // Pink -  9% chance
-            }
-            {num >= 75 && num <= 82 ?
-                <YellowGameCards /> : null // Yellow -  8% chance
-            }
-            {num >= 83 && num <= 92 ?
-                <WhiteGameCards /> : null // White -  10% chance
-            }
-            {num >= 93 && num <= 100 ?
-                <PurpleGameCards /> : null // Purple -  8% chance
+                               
+            <div className="card_button_container">
+                {                    
+                    num == 1000 ?         
+                        <div className="card_container">
+                            <img src={card_back} className="cards" alt="Back Of Card"></img>
+                        </div> : null
+                }             
+                {                   
+                    num == 1001 ?
+                        <div className="card_container">
+                            <img src={card_back_loplus} className="cards" alt="Back Of Card"></img>
+                        </div> : null
+                }   
+                { 
+                    num == 1002 ?
+                        <div className="card_container">
+                            <img src={card_back_fiftytwo} className="cards" alt="Back Of Card"></img>
+                        </div> : null
+                }
+                {
+                    num == 1003 ?
+                        <div className="card_container">
+                            <img src={card_back_att} className="cards" alt="Back Of Card"></img>
+                        </div> : null
+                }
+                {
+                    num == 1 ?
+                        <OriginalDeck /> : null
+                }
+                {
+                    num == 2 ?
+                        <LOPlusDeck /> : null
+                }
+                {
+                    num == 3 ?
+                        <FiftyTwoDeck /> : null
+                }
+                {
+                    num == 4 ?
+                        <ATTDeck /> : null
+                }
+            </div >
+            { // Shearer Feature
+                fNum == 1 ?
+                    <div>
+                        <img src={shearer_image} className="shearer_popup" alt="shearer"></img>
+                        <img src={speech_bubble} className="speech_bubble" alt="speech_bubble"></img>
+                        <p className="shearer_text_name"> {randomName}</p>
+                        <p className="shearer_text"> Give out 4 drinks!</p>
+                    </div> :
+                    null
             }
 
+            {// Earthquake Feature
+                fNum == 2 ?
+                    <div className="earthquake_container">
+                        <h1 className="earthquake_title">  EARTHQUAKE</h1>
+                        <img src={earthquake_image} className="earthquake_image" ></img>
+                        <h2 className="earthquake_description">  NECK YOUR DRINK QUICK!</h2>
+                    </div>
+                    : null
+            }
+            {// Boozenami Feature
+                fNum == 3 ?
+                    <div>
+                        <h1 className="boozenami_title"> Boozenami</h1>
+                        <img src={boozenami_image} className="boozenami_image"></img>
+                        <img src={waves_image} className="waves_image"></img>
+                        <h2 className="boozenami_description">  EVERYONE NECK SOMEONE ELSES DRINK!</h2>
 
-            <img src={shearer_image} className={shearerStyle} alt="shearer"></img>
-            <img src={speech_bubble} className={speechBubbleStyle} alt="speech_bubble"></img>
-            <p className={shearerNameStyle}> {randomName}</p>
-            <p className={shearerTextStyle}> Give out 4 drinks!</p>
-
+                    </div>
+                    : null
+            }
+            {// Genie Feature
+                fNum == 4 ?
+                    <div>
+                        <h1 className="genie_title"> I grant {randomName}, 3 wishes!</h1>
+                        <img src={genie_image} className="genie_image"></img>
+                        <h2 className="genie_description">  Give 1 drink out, create 1 rule and refuse your next forfeit!</h2>
+                    </div>
+                    : null
+            }
+            {// Shield Feature
+                fNum == 5 ?
+                    <div>
+                        <h1 className={"shield_title"}> {randomName} found a shield!</h1>
+                        <img src={reflect_shield} className="shield_image"></img>
+                        <h2 className="shield_description"> Pass your next forfeit onto a player of your choosing!</h2>
+                    </div>
+                    : null
+            }
+            {// Chests Feature
+                fNum == 6 ?
+                    <div>
+                        <ChestFeatureComponent />
+                    </div>
+                    : null
+            }
+             {// Gamble Feature
+                fNum == 7 ?
+                <div>
+                    <GambleFeatureComponent />
+                </div>
+                : null
+        }
 
 
 
             <button className="next_card_button" onClick={OnClick}>Next Card</button>
+
+
         </div>
-
-
-
-
 
     )
 }
