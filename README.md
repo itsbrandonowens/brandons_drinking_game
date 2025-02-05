@@ -2,7 +2,7 @@
 
 https://itsbrandonowens.github.io/brandons_drinking_game/
 
-lastordersgame.com
+https://lastordersgame.com
 
 Last Orders is a card-based drinking game that I started creating in August of 2023.
 
