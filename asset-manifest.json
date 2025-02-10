@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/brandons_drinking_game/static/css/main.a13e6c36.css",
+    "main.css": "/brandons_drinking_game/static/css/main.f5908ae6.css",
     "main.js": "/brandons_drinking_game/static/js/main.6afc914a.js",
     "static/js/787.7251fea7.chunk.js": "/brandons_drinking_game/static/js/787.7251fea7.chunk.js",
     "static/media/gamble_image.png": "/brandons_drinking_game/static/media/gamble_image.09ef159470d5cf988e90.png",
@@ -135,12 +135,12 @@
     "static/media/wheel_stopper.png": "/brandons_drinking_game/static/media/wheel_stopper.a3fe1aba25a7f37be1d0.png",
     "static/media/facebook_logo.png": "/brandons_drinking_game/static/media/facebook_logo.a2075685616076c6594f.png",
     "index.html": "/brandons_drinking_game/index.html",
-    "main.a13e6c36.css.map": "/brandons_drinking_game/static/css/main.a13e6c36.css.map",
+    "main.f5908ae6.css.map": "/brandons_drinking_game/static/css/main.f5908ae6.css.map",
     "main.6afc914a.js.map": "/brandons_drinking_game/static/js/main.6afc914a.js.map",
     "787.7251fea7.chunk.js.map": "/brandons_drinking_game/static/js/787.7251fea7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a13e6c36.css",
+    "static/css/main.f5908ae6.css",
     "static/js/main.6afc914a.js"
   ]
 }
