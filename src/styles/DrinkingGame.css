@@ -87,7 +87,8 @@
         /* /\ Placement on Screen*/
         /* \/ Looks */
         padding: 4% 0% 4% 0%;
-        font-size: 10vw;
+        font-size: 8vw;
+        height:20vw;
         cursor: pointer;
         text-align: center;
         outline: none;
@@ -251,14 +252,14 @@
         position: absolute;
         width: 70%;
         left: 15%;
-        top: 5%;
+        top: 15%;
         z-index: 100000;
         filter: drop-shadow(0px 0px 15px #292929);
     }
 
     .boozenami_title {
         position: absolute;
-        top: 45%;
+        top: 55%;
         width: 100%;
         text-align: center;
         z-index: 100000;
@@ -272,7 +273,7 @@
 
     .boozenami_description {
         position: absolute;
-        top: 53%;
+        top: 63%;
         width: 100%;
         text-align: center;
         z-index: 100000;
@@ -691,7 +692,6 @@
         }
     }
 }
-
 /* --------------------------------------------------------------------------------------------------------------------------------------- */
 /* The CSS Below is for mobile in landscape orientation */
 @media only screen and (min-width:650px) and (max-width:991px) {
