@@ -104,13 +104,14 @@
     .deck_feature_container {
         border: 3px solid #000;
         border-radius: 10px;
-        padding: 2% 0% 12% 0%;
+        padding: 2% 0% 6rem 0%;
         width: 90%;
         background-color: white;
         margin-left: 5%;
         filter: drop-shadow(0px 0px 10px #292929);
         height:auto;
         margin-top:10%;
+        position: relative;
     }
 
     .checkbox_grid {
@@ -138,6 +139,7 @@
         margin: 6% 1% 0% 1%;
         cursor: pointer;
         filter: drop-shadow(0px 0px 2px #292929);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
     .feature_checkbox_off {
@@ -154,6 +156,54 @@
         margin: 6% 1% 0% 1%;
         cursor: pointer;
         filter: drop-shadow(0px 0px 2px #292929);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .feature_checkbox_on:hover,
+    .feature_checkbox_off:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 0 0 2px rgba(255,255,255,0.2);
+    }
+
+    .button_row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2%;
+        width: 100%;
+        position: absolute;
+        bottom: 1rem;
+        left: 0;
+        z-index: 1;
+    }
+
+    .checkbox_helper_button {
+        margin-top: 0;
+        margin-right: 0;
+        background-color: #fff;
+        border: 2px solid #111;
+        border-radius: 8px;
+        padding: 2% 3%;
+        font-family: "Bubblegum Sans", serif;
+        cursor: pointer;
+        position: relative;
+        z-index: 1;
+        box-shadow: #111111 2px 2px 0 0;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 1;
+    }
+
+    .checkbox_helper_button:hover {
+        transform: translateY(-2px);
+        box-shadow: #111111 3px 3px 0 0;
+    }
+
+    .checkbox_helper_button:active {
+        box-shadow: #111111 1px 1px 0 0;
+        transform: translate(1px, 1px);
     }
 
     input[type='checkbox'] {
@@ -216,11 +266,13 @@
     .deck_details_button {
         background-color: #02a5ea;
         border: 2px solid #111111;
-        border-radius: 10px;
+        border-radius: 8px;
         box-shadow: #111111 2px 2px 0 0;
         color: #ffffff;
         cursor: pointer;
-        display: inline-block;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
         font-weight: 400;
         font-size: 3.5vw;
         text-align: center;
@@ -228,22 +280,25 @@
         user-select: none;
         -webkit-user-select: none;
         touch-action: manipulation;
-        padding: 1% 0% 1% 0%;
+        padding: 2% 3%;
         filter: drop-shadow(0px 0px 2px #292929);
         font-family: "Bubblegum Sans", serif;
         font-weight: 200;
         margin-bottom: 1%;
-        
-        position: absolute;
-        margin-top:27%;
-        left: 50%;
-        width: 20%;
-        margin-left: -10%;
-        
+        position: relative;
+        width: auto;
+        min-width: 20%;
+        margin-left: 2%;
+        margin-right: 2%;
+        z-index: 1;
+        transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+        line-height: 1;
     }
 
     .deck_details_button:hover {
         background-color: #027fb4;
+        transform: translateY(-2px);
+        box-shadow: #111111 3px 3px 0 0;
     }
 
     .deck_details_button:active {
@@ -580,12 +635,13 @@
     .deck_feature_container {
         border: 3px solid #000;
         border-radius: 20px;
-        padding: 1%;
+        padding: 1% 0% 6rem 0%;
         width: 90%;
         background-color: white;
         margin-left: 10%;
         filter: drop-shadow(0px 0px 10px #292929);
         height: 25vw;
+        position: relative;
     }
 
     .checkbox_grid {
@@ -633,6 +689,46 @@
         margin: 6% 1% 0% 1%;
         cursor: pointer;
         filter: drop-shadow(0px 0px 2px #292929);
+    }
+
+    .button_row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2%;
+        width: 100%;
+        position: absolute;
+        bottom: 1rem;
+        left: 0;
+        z-index: 1;
+    }
+
+    .checkbox_helper_button {
+        margin-top: 0;
+        margin-right: 0;
+        background-color: #fff;
+        border: 2px solid #111;
+        border-radius: 8px;
+        padding: 0.7rem 1rem;
+        font-family: "Bubblegum Sans", serif;
+        font-size: 1.1vw;
+        cursor: pointer;
+        box-shadow: #111111 2px 2px 0 0;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 1;
+    }
+
+    .checkbox_helper_button:hover {
+        transform: translateY(-2px);
+        box-shadow: #111111 3px 3px 0 0;
+    }
+
+    .checkbox_helper_button:active {
+        box-shadow: #111111 1px 1px 0 0;
+        transform: translate(1px, 1px);
     }
 
     input[type='checkbox'] {
@@ -698,11 +794,13 @@
     .deck_details_button {
         background-color: #02a5ea;
         border: 2px solid #111111;
-        border-radius: 10px;
+        border-radius: 8px;
         box-shadow: #111111 2px 2px 0 0;
         color: #ffffff;
         cursor: pointer;
-        display: inline-block;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
         font-weight: 400;
         font-size: 1.8vw;
         text-align: center;
@@ -710,20 +808,25 @@
         user-select: none;
         -webkit-user-select: none;
         touch-action: manipulation;
-        padding: 1% 0% 1% 0%;
+        padding: 0.7rem 1rem;
         filter: drop-shadow(0px 0px 2px #292929);
         font-family: "Bubblegum Sans", serif;
         font-weight: 200;
         margin-bottom: 1%;
-        position: absolute;
-        bottom: 1%;
-        left: 50%;
-        width: 20%;
-        margin-left: -10%;
+        position: relative;
+        width: auto;
+        min-width: 20%;
+        margin-left: 2%;
+        margin-right: 2%;
+        z-index: 1;
+        transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+        line-height: 1;
     }
 
     .deck_details_button:hover {
         background-color: #027fb4;
+        transform: translateY(-2px);
+        box-shadow: #111111 3px 3px 0 0;
     }
 
     .deck_details_button:active {
@@ -1068,12 +1171,13 @@
     .deck_feature_container {
         border: 3px solid #000;
         border-radius: 20px;
-        padding: 1%;
+        padding: 1% 0% 6rem 0%;
         width: 100%;
         background-color: white;
         margin-left: 5%;
         filter: drop-shadow(0px 0px 10px #292929);
         height: 30vw;
+        position: relative;
     }
 
     .checkbox_grid {
@@ -1122,6 +1226,46 @@
         margin: 5% 1% 0% 1%;
         cursor: pointer;
         filter: drop-shadow(0px 0px 2px #292929);
+    }
+
+    .button_row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2%;
+        width: 100%;
+        position: absolute;
+        bottom: 1rem;
+        left: 0;
+        z-index: 1;
+    }
+
+    .checkbox_helper_button {
+        margin-top: 0;
+        margin-right: 0;
+        background-color: #fff;
+        border: 2px solid #111;
+        border-radius: 8px;
+        padding: 0.7rem 1rem;
+        font-family: "Bubblegum Sans", serif;
+        font-size: 1.2vw;
+        cursor: pointer;
+        box-shadow: #111111 2px 2px 0 0;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 1;
+    }
+
+    .checkbox_helper_button:hover {
+        transform: translateY(-2px);
+        box-shadow: #111111 3px 3px 0 0;
+    }
+
+    .checkbox_helper_button:active {
+        box-shadow: #111111 1px 1px 0 0;
+        transform: translate(1px, 1px);
     }
 
     input[type='checkbox'] {
@@ -1187,11 +1331,13 @@
     .deck_details_button {
         background-color: #02a5ea;
         border: 2px solid #111111;
-        border-radius: 10px;
+        border-radius: 8px;
         box-shadow: #111111 2px 2px 0 0;
         color: #ffffff;
         cursor: pointer;
-        display: inline-block;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
         font-weight: 400;
         font-size: 1.4vw;
         text-align: center;
@@ -1199,20 +1345,25 @@
         user-select: none;
         -webkit-user-select: none;
         touch-action: manipulation;
-        padding: 1% 0% 1% 0%;
+        padding: 0.7rem 1rem;
         filter: drop-shadow(0px 0px 2px #292929);
         font-family: "Bubblegum Sans", serif;
         font-weight: 200;
         margin-bottom: 1%;
-        position: absolute;
-        bottom: 1%;
-        left: 50%;
-        width: 20%;
-        margin-left: -10%;
+        position: relative;
+        width: auto;
+        min-width: 20%;
+        margin-left: 2%;
+        margin-right: 2%;
+        z-index: 1;
+        transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+        line-height: 1;
     }
 
     .deck_details_button:hover {
         background-color: #027fb4;
+        transform: translateY(-2px);
+        box-shadow: #111111 3px 3px 0 0;
     }
 
     .deck_details_button:active {

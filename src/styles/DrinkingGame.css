@@ -84,8 +84,6 @@
         bottom: 2%;
         width: 90%;
         left: 5%;
-        /* /\ Placement on Screen*/
-        /* \/ Looks */
         padding: 4% 0% 4% 0%;
         font-size: 8vw;
         height:20vw;
@@ -101,6 +99,7 @@
         color: #000000;
         font-family: "Bubblegum Sans", serif;
         font-weight: 200;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
 

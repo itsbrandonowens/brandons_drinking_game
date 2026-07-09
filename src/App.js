@@ -1,28 +1,28 @@
 import './App.css';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import Homepage from './components/Homepage';
 import DrinkingGame from './components/DrinkingGame';
 import IndexPage from './components/IndexPage';
 import CardDetails from './components/CardDetails';
 import ReactGA from 'react-ga';
-import { useEffect, } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
+
 ReactGA.initialize('G-9J3FRLZPM3');
 
 function App() {
+  const location = useLocation();
+
   useEffect(() => {
-    ReactGA.send({ hitType: "pageview", page: window.location.pathname });
-  }, []);
-
-  const scrollLock = () => {
+    ReactGA.send({ hitType: 'pageview', page: location.pathname });
     document.body.style.overflow = 'hidden';
-  }
 
-  scrollLock();
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [location.pathname]);
 
   return (
     <div className="App">
-    
       <Routes>
         <Route path='/' element={<IndexPage />} />
         <Route path='/brandons_drinking_game' element={<Homepage />} />
@@ -30,7 +30,6 @@ function App() {
         <Route path='/drinking_game' element={<DrinkingGame />} />
         <Route path='/card_details' element={<CardDetails />} />
       </Routes>
-
     </div>
   );
 }
