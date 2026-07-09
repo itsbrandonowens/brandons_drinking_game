@@ -104,7 +104,6 @@
     .deck_feature_container {
         border: 3px solid #000;
         border-radius: 10px;
-        padding: 2% 0% 6rem 0%;
         width: 90%;
         background-color: white;
         margin-left: 5%;
@@ -112,6 +111,8 @@
         height:auto;
         margin-top:10%;
         position: relative;
+        padding: 2% 0% 6rem 0%;
+        box-sizing: border-box;
     }
 
     .checkbox_grid {
@@ -172,12 +173,20 @@
         gap: 2%;
         width: 100%;
         position: absolute;
-        bottom: 1rem;
+        bottom: 0.7rem;
         left: 0;
         z-index: 1;
+        padding: 0 2%;
+        box-sizing: border-box;
     }
 
-    .checkbox_helper_button {
+    .button_row > .checkbox_helper_button,
+    .button_row > .deck_details_button {
+        flex: 1 1 0;
+        min-width: 0;
+        width: 100%;
+        max-width: 33%;
+        height: auto;
         margin-top: 0;
         margin-right: 0;
         background-color: #fff;
@@ -194,6 +203,13 @@
         align-items: center;
         justify-content: center;
         line-height: 1;
+        font-size: 3.2vw;
+    }
+
+    .button_row > .deck_details_button {
+        background-color: #02a5ea;
+        color: #ffffff;
+        font-size: 3.2vw;
     }
 
     .checkbox_helper_button:hover {
@@ -274,7 +290,7 @@
         align-items: center;
         justify-content: center;
         font-weight: 400;
-        font-size: 3.5vw;
+        font-size: 4vw;
         text-align: center;
         text-decoration: none;
         user-select: none;
@@ -287,7 +303,7 @@
         margin-bottom: 1%;
         position: relative;
         width: auto;
-        min-width: 20%;
+        min-width: 30%;
         margin-left: 2%;
         margin-right: 2%;
         z-index: 1;
@@ -323,7 +339,7 @@
         user-select: none;
         -webkit-user-select: none;
         touch-action: manipulation;
-        margin-top: 4%;
+        margin-top: 3%;
         filter: drop-shadow(0px 0px 2px #292929);
         font-family: "Bubblegum Sans", serif;
         font-weight: 200;
@@ -486,14 +502,47 @@
         border: 2px solid #111111;
         border-radius:10px;
         padding: 2%;
-        text-align: center;
         box-shadow: #111111 4px 4px 0 0;
         font-weight: 600;
         color: #111111;
         font-size: 3.5vw;
         font-family: "Bubblegum Sans", serif;
         font-weight: 200;
-        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 6px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .player_name_text {
+        flex: 1;
+        text-align: center;
+        padding-right: 0.8em;
+    }
+
+    .remove_player_button {
+        background-color: #ff3b30;
+        border: 2px solid #111111;
+        color: #ffffff;
+        font-size: 1.05em;
+        font-weight: 900;
+        cursor: pointer;
+        line-height: 1;
+        width: 1.35em;
+        height: 1.35em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 6px;
+        box-shadow: inset 0 0 0 1px rgba(255,255,255,0.25);
+        flex-shrink: 0;
+    }
+
+    .remove_player_button:hover {
+        background-color: #d32f2f;
+        transform: scale(1.04);
     }
 
 
@@ -635,13 +684,14 @@
     .deck_feature_container {
         border: 3px solid #000;
         border-radius: 20px;
-        padding: 1% 0% 6rem 0%;
-        width: 90%;
+        width: 92%;
         background-color: white;
-        margin-left: 10%;
+        margin-left: 4%;
         filter: drop-shadow(0px 0px 10px #292929);
-        height: 25vw;
+        height: 28vw;
         position: relative;
+        padding: 0 1% 3.2rem 1%;
+        box-sizing: border-box;
     }
 
     .checkbox_grid {
@@ -701,9 +751,17 @@
         bottom: 1rem;
         left: 0;
         z-index: 1;
+        padding: 0 2%;
+        box-sizing: border-box;
     }
 
-    .checkbox_helper_button {
+    .button_row > .checkbox_helper_button,
+    .button_row > .deck_details_button {
+        flex: 1 1 0;
+        min-width: 0;
+        width: 100%;
+        max-width: 33%;
+        height: auto;
         margin-top: 0;
         margin-right: 0;
         background-color: #fff;
@@ -719,6 +777,12 @@
         align-items: center;
         justify-content: center;
         line-height: 1;
+    }
+
+    .button_row > .deck_details_button {
+        background-color: #02a5ea;
+        color: #ffffff;
+        font-size: 1.1vw;
     }
 
     .checkbox_helper_button:hover {
@@ -1171,13 +1235,14 @@
     .deck_feature_container {
         border: 3px solid #000;
         border-radius: 20px;
-        padding: 1% 0% 6rem 0%;
         width: 100%;
         background-color: white;
         margin-left: 5%;
         filter: drop-shadow(0px 0px 10px #292929);
         height: 30vw;
         position: relative;
+        padding: 0;
+        box-sizing: border-box;
     }
 
     .checkbox_grid {
@@ -1601,4 +1666,56 @@
 
 
 
+}
+
+.each_player_names_list {
+    background-color: #ffffff;
+    border: 2px solid #111111;
+    padding: 2%;
+    text-align: center;
+    box-shadow: #111111 4px 4px 0 0;
+    font-weight: 600;
+    color: #111111;
+    font-size: 2vw;
+    width: 100%;
+    margin-left: 0.2%;
+    margin-right: 0.2%;
+    border-radius: 20px;
+    font-family: "Bubblegum Sans", serif;
+    font-weight: 200;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+    position: relative;
+    overflow: hidden;
+}
+
+.player_name_text {
+    flex: 1;
+    text-align: center;
+    padding-right: 0.8em;
+}
+
+.remove_player_button {
+    background-color: #ff3b30;
+    border: 2px solid #111111;
+    color: #ffffff;
+    font-size: 1.05em;
+    font-weight: 900;
+    cursor: pointer;
+    line-height: 1;
+    width: 1.35em;
+    height: 1.35em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.25);
+    flex-shrink: 0;
+}
+
+.remove_player_button:hover {
+    background-color: #d32f2f;
+    transform: scale(1.04);
 }

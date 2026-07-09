@@ -19,6 +19,7 @@ import genie_image from './images/genie_image.png'
 import reflect_shield from './images/reflect_shield.png'
 import ChestFeatureComponent from './ChestFeatureComponent';
 import GambleFeatureComponent from './GambleFeatureComponent';
+import HeadsOrTailsFeatureComponent from './HeadsOrTailsFeatureComponent';
 
 const DECK_BACK_ORIGINAL = 1000;
 const DECK_BACK_LO_PLUS = 1001;
@@ -35,6 +36,7 @@ const FEATURE_GENIE = 4;
 const FEATURE_SHIELD = 5;
 const FEATURE_CHESTS = 6;
 const FEATURE_GAMBLE = 7;
+const FEATURE_HEADS_OR_TAILS = 8;
 const CARD_FLIP_DELAY_MS = 1000;
 const DECK_CHANCE_THRESHOLD = 33;
 const RANDOM_DECK_RANGE_MIN = 1;
@@ -46,6 +48,7 @@ const GENIE_ODDS_MAX = 100;
 const SHIELD_ODDS_MAX = 100;
 const CHESTS_ODDS_MAX = 50;
 const GAMBLE_ODDS_MAX = 70;
+const HEADS_OR_TAILS_ODDS_MAX = 1;
 const DEFAULT_CARD_STYLE = 'game_container';
 const DEFAULT_FEATURE_ID = 0;
 const HIDDEN_CARD_STATE = -1;
@@ -100,6 +103,10 @@ const getFeatureOutcome = (featureRolls, chosenFeatures) => {
         return { featureId: FEATURE_GAMBLE, cardStyle: DEFAULT_CARD_STYLE, shouldHideCard: true };
     }
 
+    if (featureRolls.headsOrTails === 1 && chosenFeatures.includes('HeadsOrTails')) {
+        return { featureId: FEATURE_HEADS_OR_TAILS, cardStyle: DEFAULT_CARD_STYLE, shouldHideCard: true };
+    }
+
     return { featureId: DEFAULT_FEATURE_ID, cardStyle: DEFAULT_CARD_STYLE, shouldHideCard: false };
 };
 
@@ -116,6 +123,7 @@ function DrinkingGame() {
         shield: 0,
         chests: 0,
         gamble: 0,
+        headsOrTails: 0,
     });
 
     const resetFeatureState = () => {
@@ -129,6 +137,7 @@ function DrinkingGame() {
             shield: 0,
             chests: 0,
             gamble: 0,
+            headsOrTails: 0,
         });
     };
 
@@ -163,6 +172,7 @@ function DrinkingGame() {
             shield: getRandomNumberInRange(1, SHIELD_ODDS_MAX),
             chests: getRandomNumberInRange(1, CHESTS_ODDS_MAX),
             gamble: getRandomNumberInRange(1, GAMBLE_ODDS_MAX),
+            headsOrTails: getRandomNumberInRange(1, HEADS_OR_TAILS_ODDS_MAX),
         };
         const nextFeatureOutcome = getFeatureOutcome(nextFeatureRolls, chosenFeatures);
 
@@ -291,6 +301,13 @@ function DrinkingGame() {
                 fNum === FEATURE_GAMBLE ?
                     <div>
                         <GambleFeatureComponent />
+                    </div>
+                    : null
+            }
+            {// Heads or Tails Feature
+                fNum === FEATURE_HEADS_OR_TAILS ?
+                    <div>
+                        <HeadsOrTailsFeatureComponent currentName={currentName} />
                     </div>
                     : null
             }

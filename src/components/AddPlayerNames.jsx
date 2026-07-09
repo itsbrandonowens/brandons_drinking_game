@@ -44,6 +44,10 @@ const AddPlayerNames = () => {
         }
     };
 
+    const handleRemovePlayer = (indexToRemove) => {
+        setPlayerName((prevItems) => prevItems.filter((_, index) => index !== indexToRemove));
+    };
+
     return (
         <div>
             <div className="legal_rules_container">
@@ -89,7 +93,15 @@ const AddPlayerNames = () => {
                     <ul className="added_players_list">
                         {playerName.map((item, index) => (
                             <li className="each_player_names_list" key={`${item}-${index}`}>
-                                {item}
+                                <span className="player_name_text">{item}</span>
+                                <button
+                                    type="button"
+                                    className="remove_player_button"
+                                    onClick={() => handleRemovePlayer(index)}
+                                    aria-label={`Remove ${item}`}
+                                >
+                                    ×
+                                </button>
                             </li>
                         ))}
                     </ul>

@@ -10,9 +10,10 @@ import genie_image from './images/genie_image.png';
 import reflect_shield from './images/reflect_shield.png';
 import chest_image from './images/chest_full.png';
 import gamble_image from './images/gamble_image.png';
+import heads_tails_image from './images/heads_tails_coin.svg';
 
 const defaultDecks = ['Original', 'LO+'];
-const defaultFeatures = ['WW', 'EQ', 'BN', 'Genie', 'Shield', 'Chests', 'Gamble'];
+const defaultFeatures = ['WW', 'EQ', 'BN', 'Genie', 'Shield', 'Chests', 'Gamble', 'HeadsOrTails'];
 
 const deckOptions = [
     { value: 'LO+', image: LOPlus, alt: 'LO+' },
@@ -28,6 +29,7 @@ const featureOptions = [
     { value: 'Shield', image: reflect_shield, alt: 'Shield' },
     { value: 'Chests', image: chest_image, alt: 'Chests' },
     { value: 'Gamble', image: gamble_image, alt: 'Gamble' },
+    { value: 'HeadsOrTails', image: heads_tails_image, alt: 'HeadsOrTails' },
 ];
 
 const loadFromStorage = (key, fallback) => {
